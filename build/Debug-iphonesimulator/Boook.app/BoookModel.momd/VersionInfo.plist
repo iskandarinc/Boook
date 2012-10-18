@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>NSManagedObjectModel_VersionHashes</key>
+	<dict>
+		<key>BoookModel</key>
+		<dict>
+			<key>Author</key>
+			<data>
+			+Dg1ugNOHEKSGAnj/lcglYaqdnzPQfd8msfLrWXbqn4=
+			</data>
+			<key>Book</key>
+			<data>
+			A1wT50ehSYYoMyhZT7HoYdqv9fbmOS53IUqWnV6FeLc=
+			</data>
+			<key>Chapter</key>
+			<data>
+			F9v1pKnQ8YoIphZUdn7Gr1qE6IOmnLiavnBo//Hn7p4=
+			</data>
+			<key>Chunk</key>
+			<data>
+			KTsL9GQtZJ4dznZoqmphe1aGyx6dByWqoLxx7qWSbMg=
+			</data>
+		</dict>
+	</dict>
+</dict>
+</plist>
