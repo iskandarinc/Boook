@@ -19,6 +19,13 @@
 		839F014F163030DE000071A5 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 839F014D163030DE000071A5 /* MainStoryboard_iPhone.storyboard */; };
 		839F0152163030DE000071A5 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 839F0150163030DE000071A5 /* MainStoryboard_iPad.storyboard */; };
 		839F0155163030DE000071A5 /* BKViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 839F0154163030DE000071A5 /* BKViewController.m */; };
+		839F0160163031FE000071A5 /* BoookModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 839F015E163031FE000071A5 /* BoookModel.xcdatamodeld */; };
+		839F0171163034F5000071A5 /* _BKAuthor.m in Sources */ = {isa = PBXBuildFile; fileRef = 839F0166163034F5000071A5 /* _BKAuthor.m */; };
+		839F0172163034F5000071A5 /* _BKBook.m in Sources */ = {isa = PBXBuildFile; fileRef = 839F0168163034F5000071A5 /* _BKBook.m */; };
+		839F0173163034F5000071A5 /* _BKChapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 839F016A163034F5000071A5 /* _BKChapter.m */; };
+		839F0174163034F5000071A5 /* BKAuthor.m in Sources */ = {isa = PBXBuildFile; fileRef = 839F016C163034F5000071A5 /* BKAuthor.m */; };
+		839F0175163034F5000071A5 /* BKBook.m in Sources */ = {isa = PBXBuildFile; fileRef = 839F016E163034F5000071A5 /* BKBook.m */; };
+		839F0176163034F5000071A5 /* BKChapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 839F0170163034F5000071A5 /* BKChapter.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +46,19 @@
 		839F0151163030DE000071A5 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 		839F0153163030DE000071A5 /* BKViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BKViewController.h; sourceTree = "<group>"; };
 		839F0154163030DE000071A5 /* BKViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BKViewController.m; sourceTree = "<group>"; };
+		839F015F163031FE000071A5 /* BoookModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BoookModel.xcdatamodel; sourceTree = "<group>"; };
+		839F0165163034F5000071A5 /* _BKAuthor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _BKAuthor.h; sourceTree = "<group>"; };
+		839F0166163034F5000071A5 /* _BKAuthor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _BKAuthor.m; sourceTree = "<group>"; };
+		839F0167163034F5000071A5 /* _BKBook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _BKBook.h; sourceTree = "<group>"; };
+		839F0168163034F5000071A5 /* _BKBook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _BKBook.m; sourceTree = "<group>"; };
+		839F0169163034F5000071A5 /* _BKChapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _BKChapter.h; sourceTree = "<group>"; };
+		839F016A163034F5000071A5 /* _BKChapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _BKChapter.m; sourceTree = "<group>"; };
+		839F016B163034F5000071A5 /* BKAuthor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BKAuthor.h; sourceTree = "<group>"; };
+		839F016C163034F5000071A5 /* BKAuthor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BKAuthor.m; sourceTree = "<group>"; };
+		839F016D163034F5000071A5 /* BKBook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BKBook.h; sourceTree = "<group>"; };
+		839F016E163034F5000071A5 /* BKBook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BKBook.m; sourceTree = "<group>"; };
+		839F016F163034F5000071A5 /* BKChapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BKChapter.h; sourceTree = "<group>"; };
+		839F0170163034F5000071A5 /* BKChapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BKChapter.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +105,9 @@
 		839F013B163030DD000071A5 /* Boook */ = {
 			isa = PBXGroup;
 			children = (
+				839F015D163031E1000071A5 /* Data */,
+				839F015C1630310E000071A5 /* External */,
+				839F015B163030FC000071A5 /* Parser */,
 				839F0144163030DE000071A5 /* BKAppDelegate.h */,
 				839F0145163030DE000071A5 /* BKAppDelegate.m */,
 				839F014D163030DE000071A5 /* MainStoryboard_iPhone.storyboard */,
@@ -108,6 +131,40 @@
 				839F014B163030DE000071A5 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		839F015B163030FC000071A5 /* Parser */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Parser;
+			sourceTree = "<group>";
+		};
+		839F015C1630310E000071A5 /* External */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = External;
+			sourceTree = "<group>";
+		};
+		839F015D163031E1000071A5 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				839F0165163034F5000071A5 /* _BKAuthor.h */,
+				839F0166163034F5000071A5 /* _BKAuthor.m */,
+				839F0167163034F5000071A5 /* _BKBook.h */,
+				839F0168163034F5000071A5 /* _BKBook.m */,
+				839F0169163034F5000071A5 /* _BKChapter.h */,
+				839F016A163034F5000071A5 /* _BKChapter.m */,
+				839F016B163034F5000071A5 /* BKAuthor.h */,
+				839F016C163034F5000071A5 /* BKAuthor.m */,
+				839F016D163034F5000071A5 /* BKBook.h */,
+				839F016E163034F5000071A5 /* BKBook.m */,
+				839F016F163034F5000071A5 /* BKChapter.h */,
+				839F0170163034F5000071A5 /* BKChapter.m */,
+				839F015E163031FE000071A5 /* BoookModel.xcdatamodeld */,
+			);
+			name = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -181,6 +238,13 @@
 				839F0142163030DD000071A5 /* main.m in Sources */,
 				839F0146163030DE000071A5 /* BKAppDelegate.m in Sources */,
 				839F0155163030DE000071A5 /* BKViewController.m in Sources */,
+				839F0160163031FE000071A5 /* BoookModel.xcdatamodeld in Sources */,
+				839F0171163034F5000071A5 /* _BKAuthor.m in Sources */,
+				839F0172163034F5000071A5 /* _BKBook.m in Sources */,
+				839F0173163034F5000071A5 /* _BKChapter.m in Sources */,
+				839F0174163034F5000071A5 /* BKAuthor.m in Sources */,
+				839F0175163034F5000071A5 /* BKBook.m in Sources */,
+				839F0176163034F5000071A5 /* BKChapter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,8 +370,22 @@
 				839F015A163030DE000071A5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		839F015E163031FE000071A5 /* BoookModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				839F015F163031FE000071A5 /* BoookModel.xcdatamodel */,
+			);
+			currentVersion = 839F015F163031FE000071A5 /* BoookModel.xcdatamodel */;
+			path = BoookModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 839F0128163030DD000071A5 /* Project object */;
 }

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1810" systemVersion="12C60" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Author" representedClassName="BKAuthor" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="book" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Book" inverseName="authors" inverseEntity="Book" syncable="YES"/>
+    </entity>
+    <entity name="Book" representedClassName="BKBook" syncable="YES">
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="authors" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Author" inverseName="book" inverseEntity="Author" syncable="YES"/>
+        <relationship name="chapters" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Chapter" inverseName="book" inverseEntity="Chapter" syncable="YES"/>
+    </entity>
+    <entity name="Chapter" representedClassName="BKChapter" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="book" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Book" inverseName="chapters" inverseEntity="Book" syncable="YES"/>
+        <relationship name="chunks" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Chunk" inverseName="chapter" inverseEntity="Chunk" syncable="YES"/>
+    </entity>
+    <entity name="Chunk" representedClassName="BKChunk" syncable="YES">
+        <attribute name="image" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="text" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="type" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <relationship name="chapter" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Chapter" inverseName="chunks" inverseEntity="Chapter" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Author" positionX="160" positionY="192" width="128" height="75"/>
+        <element name="Book" positionX="160" positionY="192" width="128" height="90"/>
+        <element name="Chapter" positionX="160" positionY="192" width="128" height="90"/>
+        <element name="Chunk" positionX="160" positionY="192" width="128" height="105"/>
+    </elements>
+</model>
