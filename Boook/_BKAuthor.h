@@ -5,11 +5,11 @@
 
 
 extern const struct BKAuthorAttributes {
-	 NSString *name;
+	__unsafe_unretained NSString *name;
 } BKAuthorAttributes;
 
 extern const struct BKAuthorRelationships {
-	 NSString *book;
+	__unsafe_unretained NSString *book;
 } BKAuthorRelationships;
 
 extern const struct BKAuthorFetchedProperties {
@@ -31,7 +31,7 @@ extern const struct BKAuthorFetchedProperties {
 
 
 
-@property (nonatomic, retain) NSString *name;
+@property (nonatomic, strong) NSString *name;
 
 
 //- (BOOL)validateName:(id*)value_ error:(NSError**)error_;
@@ -40,7 +40,7 @@ extern const struct BKAuthorFetchedProperties {
 
 
 
-@property (nonatomic, retain) BKBook* book;
+@property (nonatomic, strong) BKBook* book;
 
 //- (BOOL)validateBook:(id*)value_ error:(NSError**)error_;
 

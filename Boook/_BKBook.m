@@ -4,6 +4,7 @@
 #import "_BKBook.h"
 
 const struct BKBookAttributes BKBookAttributes = {
+	.epubId = @"epubId",
 	.title = @"title",
 };
 
@@ -44,6 +45,13 @@ const struct BKBookFetchedProperties BKBookFetchedProperties = {
 
 	return keyPaths;
 }
+
+
+
+
+@dynamic epubId;
+
+
 
 
 

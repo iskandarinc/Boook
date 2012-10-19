@@ -1,5 +1,6 @@
 #import "_BKBook.h"
 
 @interface BKBook : _BKBook {}
-// Custom logic goes here.
++ (void)parseEpub:(NSString *)fileName;
+
 @end

@@ -7,6 +7,7 @@
 //
 
 #import "BKViewController.h"
+#import "BKBook.h"
 
 @interface BKViewController ()
 
@@ -17,7 +18,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+	
+	// parse a book
+	[BKBook parseEpub:@"gullivers.epub"];
 }
 
 - (void)didReceiveMemoryWarning

@@ -5,19 +5,19 @@
 
 
 extern const struct BKChapterAttributes {
-	 NSString *name;
+	__unsafe_unretained NSString *name;
 } BKChapterAttributes;
 
 extern const struct BKChapterRelationships {
-	 NSString *book;
-	 NSString *chunks;
+	__unsafe_unretained NSString *book;
+	__unsafe_unretained NSString *chunks;
 } BKChapterRelationships;
 
 extern const struct BKChapterFetchedProperties {
 } BKChapterFetchedProperties;
 
 @class BKBook;
-@class NSManagedObject;
+@class BKChunk;
 
 
 
@@ -33,7 +33,7 @@ extern const struct BKChapterFetchedProperties {
 
 
 
-@property (nonatomic, retain) NSString *name;
+@property (nonatomic, strong) NSString *name;
 
 
 //- (BOOL)validateName:(id*)value_ error:(NSError**)error_;
@@ -42,14 +42,14 @@ extern const struct BKChapterFetchedProperties {
 
 
 
-@property (nonatomic, retain) BKBook* book;
+@property (nonatomic, strong) BKBook* book;
 
 //- (BOOL)validateBook:(id*)value_ error:(NSError**)error_;
 
 
 
 
-@property (nonatomic, retain) NSSet* chunks;
+@property (nonatomic, strong) NSSet* chunks;
 
 - (NSMutableSet*)chunksSet;
 
@@ -63,8 +63,8 @@ extern const struct BKChapterFetchedProperties {
 
 - (void)addChunks:(NSSet*)value_;
 - (void)removeChunks:(NSSet*)value_;
-- (void)addChunksObject:(NSManagedObject*)value_;
-- (void)removeChunksObject:(NSManagedObject*)value_;
+- (void)addChunksObject:(BKChunk*)value_;
+- (void)removeChunksObject:(BKChunk*)value_;
 
 @end
 

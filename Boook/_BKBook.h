@@ -5,12 +5,13 @@
 
 
 extern const struct BKBookAttributes {
-	 NSString *title;
+	__unsafe_unretained NSString *epubId;
+	__unsafe_unretained NSString *title;
 } BKBookAttributes;
 
 extern const struct BKBookRelationships {
-	 NSString *authors;
-	 NSString *chapters;
+	__unsafe_unretained NSString *authors;
+	__unsafe_unretained NSString *chapters;
 } BKBookRelationships;
 
 extern const struct BKBookFetchedProperties {
@@ -18,6 +19,7 @@ extern const struct BKBookFetchedProperties {
 
 @class BKAuthor;
 @class BKChapter;
+
 
 
 
@@ -33,7 +35,15 @@ extern const struct BKBookFetchedProperties {
 
 
 
-@property (nonatomic, retain) NSString *title;
+@property (nonatomic, strong) NSString *epubId;
+
+
+//- (BOOL)validateEpubId:(id*)value_ error:(NSError**)error_;
+
+
+
+
+@property (nonatomic, strong) NSString *title;
 
 
 //- (BOOL)validateTitle:(id*)value_ error:(NSError**)error_;
@@ -42,14 +52,14 @@ extern const struct BKBookFetchedProperties {
 
 
 
-@property (nonatomic, retain) NSSet* authors;
+@property (nonatomic, strong) NSSet* authors;
 
 - (NSMutableSet*)authorsSet;
 
 
 
 
-@property (nonatomic, retain) BKChapter* chapters;
+@property (nonatomic, strong) BKChapter* chapters;
 
 //- (BOOL)validateChapters:(id*)value_ error:(NSError**)error_;
 
@@ -69,6 +79,12 @@ extern const struct BKBookFetchedProperties {
 @end
 
 @interface _BKBook (CoreDataGeneratedPrimitiveAccessors)
+
+
+- (NSString *)primitiveEpubId;
+- (void)setPrimitiveEpubId:(NSString *)value;
+
+
 
 
 - (NSString *)primitiveTitle;
