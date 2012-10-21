@@ -3,10 +3,12 @@
 #import "NSFileManager+BoookAdditions.h"
 #import "NSString+BoookAdditions.h"
 #import "XMLReader.h"
+#import "BKChapter.h"
 
 @implementation BKBook
 
 NSString *const kUnzipRootPath = @"/Documents/";
+NSString *const kEpubContentRoot = @"/OPS/";
 NSString *const kEpubContentManifest = @"/OPS/content.opf";
 
 
@@ -18,10 +20,10 @@ NSString *const kEpubContentManifest = @"/OPS/content.opf";
 
 + (void)unzipEpub:(NSString *)fileName {
 	NSString *resourcesPath = [[NSBundle mainBundle] resourcePath];
-	[SSZipArchive unzipFileAtPath:[NSString stringWithFormat:@"%@/%@", resourcesPath, fileName] toDestination:[resourcesPath stringByAppendingString:[[self class] unzipPathForFileName:fileName]]];
+	[SSZipArchive unzipFileAtPath:[NSString stringWithFormat:@"%@/%@", resourcesPath, fileName] toDestination:[[self class] unzipPathForFileName:fileName]];
 }
 
-+ (void)parseEpub:(NSString *)fileName {
++ (BKBook *)parseEpub:(NSString *)fileName {
 
 	[[self class] unzipEpub:fileName];
 	
@@ -35,16 +37,37 @@ NSString *const kEpubContentManifest = @"/OPS/content.opf";
 	
 	// save the main book metadata
 	BKBook *book = [BKBook findFirstByAttribute:@"epubId" withValue:epubId];
-	if (!book) {
-		book = [BKBook createInContext:[NSManagedObjectContext defaultContext]];
+	if (book) {
+		[book deleteInContext:[NSManagedObjectContext defaultContext]];
 	}
+		
+	book = [BKBook createInContext:[NSManagedObjectContext defaultContext]];
+	
 	book.epubId = epubId;
 	book.title = title;
 	
 	// lets go get the chapters
+	__block NSMutableOrderedSet *chapters = [NSMutableOrderedSet orderedSetWithCapacity:2];
+	
+	NSArray *chaptersFileNames = [[[fileContents objectForKey:@"package"] objectForKey:@"manifest"] objectForKey:@"item"];
+	[chaptersFileNames enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
 	
 
+		NSDictionary *item = (NSDictionary *)obj;
+		NSString *chapterFileName = [item objectForKey:@"href"];
+		
+		// read each file
+		NSString *chapterFileNamePath = [[[self unzipPathForFileName:fileName] stringByAppendingString:kEpubContentRoot] stringByAppendingString:chapterFileName];
+		
+		if ([chapterFileName rangeOfString:@"html"].location != NSNotFound) {
+			BKChapter *chapter = [BKChapter parseChapterWithFilename:chapterFileNamePath];
+			[chapters addObject:chapter];
+		}
+	}];
+	
+	[book setChapters:chapters];
 	[[NSManagedObjectContext defaultContext] save];
+	return book;
 }
 
 @end

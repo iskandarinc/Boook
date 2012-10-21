@@ -7,7 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BKBook.h"
 
-@interface BKViewController : UIViewController
-
+@interface BKViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
+@property (strong, nonatomic) IBOutlet UITableView *tableView;
+@property (strong, nonatomic) IBOutlet UIActivityIndicatorView *activityIndicator;
+@property (strong, nonatomic) BKBook *book;
+@property (strong, nonatomic) NSMutableArray *pages;
+@property (strong, nonatomic) UILabel *dummyLabel;
 @end

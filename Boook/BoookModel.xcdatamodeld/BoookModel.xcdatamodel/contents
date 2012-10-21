@@ -8,12 +8,12 @@
         <attribute name="epubId" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="authors" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Author" inverseName="book" inverseEntity="Author" syncable="YES"/>
-        <relationship name="chapters" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Chapter" inverseName="book" inverseEntity="Chapter" syncable="YES"/>
+        <relationship name="chapters" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="Chapter" inverseName="book" inverseEntity="Chapter" syncable="YES"/>
     </entity>
     <entity name="Chapter" representedClassName="BKChapter" syncable="YES">
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="book" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Book" inverseName="chapters" inverseEntity="Book" syncable="YES"/>
-        <relationship name="chunks" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Chunk" inverseName="chapter" inverseEntity="Chunk" syncable="YES"/>
+        <relationship name="chunks" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="Chunk" inverseName="chapter" inverseEntity="Chunk" syncable="YES"/>
     </entity>
     <entity name="Chunk" representedClassName="BKChunk" syncable="YES">
         <attribute name="image" optional="YES" attributeType="String" syncable="YES"/>

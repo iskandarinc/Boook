@@ -62,10 +62,10 @@ const struct BKChapterFetchedProperties BKChapterFetchedProperties = {
 @dynamic chunks;
 
 	
-- (NSMutableSet*)chunksSet {
+- (NSMutableOrderedSet*)chunksSet {
 	[self willAccessValueForKey:@"chunks"];
   
-	NSMutableSet *result = (NSMutableSet*)[self mutableSetValueForKey:@"chunks"];
+	NSMutableOrderedSet *result = (NSMutableOrderedSet*)[self mutableOrderedSetValueForKey:@"chunks"];
   
 	[self didAccessValueForKey:@"chunks"];
 	return result;

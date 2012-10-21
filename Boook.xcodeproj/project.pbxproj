@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8338BFA416339BDF00281731 /* NSAttributedString+BoookAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 8338BFA316339BDF00281731 /* NSAttributedString+BoookAdditions.m */; };
+		8338BFA8163440F600281731 /* UILabel+BoookAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 8338BFA7163440F600281731 /* UILabel+BoookAdditions.m */; };
 		836216641630EB98007A9BBB /* gullivers.epub in Resources */ = {isa = PBXBuildFile; fileRef = 839A10491630D74400F3D6B1 /* gullivers.epub */; };
 		836216691630EC1C007A9BBB /* NSFileManager+BoookAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 836216681630EC1C007A9BBB /* NSFileManager+BoookAdditions.m */; };
 		8362167E1630FE7D007A9BBB /* XMLReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 8362167D1630FE7D007A9BBB /* XMLReader.m */; };
@@ -65,9 +67,35 @@
 		839F018E1630A8CB000071A5 /* _BKChunk.m in Sources */ = {isa = PBXBuildFile; fileRef = 839F01851630A8CB000071A5 /* _BKChunk.m */; };
 		839F018F1630A8CB000071A5 /* BKChunk.m in Sources */ = {isa = PBXBuildFile; fileRef = 839F01871630A8CB000071A5 /* BKChunk.m */; };
 		83E409CE163192560085D91A /* NSString+BoookAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 83E409CD163192560085D91A /* NSString+BoookAdditions.m */; };
+		83E409EE1631F37B0085D91A /* CXMLDocument_CreationExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 83E409D31631F37B0085D91A /* CXMLDocument_CreationExtensions.m */; };
+		83E409EF1631F37B0085D91A /* CXMLNode_CreationExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 83E409D51631F37B0085D91A /* CXMLNode_CreationExtensions.m */; };
+		83E409F01631F37B0085D91A /* CXHTMLDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 83E409D71631F37B0085D91A /* CXHTMLDocument.m */; };
+		83E409F11631F37B0085D91A /* CXMLDocument_PrivateExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 83E409D91631F37B0085D91A /* CXMLDocument_PrivateExtensions.m */; };
+		83E409F21631F37B0085D91A /* CXMLDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 83E409DB1631F37B0085D91A /* CXMLDocument.m */; };
+		83E409F31631F37B0085D91A /* CXMLElement_CreationExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 83E409DD1631F37B0085D91A /* CXMLElement_CreationExtensions.m */; };
+		83E409F41631F37B0085D91A /* CXMLElement_ElementTreeExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 83E409DF1631F37B0085D91A /* CXMLElement_ElementTreeExtensions.m */; };
+		83E409F51631F37B0085D91A /* CXMLElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 83E409E11631F37B0085D91A /* CXMLElement.m */; };
+		83E409F61631F37B0085D91A /* CXMLNamespaceNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 83E409E31631F37B0085D91A /* CXMLNamespaceNode.m */; };
+		83E409F71631F37B0085D91A /* CXMLNode_PrivateExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 83E409E51631F37B0085D91A /* CXMLNode_PrivateExtensions.m */; };
+		83E409F81631F37B0085D91A /* CXMLNode_XPathExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 83E409E71631F37B0085D91A /* CXMLNode_XPathExtensions.m */; };
+		83E409F91631F37B0085D91A /* CXMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 83E409E91631F37B0085D91A /* CXMLNode.m */; };
+		83E409FA1631F37B0085D91A /* CTidy.m in Sources */ = {isa = PBXBuildFile; fileRef = 83E409EC1631F37B0085D91A /* CTidy.m */; };
+		83E409FC1631F3980085D91A /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 83E409FB1631F3980085D91A /* libxml2.dylib */; };
+		83E40A0E163210060085D91A /* GDataXMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 83E40A0D163210060085D91A /* GDataXMLNode.m */; };
+		83E40A13163235A40085D91A /* paper_texture.png in Resources */ = {isa = PBXBuildFile; fileRef = 83E40A10163235A40085D91A /* paper_texture.png */; };
+		83E40A14163235A40085D91A /* blue_texture.png in Resources */ = {isa = PBXBuildFile; fileRef = 83E40A11163235A40085D91A /* blue_texture.png */; };
+		83E40A15163235A40085D91A /* dark_texture.png in Resources */ = {isa = PBXBuildFile; fileRef = 83E40A12163235A40085D91A /* dark_texture.png */; };
+		83E40A18163241200085D91A /* gray_global_bgr.png in Resources */ = {isa = PBXBuildFile; fileRef = 83E40A16163241200085D91A /* gray_global_bgr.png */; };
+		83E40A19163241200085D91A /* gray_global_bgr@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 83E40A17163241200085D91A /* gray_global_bgr@2x.png */; };
+		83E40A1C16324CBA0085D91A /* BKPageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 83E40A1B16324CB90085D91A /* BKPageCell.m */; };
+		83E40A2116325BE30085D91A /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83E40A2016325BE30085D91A /* CoreText.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8338BFA216339BDF00281731 /* NSAttributedString+BoookAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString+BoookAdditions.h"; sourceTree = "<group>"; };
+		8338BFA316339BDF00281731 /* NSAttributedString+BoookAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSAttributedString+BoookAdditions.m"; sourceTree = "<group>"; };
+		8338BFA6163440F600281731 /* UILabel+BoookAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+BoookAdditions.h"; sourceTree = "<group>"; };
+		8338BFA7163440F600281731 /* UILabel+BoookAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+BoookAdditions.m"; sourceTree = "<group>"; };
 		836216671630EC1C007A9BBB /* NSFileManager+BoookAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSFileManager+BoookAdditions.h"; sourceTree = "<group>"; };
 		836216681630EC1C007A9BBB /* NSFileManager+BoookAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSFileManager+BoookAdditions.m"; sourceTree = "<group>"; };
 		8362167C1630FE7D007A9BBB /* XMLReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLReader.h; sourceTree = "<group>"; };
@@ -176,6 +204,44 @@
 		839F01871630A8CB000071A5 /* BKChunk.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BKChunk.m; sourceTree = "<group>"; };
 		83E409CC163192560085D91A /* NSString+BoookAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+BoookAdditions.h"; sourceTree = "<group>"; };
 		83E409CD163192560085D91A /* NSString+BoookAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+BoookAdditions.m"; sourceTree = "<group>"; };
+		83E409D21631F37B0085D91A /* CXMLDocument_CreationExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXMLDocument_CreationExtensions.h; sourceTree = "<group>"; };
+		83E409D31631F37B0085D91A /* CXMLDocument_CreationExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXMLDocument_CreationExtensions.m; sourceTree = "<group>"; };
+		83E409D41631F37B0085D91A /* CXMLNode_CreationExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXMLNode_CreationExtensions.h; sourceTree = "<group>"; };
+		83E409D51631F37B0085D91A /* CXMLNode_CreationExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXMLNode_CreationExtensions.m; sourceTree = "<group>"; };
+		83E409D61631F37B0085D91A /* CXHTMLDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXHTMLDocument.h; sourceTree = "<group>"; };
+		83E409D71631F37B0085D91A /* CXHTMLDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXHTMLDocument.m; sourceTree = "<group>"; };
+		83E409D81631F37B0085D91A /* CXMLDocument_PrivateExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXMLDocument_PrivateExtensions.h; sourceTree = "<group>"; };
+		83E409D91631F37B0085D91A /* CXMLDocument_PrivateExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXMLDocument_PrivateExtensions.m; sourceTree = "<group>"; };
+		83E409DA1631F37B0085D91A /* CXMLDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXMLDocument.h; sourceTree = "<group>"; };
+		83E409DB1631F37B0085D91A /* CXMLDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXMLDocument.m; sourceTree = "<group>"; };
+		83E409DC1631F37B0085D91A /* CXMLElement_CreationExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXMLElement_CreationExtensions.h; sourceTree = "<group>"; };
+		83E409DD1631F37B0085D91A /* CXMLElement_CreationExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXMLElement_CreationExtensions.m; sourceTree = "<group>"; };
+		83E409DE1631F37B0085D91A /* CXMLElement_ElementTreeExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXMLElement_ElementTreeExtensions.h; sourceTree = "<group>"; };
+		83E409DF1631F37B0085D91A /* CXMLElement_ElementTreeExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXMLElement_ElementTreeExtensions.m; sourceTree = "<group>"; };
+		83E409E01631F37B0085D91A /* CXMLElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXMLElement.h; sourceTree = "<group>"; };
+		83E409E11631F37B0085D91A /* CXMLElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXMLElement.m; sourceTree = "<group>"; };
+		83E409E21631F37B0085D91A /* CXMLNamespaceNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXMLNamespaceNode.h; sourceTree = "<group>"; };
+		83E409E31631F37B0085D91A /* CXMLNamespaceNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXMLNamespaceNode.m; sourceTree = "<group>"; };
+		83E409E41631F37B0085D91A /* CXMLNode_PrivateExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXMLNode_PrivateExtensions.h; sourceTree = "<group>"; };
+		83E409E51631F37B0085D91A /* CXMLNode_PrivateExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXMLNode_PrivateExtensions.m; sourceTree = "<group>"; };
+		83E409E61631F37B0085D91A /* CXMLNode_XPathExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXMLNode_XPathExtensions.h; sourceTree = "<group>"; };
+		83E409E71631F37B0085D91A /* CXMLNode_XPathExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXMLNode_XPathExtensions.m; sourceTree = "<group>"; };
+		83E409E81631F37B0085D91A /* CXMLNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXMLNode.h; sourceTree = "<group>"; };
+		83E409E91631F37B0085D91A /* CXMLNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXMLNode.m; sourceTree = "<group>"; };
+		83E409EB1631F37B0085D91A /* CTidy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTidy.h; sourceTree = "<group>"; };
+		83E409EC1631F37B0085D91A /* CTidy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTidy.m; sourceTree = "<group>"; };
+		83E409ED1631F37B0085D91A /* TouchXML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouchXML.h; sourceTree = "<group>"; };
+		83E409FB1631F3980085D91A /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
+		83E40A0C163210060085D91A /* GDataXMLNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDataXMLNode.h; sourceTree = "<group>"; };
+		83E40A0D163210060085D91A /* GDataXMLNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDataXMLNode.m; sourceTree = "<group>"; };
+		83E40A10163235A40085D91A /* paper_texture.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = paper_texture.png; path = Images/paper_texture.png; sourceTree = "<group>"; };
+		83E40A11163235A40085D91A /* blue_texture.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = blue_texture.png; path = Images/blue_texture.png; sourceTree = "<group>"; };
+		83E40A12163235A40085D91A /* dark_texture.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = dark_texture.png; path = Images/dark_texture.png; sourceTree = "<group>"; };
+		83E40A16163241200085D91A /* gray_global_bgr.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gray_global_bgr.png; sourceTree = "<group>"; };
+		83E40A17163241200085D91A /* gray_global_bgr@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gray_global_bgr@2x.png"; sourceTree = "<group>"; };
+		83E40A1A16324CB80085D91A /* BKPageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BKPageCell.h; sourceTree = "<group>"; };
+		83E40A1B16324CB90085D91A /* BKPageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BKPageCell.m; sourceTree = "<group>"; };
+		83E40A2016325BE30085D91A /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,6 +249,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83E40A2116325BE30085D91A /* CoreText.framework in Frameworks */,
+				83E409FC1631F3980085D91A /* libxml2.dylib in Frameworks */,
 				839A105C1630DCF700F3D6B1 /* libz.dylib in Frameworks */,
 				839A10471630CDCC00F3D6B1 /* CoreData.framework in Frameworks */,
 				839F0136163030DD000071A5 /* UIKit.framework in Frameworks */,
@@ -201,8 +269,13 @@
 				836216681630EC1C007A9BBB /* NSFileManager+BoookAdditions.m */,
 				83E409CC163192560085D91A /* NSString+BoookAdditions.h */,
 				83E409CD163192560085D91A /* NSString+BoookAdditions.m */,
+				8338BFA216339BDF00281731 /* NSAttributedString+BoookAdditions.h */,
+				8338BFA316339BDF00281731 /* NSAttributedString+BoookAdditions.m */,
+				8338BFA6163440F600281731 /* UILabel+BoookAdditions.h */,
+				8338BFA7163440F600281731 /* UILabel+BoookAdditions.m */,
 			);
 			name = Categories;
+			path = Boook;
 			sourceTree = "<group>";
 		};
 		836216781630FDA5007A9BBB /* XMLReader */ = {
@@ -344,7 +417,10 @@
 		839F0126163030DD000071A5 = {
 			isa = PBXGroup;
 			children = (
+				83E40A2016325BE30085D91A /* CoreText.framework */,
+				83E409FB1631F3980085D91A /* libxml2.dylib */,
 				839A105B1630DCF700F3D6B1 /* libz.dylib */,
+				836216661630EBFC007A9BBB /* Categories */,
 				839A10461630CDCC00F3D6B1 /* CoreData.framework */,
 				839F013B163030DD000071A5 /* Boook */,
 				839F0134163030DD000071A5 /* Frameworks */,
@@ -373,7 +449,6 @@
 		839F013B163030DD000071A5 /* Boook */ = {
 			isa = PBXGroup;
 			children = (
-				836216661630EBFC007A9BBB /* Categories */,
 				839F015D163031E1000071A5 /* Data */,
 				839F015C1630310E000071A5 /* External */,
 				839F015B163030FC000071A5 /* Parser */,
@@ -383,6 +458,8 @@
 				839F0150163030DE000071A5 /* MainStoryboard_iPad.storyboard */,
 				839F0153163030DE000071A5 /* BKViewController.h */,
 				839F0154163030DE000071A5 /* BKViewController.m */,
+				83E40A1A16324CB80085D91A /* BKPageCell.h */,
+				83E40A1B16324CB90085D91A /* BKPageCell.m */,
 				839F013C163030DD000071A5 /* Supporting Files */,
 			);
 			path = Boook;
@@ -391,6 +468,7 @@
 		839F013C163030DD000071A5 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				83E40A0F1632358D0085D91A /* Images */,
 				839A10491630D74400F3D6B1 /* gullivers.epub */,
 				839F013D163030DD000071A5 /* Boook-Info.plist */,
 				839F013E163030DD000071A5 /* InfoPlist.strings */,
@@ -413,6 +491,8 @@
 		839F015C1630310E000071A5 /* External */ = {
 			isa = PBXGroup;
 			children = (
+				83E40A0116320F540085D91A /* GDataXML */,
+				83E409D01631F36A0085D91A /* TouchXML */,
 				8362167F16318686007A9BBB /* MagicalRecord */,
 				836216781630FDA5007A9BBB /* XMLReader */,
 				839A104A1630DCC500F3D6B1 /* SSZipArchive */,
@@ -442,6 +522,77 @@
 				839F015E163031FE000071A5 /* BoookModel.xcdatamodeld */,
 			);
 			name = Data;
+			sourceTree = "<group>";
+		};
+		83E409D01631F36A0085D91A /* TouchXML */ = {
+			isa = PBXGroup;
+			children = (
+				83E409D11631F37B0085D91A /* Creation */,
+				83E409D61631F37B0085D91A /* CXHTMLDocument.h */,
+				83E409D71631F37B0085D91A /* CXHTMLDocument.m */,
+				83E409D81631F37B0085D91A /* CXMLDocument_PrivateExtensions.h */,
+				83E409D91631F37B0085D91A /* CXMLDocument_PrivateExtensions.m */,
+				83E409DA1631F37B0085D91A /* CXMLDocument.h */,
+				83E409DB1631F37B0085D91A /* CXMLDocument.m */,
+				83E409DC1631F37B0085D91A /* CXMLElement_CreationExtensions.h */,
+				83E409DD1631F37B0085D91A /* CXMLElement_CreationExtensions.m */,
+				83E409DE1631F37B0085D91A /* CXMLElement_ElementTreeExtensions.h */,
+				83E409DF1631F37B0085D91A /* CXMLElement_ElementTreeExtensions.m */,
+				83E409E01631F37B0085D91A /* CXMLElement.h */,
+				83E409E11631F37B0085D91A /* CXMLElement.m */,
+				83E409E21631F37B0085D91A /* CXMLNamespaceNode.h */,
+				83E409E31631F37B0085D91A /* CXMLNamespaceNode.m */,
+				83E409E41631F37B0085D91A /* CXMLNode_PrivateExtensions.h */,
+				83E409E51631F37B0085D91A /* CXMLNode_PrivateExtensions.m */,
+				83E409E61631F37B0085D91A /* CXMLNode_XPathExtensions.h */,
+				83E409E71631F37B0085D91A /* CXMLNode_XPathExtensions.m */,
+				83E409E81631F37B0085D91A /* CXMLNode.h */,
+				83E409E91631F37B0085D91A /* CXMLNode.m */,
+				83E409EA1631F37B0085D91A /* Tidy */,
+				83E409ED1631F37B0085D91A /* TouchXML.h */,
+			);
+			name = TouchXML;
+			sourceTree = "<group>";
+		};
+		83E409D11631F37B0085D91A /* Creation */ = {
+			isa = PBXGroup;
+			children = (
+				83E409D21631F37B0085D91A /* CXMLDocument_CreationExtensions.h */,
+				83E409D31631F37B0085D91A /* CXMLDocument_CreationExtensions.m */,
+				83E409D41631F37B0085D91A /* CXMLNode_CreationExtensions.h */,
+				83E409D51631F37B0085D91A /* CXMLNode_CreationExtensions.m */,
+			);
+			path = Creation;
+			sourceTree = "<group>";
+		};
+		83E409EA1631F37B0085D91A /* Tidy */ = {
+			isa = PBXGroup;
+			children = (
+				83E409EB1631F37B0085D91A /* CTidy.h */,
+				83E409EC1631F37B0085D91A /* CTidy.m */,
+			);
+			path = Tidy;
+			sourceTree = "<group>";
+		};
+		83E40A0116320F540085D91A /* GDataXML */ = {
+			isa = PBXGroup;
+			children = (
+				83E40A0C163210060085D91A /* GDataXMLNode.h */,
+				83E40A0D163210060085D91A /* GDataXMLNode.m */,
+			);
+			name = GDataXML;
+			sourceTree = "<group>";
+		};
+		83E40A0F1632358D0085D91A /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				83E40A16163241200085D91A /* gray_global_bgr.png */,
+				83E40A17163241200085D91A /* gray_global_bgr@2x.png */,
+				83E40A10163235A40085D91A /* paper_texture.png */,
+				83E40A11163235A40085D91A /* blue_texture.png */,
+				83E40A12163235A40085D91A /* dark_texture.png */,
+			);
+			name = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -503,6 +654,11 @@
 				839F014F163030DE000071A5 /* MainStoryboard_iPhone.storyboard in Resources */,
 				839F0152163030DE000071A5 /* MainStoryboard_iPad.storyboard in Resources */,
 				836216641630EB98007A9BBB /* gullivers.epub in Resources */,
+				83E40A13163235A40085D91A /* paper_texture.png in Resources */,
+				83E40A14163235A40085D91A /* blue_texture.png in Resources */,
+				83E40A15163235A40085D91A /* dark_texture.png in Resources */,
+				83E40A18163241200085D91A /* gray_global_bgr.png in Resources */,
+				83E40A19163241200085D91A /* gray_global_bgr@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -559,6 +715,23 @@
 				836216D316318686007A9BBB /* MagicalRecord+ShorthandSupport.m in Sources */,
 				836216D416318686007A9BBB /* MagicalRecord.m in Sources */,
 				83E409CE163192560085D91A /* NSString+BoookAdditions.m in Sources */,
+				83E409EE1631F37B0085D91A /* CXMLDocument_CreationExtensions.m in Sources */,
+				83E409EF1631F37B0085D91A /* CXMLNode_CreationExtensions.m in Sources */,
+				83E409F01631F37B0085D91A /* CXHTMLDocument.m in Sources */,
+				83E409F11631F37B0085D91A /* CXMLDocument_PrivateExtensions.m in Sources */,
+				83E409F21631F37B0085D91A /* CXMLDocument.m in Sources */,
+				83E409F31631F37B0085D91A /* CXMLElement_CreationExtensions.m in Sources */,
+				83E409F41631F37B0085D91A /* CXMLElement_ElementTreeExtensions.m in Sources */,
+				83E409F51631F37B0085D91A /* CXMLElement.m in Sources */,
+				83E409F61631F37B0085D91A /* CXMLNamespaceNode.m in Sources */,
+				83E409F71631F37B0085D91A /* CXMLNode_PrivateExtensions.m in Sources */,
+				83E409F81631F37B0085D91A /* CXMLNode_XPathExtensions.m in Sources */,
+				83E409F91631F37B0085D91A /* CXMLNode.m in Sources */,
+				83E409FA1631F37B0085D91A /* CTidy.m in Sources */,
+				83E40A0E163210060085D91A /* GDataXMLNode.m in Sources */,
+				83E40A1C16324CBA0085D91A /* BKPageCell.m in Sources */,
+				8338BFA416339BDF00281731 /* NSAttributedString+BoookAdditions.m in Sources */,
+				8338BFA8163440F600281731 /* UILabel+BoookAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -648,7 +821,9 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Boook/Boook-Prefix.pch";
+				HEADER_SEARCH_PATHS = /usr/include/libxml2;
 				INFOPLIST_FILE = "Boook/Boook-Info.plist";
+				OTHER_LDFLAGS = "-lxml2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -659,7 +834,9 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Boook/Boook-Prefix.pch";
+				HEADER_SEARCH_PATHS = /usr/include/libxml2;
 				INFOPLIST_FILE = "Boook/Boook-Info.plist";
+				OTHER_LDFLAGS = "-lxml2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

@@ -59,9 +59,9 @@ extern const struct BKBookFetchedProperties {
 
 
 
-@property (nonatomic, strong) BKChapter* chapters;
+@property (nonatomic, strong) NSOrderedSet* chapters;
 
-//- (BOOL)validateChapters:(id*)value_ error:(NSError**)error_;
+- (NSMutableOrderedSet*)chaptersSet;
 
 
 
@@ -75,6 +75,11 @@ extern const struct BKBookFetchedProperties {
 - (void)removeAuthors:(NSSet*)value_;
 - (void)addAuthorsObject:(BKAuthor*)value_;
 - (void)removeAuthorsObject:(BKAuthor*)value_;
+
+- (void)addChapters:(NSOrderedSet*)value_;
+- (void)removeChapters:(NSOrderedSet*)value_;
+- (void)addChaptersObject:(BKChapter*)value_;
+- (void)removeChaptersObject:(BKChapter*)value_;
 
 @end
 
@@ -99,8 +104,8 @@ extern const struct BKBookFetchedProperties {
 
 
 
-- (BKChapter*)primitiveChapters;
-- (void)setPrimitiveChapters:(BKChapter*)value;
+- (NSMutableOrderedSet*)primitiveChapters;
+- (void)setPrimitiveChapters:(NSMutableOrderedSet*)value;
 
 
 @end

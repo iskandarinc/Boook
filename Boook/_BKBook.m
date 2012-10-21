@@ -79,6 +79,15 @@ const struct BKBookFetchedProperties BKBookFetchedProperties = {
 @dynamic chapters;
 
 	
+- (NSMutableOrderedSet*)chaptersSet {
+	[self willAccessValueForKey:@"chapters"];
+  
+	NSMutableOrderedSet *result = (NSMutableOrderedSet*)[self mutableOrderedSetValueForKey:@"chapters"];
+  
+	[self didAccessValueForKey:@"chapters"];
+	return result;
+}
+	
 
 
 

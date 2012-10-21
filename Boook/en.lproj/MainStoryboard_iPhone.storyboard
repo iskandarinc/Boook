@@ -23,32 +23,85 @@
         <scene sceneID="I18-Fj-D6r">
             <objects>
                 <viewController id="yPh-SV-mgz" customClass="BKViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="gNo-vg-aXx">
-                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <view key="view" contentMode="scaleToFill" id="Q3P-v9-Rl0">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="euA-85-ylH">
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Test">
-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" pagingEnabled="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="504" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="61C-if-W8p">
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="separatorColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="standard" rowHeight="504" id="8WC-1K-ePo" customClass="BKPageCell">
+                                        <rect key="frame" x="0.0" y="22" width="320" height="504"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="503"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" contentMode="left" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="300" translatesAutoresizingMaskIntoConstraints="NO" id="F86-xg-cxn">
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="454" id="DEG-Px-3HF"/>
+                                                        <constraint firstAttribute="width" constant="300" id="Imi-Up-0Xt"/>
+                                                    </constraints>
+                                                    <attributedString key="attributedText">
+                                                        <fragment content="Label">
+                                                            <attributes>
+                                                                <color key="NSColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                                <font key="NSFont" size="12" name="Helvetica"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="truncatingTail" baseWritingDirection="natural"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                    <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </label>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Page 4 / 10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vim-V5-Yxz">
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="8dV-P2-K92"/>
+                                                        <constraint firstAttribute="width" constant="124" id="BCg-Fn-v9H"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="AmericanTypewriter-CondensedLight" family="American Typewriter" pointSize="12"/>
+                                                    <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <color key="backgroundColor" red="0.56305803570000001" green="0.56305803570000001" blue="0.56305803570000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="vim-V5-Yxz" secondAttribute="bottom" constant="10" id="1Gc-jK-zX8"/>
+                                            <constraint firstItem="vim-V5-Yxz" firstAttribute="centerX" secondItem="F86-xg-cxn" secondAttribute="centerX" type="default" id="fQf-bG-S5b"/>
+                                            <constraint firstItem="vim-V5-Yxz" firstAttribute="centerX" secondItem="8WC-1K-ePo" secondAttribute="centerX" type="default" id="ng0-Iz-QmN"/>
+                                            <constraint firstItem="F86-xg-cxn" firstAttribute="top" secondItem="8WC-1K-ePo" secondAttribute="top" constant="10" id="zCO-B4-Mm0"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="contentLabel" destination="F86-xg-cxn" id="QE0-PD-pJi"/>
+                                            <outlet property="pageNumberLabel" destination="vim-V5-Yxz" id="5nZ-iM-WZY"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
                                 <connections>
-                                    <segue destination="WbT-ao-Nfw" kind="push" id="1cG-4m-9V2"/>
+                                    <outlet property="dataSource" destination="yPh-SV-mgz" id="nJj-qZ-F2Y"/>
+                                    <outlet property="delegate" destination="yPh-SV-mgz" id="Gru-ou-PHk"/>
                                 </connections>
-                            </button>
+                            </tableView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="Z33-WH-wkU"/>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="euA-85-ylH" firstAttribute="leading" secondItem="gNo-vg-aXx" secondAttribute="leading" constant="123" id="Eb6-5x-Kga"/>
-                            <constraint firstItem="euA-85-ylH" firstAttribute="top" secondItem="gNo-vg-aXx" secondAttribute="top" constant="230" id="IRs-Tt-7bb"/>
+                            <constraint firstItem="Z33-WH-wkU" firstAttribute="centerY" secondItem="61C-if-W8p" secondAttribute="centerY" type="default" id="MMJ-y1-2SZ"/>
+                            <constraint firstItem="Z33-WH-wkU" firstAttribute="centerY" secondItem="Q3P-v9-Rl0" secondAttribute="centerY" type="default" id="PAM-rq-gr8"/>
+                            <constraint firstItem="61C-if-W8p" firstAttribute="trailing" secondItem="Q3P-v9-Rl0" secondAttribute="trailing" type="default" id="Sl1-GI-mHU"/>
+                            <constraint firstItem="61C-if-W8p" firstAttribute="top" secondItem="Q3P-v9-Rl0" secondAttribute="top" type="default" id="hfQ-aH-jfa"/>
+                            <constraint firstItem="Z33-WH-wkU" firstAttribute="centerX" secondItem="61C-if-W8p" secondAttribute="centerX" type="default" id="xsR-gh-2Ur"/>
+                            <constraint firstItem="61C-if-W8p" firstAttribute="leading" secondItem="Q3P-v9-Rl0" secondAttribute="leading" type="default" id="yzo-cu-NC7"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="5Ps-uB-ZTc"/>
-                    <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="activityIndicator" destination="Z33-WH-wkU" id="Hfz-pO-hpm"/>
+                        <outlet property="tableView" destination="61C-if-W8p" id="ADv-Dw-hnU"/>
+                        <outlet property="view" destination="Q3P-v9-Rl0" id="qqu-lj-CFT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="trW-rK-CTP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -71,8 +124,19 @@
         </scene>
     </scenes>
     <classes>
+        <class className="BKPageCell" superclassName="UITableViewCell">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/BKPageCell.h"/>
+            <relationships>
+                <relationship kind="outlet" name="contentLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="pageNumberLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
         <class className="BKViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/BKViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="activityIndicator" candidateClass="UIActivityIndicatorView"/>
+                <relationship kind="outlet" name="tableView" candidateClass="UITableView"/>
+            </relationships>
         </class>
         <class className="NSLayoutConstraint" superclassName="NSObject">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>

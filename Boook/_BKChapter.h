@@ -49,9 +49,9 @@ extern const struct BKChapterFetchedProperties {
 
 
 
-@property (nonatomic, strong) NSSet* chunks;
+@property (nonatomic, strong) NSOrderedSet* chunks;
 
-- (NSMutableSet*)chunksSet;
+- (NSMutableOrderedSet*)chunksSet;
 
 
 
@@ -61,8 +61,8 @@ extern const struct BKChapterFetchedProperties {
 
 @interface _BKChapter (CoreDataGeneratedAccessors)
 
-- (void)addChunks:(NSSet*)value_;
-- (void)removeChunks:(NSSet*)value_;
+- (void)addChunks:(NSOrderedSet*)value_;
+- (void)removeChunks:(NSOrderedSet*)value_;
 - (void)addChunksObject:(BKChunk*)value_;
 - (void)removeChunksObject:(BKChunk*)value_;
 
@@ -83,8 +83,8 @@ extern const struct BKChapterFetchedProperties {
 
 
 
-- (NSMutableSet*)primitiveChunks;
-- (void)setPrimitiveChunks:(NSMutableSet*)value;
+- (NSMutableOrderedSet*)primitiveChunks;
+- (void)setPrimitiveChunks:(NSMutableOrderedSet*)value;
 
 
 @end
