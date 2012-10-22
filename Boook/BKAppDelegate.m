@@ -13,8 +13,10 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
 	// global appearances
-	[[UINavigationBar appearance] setBackgroundImage:[UIImage imageNamed:@"blue_texture"] forBarMetrics:UIBarMetricsDefault];
+//	[[UINavigationBar appearance] setBackgroundImage:[UIImage imageNamed:@"blue_texture"] forBarMetrics:UIBarMetricsDefault];
 	
+	[[UINavigationBar appearance] setTintColor:[UIColor blackColor]];
+
     [MagicalRecord setupCoreDataStackWithStoreNamed:@"Book_Store"];
 	return YES;
 }

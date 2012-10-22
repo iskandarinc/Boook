@@ -4,6 +4,7 @@ typedef enum {
 	ChunkTypeTitle,
 	ChunkTypeSubTitle,
 	ChunkTypeHeading,
+	ChunkTypeSubHeading,
 	ChunkTypeParagraph,
 	ChunkTypeImage,
 } ChunkType;

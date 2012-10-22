@@ -10,8 +10,9 @@
 
 @interface NSAttributedString (BoookAdditions)
 + (NSDictionary *)attributesForParagraph;
-+ (NSDictionary *)attributesForTitle;
++ (NSDictionary *)attributesForHeading;
 + (NSDictionary *)attributesForFirstParagraphTitle;
 + (NSDictionary *)attributesForFootNote;
 - (UIFont *) font;
++ (NSDictionary *)attributesForSubHeading;
 @end

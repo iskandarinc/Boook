@@ -5,6 +5,7 @@
         <relationship name="book" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Book" inverseName="authors" inverseEntity="Book" syncable="YES"/>
     </entity>
     <entity name="Book" representedClassName="BKBook" syncable="YES">
+        <attribute name="baseName" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="epubId" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="authors" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Author" inverseName="book" inverseEntity="Author" syncable="YES"/>
@@ -23,7 +24,7 @@
     </entity>
     <elements>
         <element name="Author" positionX="160" positionY="192" width="128" height="75"/>
-        <element name="Book" positionX="160" positionY="192" width="128" height="105"/>
+        <element name="Book" positionX="160" positionY="192" width="128" height="120"/>
         <element name="Chapter" positionX="160" positionY="192" width="128" height="90"/>
         <element name="Chunk" positionX="160" positionY="192" width="128" height="105"/>
     </elements>

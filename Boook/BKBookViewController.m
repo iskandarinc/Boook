@@ -6,7 +6,7 @@
 //  Copyright (c) 2012 Edwin Iskandar. All rights reserved.
 //
 
-#import "BKViewController.h"
+#import "BKBookViewController.h"
 #import "BKBook.h"
 #import "BKChapter.h"
 #import "BKChunk.h"
@@ -15,14 +15,14 @@
 #import "NSAttributedString+BoookAdditions.h"
 #import "UILabel+BoookAdditions.h"
 
-@interface BKViewController ()
+@interface BKBookViewController ()
 
 @end
 
 int const kLabelWidth = 300;
 int const kLabelHeight = 454;
 
-@implementation BKViewController
+@implementation BKBookViewController
 
 - (CGSize)sizeInLabel:(NSAttributedString *)attributedString {
 	if (!self.dummyLabel) {
@@ -45,25 +45,27 @@ int const kLabelHeight = 454;
 	NSOrderedSet *chapters = [self.book chapters];
 	
 	// just hardcode chapter 5
-	BKChapter *chapter5 = [chapters objectAtIndex:10];
+	BKChapter *chapter = [chapters objectAtIndex:1];
 	
-	NSOrderedSet *chunks = chapter5.chunks;
+	NSOrderedSet *chunks = chapter.chunks;
 	__block NSMutableAttributedString *attString=[[NSMutableAttributedString alloc] initWithString:@""];
 	
 	[chunks enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
 		BKChunk *chunk = (BKChunk *)obj;
 		
-		NSString *text = [chunk.text stringByAppendingString:@"\r\n\n"];
+		NSString *text = [chunk.text stringByAppendingString:@"\n\n      "];
 		if (text) {
 			
 			NSMutableAttributedString *chunkAttString = [[NSMutableAttributedString alloc] initWithString:text];
 			
 			if (chunk.typeValue == ChunkTypeHeading) {
-				[chunkAttString setAttributes:[NSAttributedString attributesForTitle] range:NSMakeRange(0, chunkAttString.length)];
+				[chunkAttString setAttributes:[NSAttributedString attributesForHeading] range:NSMakeRange(0, chunkAttString.length)];
+			} else if (chunk.typeValue == ChunkTypeSubHeading) {
+				[chunkAttString setAttributes:[NSAttributedString attributesForSubHeading] range:NSMakeRange(0, chunkAttString.length)];
 			} else {
 				[chunkAttString setAttributes:[NSAttributedString attributesForParagraph] range:NSMakeRange(0, chunkAttString.length)];
 				
-				if (idx == 1) {
+				if (idx == 2) {
 					[chunkAttString setAttributes:[NSAttributedString attributesForFirstParagraphTitle] range:NSMakeRange(0, 1)];
 				}
 			}
@@ -91,16 +93,22 @@ int const kLabelHeight = 454;
 			}
 		}
 	}];
+	
+	if ([chunks count] < 1) {
+		[self.pages addObject:attString];
+	}
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+	self.title = self.book.title;
+	[[UIBarButtonItem appearance] setTintColor:[UIColor blackColor]];
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+	[super viewWillAppear:animated];
+	
 	self.tableView.alpha = 0.0f;
-	[self.view setBackgroundColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"gray_global_bgr"]]];
-	
-	// parse a book
-	self.book = [BKBook parseEpub:@"gullivers.epub"];
-	
 	
 	dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0), ^{
 		
@@ -114,7 +122,6 @@ int const kLabelHeight = 454;
 			}];
 		});
 	});
-	
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
@@ -137,5 +144,17 @@ int const kLabelHeight = 454;
 	cell.pageNumberLabel.text = [NSString stringWithFormat:@"page %i / %i", indexPath.row + 1, [self.pages count]];
 	
 	return cell;
+}
+
+- (void)scrollViewDidScroll:(UIScrollView *)sender {
+	if (self.lastContentOffset.y > self.tableView.contentOffset.y) {
+		// up
+		//[self.navigationController setNavigationBarHidden:NO animated:YES];
+	}
+	else if (self.lastContentOffset.y < self.tableView.contentOffset.y) {
+		//[self.navigationController setNavigationBarHidden:YES animated:YES];
+	}
+	
+	self.lastContentOffset = self.tableView.contentOffset;
 }
 @end

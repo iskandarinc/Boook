@@ -16,7 +16,7 @@
 			nil];
 }
 
-+ (NSDictionary *)attributesForTitle {
++ (NSDictionary *)attributesForHeading{
 	UIFont *font=[UIFont fontWithName:@"AmericanTypewriter" size:25];
 	NSShadow *shadowDic=[[NSShadow alloc] init];
 	[shadowDic setShadowBlurRadius:3.0];
@@ -25,8 +25,14 @@
 	return [NSDictionary dictionaryWithObjectsAndKeys:
 			font, NSFontAttributeName,
 			[UIColor blackColor], NSForegroundColorAttributeName,
-			
-			
+			nil];
+}
+
++ (NSDictionary *)attributesForSubHeading{
+	UIFont *font=[UIFont fontWithName:@"Baskerville-Italic" size:20];
+	return [NSDictionary dictionaryWithObjectsAndKeys:
+			font, NSFontAttributeName,
+			[UIColor blackColor], NSForegroundColorAttributeName,
 			nil];
 }
 

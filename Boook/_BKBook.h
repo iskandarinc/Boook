@@ -5,6 +5,7 @@
 
 
 extern const struct BKBookAttributes {
+	__unsafe_unretained NSString *baseName;
 	__unsafe_unretained NSString *epubId;
 	__unsafe_unretained NSString *title;
 } BKBookAttributes;
@@ -23,6 +24,7 @@ extern const struct BKBookFetchedProperties {
 
 
 
+
 @interface BKBookID : NSManagedObjectID {}
 @end
 
@@ -31,6 +33,14 @@ extern const struct BKBookFetchedProperties {
 + (NSString*)entityName;
 + (NSEntityDescription*)entityInManagedObjectContext:(NSManagedObjectContext*)moc_;
 - (BKBookID*)objectID;
+
+
+
+
+@property (nonatomic, strong) NSString *baseName;
+
+
+//- (BOOL)validateBaseName:(id*)value_ error:(NSError**)error_;
 
 
 
@@ -84,6 +94,12 @@ extern const struct BKBookFetchedProperties {
 @end
 
 @interface _BKBook (CoreDataGeneratedPrimitiveAccessors)
+
+
+- (NSString *)primitiveBaseName;
+- (void)setPrimitiveBaseName:(NSString *)value;
+
+
 
 
 - (NSString *)primitiveEpubId;

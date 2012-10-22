@@ -13,9 +13,29 @@ NSString *const kEpubContentManifest = @"/OPS/content.opf";
 
 
 + (NSString *)unzipPathForFileName:(NSString *)fileName {
+	NSArray *paths = NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES);
+	NSString *rootPath = [paths objectAtIndex:0];
 	NSString *baseFileName = [fileName stringByReplacingOccurrencesOfString:@".epub" withString:@""];
-	NSString *unzipPath = [NSString stringWithFormat:@"%@%@%@", [[NSBundle mainBundle] resourcePath], kUnzipRootPath, baseFileName];
+	NSString *unzipPath = [NSString stringWithFormat:@"%@%@%@", rootPath, kUnzipRootPath, baseFileName];
 	return unzipPath;
+}
+
+- (NSString *)pathToBookImage {
+	// try to use standard bookcover filename
+	NSString *path = [[self unzipPath] stringByAppendingString:@"/OPS/images/bookcover.jpg"];
+	
+	if ([UIImage imageWithContentsOfFile:path]) {
+		return path;
+	} else {
+		// get first image in images dir
+		NSArray *directoryContents = [[NSFileManager defaultManager] contentsOfDirectoryAtPath:[[self unzipPath] stringByAppendingString:@"/OPS/images"] error:nil];
+		path = [[[self unzipPath] stringByAppendingString:@"/OPS/images/"] stringByAppendingString:[directoryContents objectAtIndex:0]];
+		return path;
+	}
+}
+
+- (NSString *)unzipPath {
+	return [[self class] unzipPathForFileName:self.baseName];
 }
 
 + (void)unzipEpub:(NSString *)fileName {
@@ -37,12 +57,13 @@ NSString *const kEpubContentManifest = @"/OPS/content.opf";
 	
 	// save the main book metadata
 	BKBook *book = [BKBook findFirstByAttribute:@"epubId" withValue:epubId];
+	
 	if (book) {
 		[book deleteInContext:[NSManagedObjectContext defaultContext]];
 	}
 		
 	book = [BKBook createInContext:[NSManagedObjectContext defaultContext]];
-	
+	book.baseName = fileName;
 	book.epubId = epubId;
 	book.title = title;
 	
@@ -59,7 +80,7 @@ NSString *const kEpubContentManifest = @"/OPS/content.opf";
 		// read each file
 		NSString *chapterFileNamePath = [[[self unzipPathForFileName:fileName] stringByAppendingString:kEpubContentRoot] stringByAppendingString:chapterFileName];
 		
-		if ([chapterFileName rangeOfString:@"html"].location != NSNotFound) {
+		if ([chapterFileName rangeOfString:@"chapter"].location != NSNotFound && [chapterFileName rangeOfString:@"html"].location != NSNotFound) {
 			BKChapter *chapter = [BKChapter parseChapterWithFilename:chapterFileNamePath];
 			[chapters addObject:chapter];
 		}

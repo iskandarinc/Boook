@@ -1,6 +1,6 @@
 /Users/eiskandar/Documents/workspace/Boook/build/Boook.build/Debug-iphonesimulator/Boook.build/Objects-normal/i386/main.o
 /Users/eiskandar/Documents/workspace/Boook/build/Boook.build/Debug-iphonesimulator/Boook.build/Objects-normal/i386/BKAppDelegate.o
-/Users/eiskandar/Documents/workspace/Boook/build/Boook.build/Debug-iphonesimulator/Boook.build/Objects-normal/i386/BKViewController.o
+/Users/eiskandar/Documents/workspace/Boook/build/Boook.build/Debug-iphonesimulator/Boook.build/Objects-normal/i386/BKBookViewController.o
 /Users/eiskandar/Documents/workspace/Boook/build/Boook.build/Debug-iphonesimulator/Boook.build/Objects-normal/i386/_BKAuthor.o
 /Users/eiskandar/Documents/workspace/Boook/build/Boook.build/Debug-iphonesimulator/Boook.build/Objects-normal/i386/_BKBook.o
 /Users/eiskandar/Documents/workspace/Boook/build/Boook.build/Debug-iphonesimulator/Boook.build/Objects-normal/i386/_BKChapter.o
@@ -60,3 +60,6 @@
 /Users/eiskandar/Documents/workspace/Boook/build/Boook.build/Debug-iphonesimulator/Boook.build/Objects-normal/i386/BKPageCell.o
 /Users/eiskandar/Documents/workspace/Boook/build/Boook.build/Debug-iphonesimulator/Boook.build/Objects-normal/i386/NSAttributedString+BoookAdditions.o
 /Users/eiskandar/Documents/workspace/Boook/build/Boook.build/Debug-iphonesimulator/Boook.build/Objects-normal/i386/UILabel+BoookAdditions.o
+/Users/eiskandar/Documents/workspace/Boook/build/Boook.build/Debug-iphonesimulator/Boook.build/Objects-normal/i386/BKBaseViewController.o
+/Users/eiskandar/Documents/workspace/Boook/build/Boook.build/Debug-iphonesimulator/Boook.build/Objects-normal/i386/BKLibraryViewController.o
+/Users/eiskandar/Documents/workspace/Boook/build/Boook.build/Debug-iphonesimulator/Boook.build/Objects-normal/i386/BKLibraryCell.o

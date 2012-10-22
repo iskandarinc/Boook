@@ -9,6 +9,15 @@
 /* Begin PBXBuildFile section */
 		8338BFA416339BDF00281731 /* NSAttributedString+BoookAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 8338BFA316339BDF00281731 /* NSAttributedString+BoookAdditions.m */; };
 		8338BFA8163440F600281731 /* UILabel+BoookAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 8338BFA7163440F600281731 /* UILabel+BoookAdditions.m */; };
+		8338BFAA16344D8300281731 /* sherlock.epub in Resources */ = {isa = PBXBuildFile; fileRef = 8338BFA916344D8300281731 /* sherlock.epub */; };
+		8338BFAD16344F8500281731 /* BKBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8338BFAC16344F8500281731 /* BKBaseViewController.m */; };
+		8338BFB01634503B00281731 /* BKLibraryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8338BFAF1634503A00281731 /* BKLibraryViewController.m */; };
+		8338BFB3163453F500281731 /* BKLibraryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8338BFB2163453F500281731 /* BKLibraryCell.m */; };
+		8338BFC816346F2400281731 /* dickens-battle-of-life.epub in Resources */ = {isa = PBXBuildFile; fileRef = 8338BFC716346F2400281731 /* dickens-battle-of-life.epub */; };
+		8338BFCB1634715900281731 /* austen-pride-and-prejudice-illustrations.epub in Resources */ = {isa = PBXBuildFile; fileRef = 8338BFC91634715900281731 /* austen-pride-and-prejudice-illustrations.epub */; };
+		8338BFD21634777E00281731 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8338BFD11634777E00281731 /* Default-568h@2x.png */; };
+		8338BFD41634785800281731 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 8338BFD31634785800281731 /* Icon.png */; };
+		8338BFD61634785E00281731 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8338BFD51634785E00281731 /* Icon@2x.png */; };
 		836216641630EB98007A9BBB /* gullivers.epub in Resources */ = {isa = PBXBuildFile; fileRef = 839A10491630D74400F3D6B1 /* gullivers.epub */; };
 		836216691630EC1C007A9BBB /* NSFileManager+BoookAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 836216681630EC1C007A9BBB /* NSFileManager+BoookAdditions.m */; };
 		8362167E1630FE7D007A9BBB /* XMLReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 8362167D1630FE7D007A9BBB /* XMLReader.m */; };
@@ -53,10 +62,9 @@
 		839F0146163030DE000071A5 /* BKAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 839F0145163030DE000071A5 /* BKAppDelegate.m */; };
 		839F0148163030DE000071A5 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 839F0147163030DE000071A5 /* Default.png */; };
 		839F014A163030DE000071A5 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 839F0149163030DE000071A5 /* Default@2x.png */; };
-		839F014C163030DE000071A5 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 839F014B163030DE000071A5 /* Default-568h@2x.png */; };
 		839F014F163030DE000071A5 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 839F014D163030DE000071A5 /* MainStoryboard_iPhone.storyboard */; };
 		839F0152163030DE000071A5 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 839F0150163030DE000071A5 /* MainStoryboard_iPad.storyboard */; };
-		839F0155163030DE000071A5 /* BKViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 839F0154163030DE000071A5 /* BKViewController.m */; };
+		839F0155163030DE000071A5 /* BKBookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 839F0154163030DE000071A5 /* BKBookViewController.m */; };
 		839F0160163031FE000071A5 /* BoookModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 839F015E163031FE000071A5 /* BoookModel.xcdatamodeld */; };
 		839F01881630A8CB000071A5 /* _BKAuthor.m in Sources */ = {isa = PBXBuildFile; fileRef = 839F01791630A8CB000071A5 /* _BKAuthor.m */; };
 		839F01891630A8CB000071A5 /* _BKBook.m in Sources */ = {isa = PBXBuildFile; fileRef = 839F017B1630A8CB000071A5 /* _BKBook.m */; };
@@ -96,6 +104,18 @@
 		8338BFA316339BDF00281731 /* NSAttributedString+BoookAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSAttributedString+BoookAdditions.m"; sourceTree = "<group>"; };
 		8338BFA6163440F600281731 /* UILabel+BoookAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+BoookAdditions.h"; sourceTree = "<group>"; };
 		8338BFA7163440F600281731 /* UILabel+BoookAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+BoookAdditions.m"; sourceTree = "<group>"; };
+		8338BFA916344D8300281731 /* sherlock.epub */ = {isa = PBXFileReference; lastKnownFileType = file; path = sherlock.epub; sourceTree = "<group>"; };
+		8338BFAB16344F8500281731 /* BKBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BKBaseViewController.h; sourceTree = "<group>"; };
+		8338BFAC16344F8500281731 /* BKBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BKBaseViewController.m; sourceTree = "<group>"; };
+		8338BFAE1634503A00281731 /* BKLibraryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BKLibraryViewController.h; sourceTree = "<group>"; };
+		8338BFAF1634503A00281731 /* BKLibraryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BKLibraryViewController.m; sourceTree = "<group>"; };
+		8338BFB1163453F500281731 /* BKLibraryCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BKLibraryCell.h; sourceTree = "<group>"; };
+		8338BFB2163453F500281731 /* BKLibraryCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BKLibraryCell.m; sourceTree = "<group>"; };
+		8338BFC716346F2400281731 /* dickens-battle-of-life.epub */ = {isa = PBXFileReference; lastKnownFileType = file; path = "dickens-battle-of-life.epub"; sourceTree = "<group>"; };
+		8338BFC91634715900281731 /* austen-pride-and-prejudice-illustrations.epub */ = {isa = PBXFileReference; lastKnownFileType = file; path = "austen-pride-and-prejudice-illustrations.epub"; sourceTree = "<group>"; };
+		8338BFD11634777E00281731 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		8338BFD31634785800281731 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		8338BFD51634785E00281731 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
 		836216671630EC1C007A9BBB /* NSFileManager+BoookAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSFileManager+BoookAdditions.h"; sourceTree = "<group>"; };
 		836216681630EC1C007A9BBB /* NSFileManager+BoookAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSFileManager+BoookAdditions.m"; sourceTree = "<group>"; };
 		8362167C1630FE7D007A9BBB /* XMLReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLReader.h; sourceTree = "<group>"; };
@@ -180,11 +200,10 @@
 		839F0145163030DE000071A5 /* BKAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BKAppDelegate.m; sourceTree = "<group>"; };
 		839F0147163030DE000071A5 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		839F0149163030DE000071A5 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
-		839F014B163030DE000071A5 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		839F014E163030DE000071A5 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 		839F0151163030DE000071A5 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
-		839F0153163030DE000071A5 /* BKViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BKViewController.h; sourceTree = "<group>"; };
-		839F0154163030DE000071A5 /* BKViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BKViewController.m; sourceTree = "<group>"; };
+		839F0153163030DE000071A5 /* BKBookViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BKBookViewController.h; sourceTree = "<group>"; };
+		839F0154163030DE000071A5 /* BKBookViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BKBookViewController.m; sourceTree = "<group>"; };
 		839F015F163031FE000071A5 /* BoookModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BoookModel.xcdatamodel; sourceTree = "<group>"; };
 		839F01781630A8CB000071A5 /* _BKAuthor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _BKAuthor.h; sourceTree = "<group>"; };
 		839F01791630A8CB000071A5 /* _BKAuthor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _BKAuthor.m; sourceTree = "<group>"; };
@@ -417,6 +436,8 @@
 		839F0126163030DD000071A5 = {
 			isa = PBXGroup;
 			children = (
+				8338BFD51634785E00281731 /* Icon@2x.png */,
+				8338BFD31634785800281731 /* Icon.png */,
 				83E40A2016325BE30085D91A /* CoreText.framework */,
 				83E409FB1631F3980085D91A /* libxml2.dylib */,
 				839A105B1630DCF700F3D6B1 /* libz.dylib */,
@@ -456,8 +477,14 @@
 				839F0145163030DE000071A5 /* BKAppDelegate.m */,
 				839F014D163030DE000071A5 /* MainStoryboard_iPhone.storyboard */,
 				839F0150163030DE000071A5 /* MainStoryboard_iPad.storyboard */,
-				839F0153163030DE000071A5 /* BKViewController.h */,
-				839F0154163030DE000071A5 /* BKViewController.m */,
+				839F0153163030DE000071A5 /* BKBookViewController.h */,
+				839F0154163030DE000071A5 /* BKBookViewController.m */,
+				8338BFAE1634503A00281731 /* BKLibraryViewController.h */,
+				8338BFAF1634503A00281731 /* BKLibraryViewController.m */,
+				8338BFB1163453F500281731 /* BKLibraryCell.h */,
+				8338BFB2163453F500281731 /* BKLibraryCell.m */,
+				8338BFAB16344F8500281731 /* BKBaseViewController.h */,
+				8338BFAC16344F8500281731 /* BKBaseViewController.m */,
 				83E40A1A16324CB80085D91A /* BKPageCell.h */,
 				83E40A1B16324CB90085D91A /* BKPageCell.m */,
 				839F013C163030DD000071A5 /* Supporting Files */,
@@ -470,13 +497,16 @@
 			children = (
 				83E40A0F1632358D0085D91A /* Images */,
 				839A10491630D74400F3D6B1 /* gullivers.epub */,
+				8338BFC91634715900281731 /* austen-pride-and-prejudice-illustrations.epub */,
+				8338BFA916344D8300281731 /* sherlock.epub */,
+				8338BFC716346F2400281731 /* dickens-battle-of-life.epub */,
 				839F013D163030DD000071A5 /* Boook-Info.plist */,
 				839F013E163030DD000071A5 /* InfoPlist.strings */,
 				839F0141163030DD000071A5 /* main.m */,
 				839F0143163030DD000071A5 /* Boook-Prefix.pch */,
 				839F0147163030DE000071A5 /* Default.png */,
+				8338BFD11634777E00281731 /* Default-568h@2x.png */,
 				839F0149163030DE000071A5 /* Default@2x.png */,
-				839F014B163030DE000071A5 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -650,7 +680,6 @@
 				839F0140163030DD000071A5 /* InfoPlist.strings in Resources */,
 				839F0148163030DE000071A5 /* Default.png in Resources */,
 				839F014A163030DE000071A5 /* Default@2x.png in Resources */,
-				839F014C163030DE000071A5 /* Default-568h@2x.png in Resources */,
 				839F014F163030DE000071A5 /* MainStoryboard_iPhone.storyboard in Resources */,
 				839F0152163030DE000071A5 /* MainStoryboard_iPad.storyboard in Resources */,
 				836216641630EB98007A9BBB /* gullivers.epub in Resources */,
@@ -659,6 +688,12 @@
 				83E40A15163235A40085D91A /* dark_texture.png in Resources */,
 				83E40A18163241200085D91A /* gray_global_bgr.png in Resources */,
 				83E40A19163241200085D91A /* gray_global_bgr@2x.png in Resources */,
+				8338BFAA16344D8300281731 /* sherlock.epub in Resources */,
+				8338BFC816346F2400281731 /* dickens-battle-of-life.epub in Resources */,
+				8338BFCB1634715900281731 /* austen-pride-and-prejudice-illustrations.epub in Resources */,
+				8338BFD21634777E00281731 /* Default-568h@2x.png in Resources */,
+				8338BFD41634785800281731 /* Icon.png in Resources */,
+				8338BFD61634785E00281731 /* Icon@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -671,7 +706,7 @@
 			files = (
 				839F0142163030DD000071A5 /* main.m in Sources */,
 				839F0146163030DE000071A5 /* BKAppDelegate.m in Sources */,
-				839F0155163030DE000071A5 /* BKViewController.m in Sources */,
+				839F0155163030DE000071A5 /* BKBookViewController.m in Sources */,
 				839F0160163031FE000071A5 /* BoookModel.xcdatamodeld in Sources */,
 				839F01881630A8CB000071A5 /* _BKAuthor.m in Sources */,
 				839F01891630A8CB000071A5 /* _BKBook.m in Sources */,
@@ -732,6 +767,9 @@
 				83E40A1C16324CBA0085D91A /* BKPageCell.m in Sources */,
 				8338BFA416339BDF00281731 /* NSAttributedString+BoookAdditions.m in Sources */,
 				8338BFA8163440F600281731 /* UILabel+BoookAdditions.m in Sources */,
+				8338BFAD16344F8500281731 /* BKBaseViewController.m in Sources */,
+				8338BFB01634503B00281731 /* BKLibraryViewController.m in Sources */,
+				8338BFB3163453F500281731 /* BKLibraryCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

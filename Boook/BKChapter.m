@@ -16,24 +16,33 @@
 	[chapter setName:titleElement.stringValue];
 	
 	// get the chunks of text
-	NSArray *nodes = [xmlDoc nodesForXPath:@"//h1 | //h2 | //h3 | //p" error:nil];
+	NSArray *nodes = [xmlDoc nodesForXPath:@"//h1 | //h2 | //h3 | //h4 | //p | //img" error:nil];
 	
 	NSMutableOrderedSet *chunks = [NSMutableOrderedSet orderedSetWithCapacity:2];
 	[nodes enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
 		GDataXMLElement *xmlElement = (GDataXMLElement *)obj;
 		
 		ChunkType chunkType;
+		NSString *textValue = xmlElement.stringValue;
 		if ([xmlElement.name isEqualToString:@"h1"]) {
 			chunkType = ChunkTypeTitle;
 		} else if ([xmlElement.name isEqualToString:@"h2"]) {
 			chunkType = ChunkTypeSubTitle;
 		} else if ([xmlElement.name isEqualToString:@"h3"]) {
 			chunkType = ChunkTypeHeading;
+		} else if ([xmlElement.name isEqualToString:@"h4"]) {
+				chunkType = ChunkTypeSubHeading;
 		} else if ([xmlElement.name isEqualToString:@"p"]) {
 			chunkType = ChunkTypeParagraph;
+		} else if ([xmlElement.name isEqualToString:@"img"]) {
+			chunkType = ChunkTypeImage;
 		}
 		
-		BKChunk *chunk = [BKChunk chunkWithType:chunkType andValue:xmlElement.stringValue];
+		BKChunk *chunk = [BKChunk chunkWithType:chunkType andValue:textValue];
+		
+		if ([xmlElement.name isEqualToString:@"img"]) {
+			chunk.image = [xmlElement attributeForName:@"src"].stringValue;
+		}
 		[chunks addObject:chunk];
 	}];
 	
