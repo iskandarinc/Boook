@@ -30,6 +30,7 @@ int const kLabelHeight = 454;
 		self.dummyLabel.numberOfLines = 0;
 		self.dummyLabel.lineBreakMode = NSLineBreakByWordWrapping;
 	}
+	
 	self.dummyLabel.attributedText = attributedString;
 	CGSize sizeOfString = [self.dummyLabel sizeThatFits:CGSizeMake(kLabelWidth, CGFLOAT_MAX)];
 //	CGSize sizeOfString = [attributedString.string sizeWithFont:[attributedString font] constrainedToSize:CGSizeMake(300.0f, 480.0f) lineBreakMode:NSLineBreakByWordWrapping];
@@ -80,14 +81,17 @@ int const kLabelHeight = 454;
 				int maxRange = chunkAttString.length - i- 1;
 				[attString appendAttributedString:[chunkAttString attributedSubstringFromRange:NSMakeRange(i, maxRange<30?maxRange:30)]];
 				
-				if ([self sizeInLabel: attString].height > kLabelHeight) {
+				if ([self sizeInLabel: attString].height > (kLabelHeight)) {
 					// call it a page
 					[self.pages addObject:attString];
 					
 					// if there is a remaining fragment to this chunk, start off with that
 					
 					// start off the remainder with the rest of the cutoff string
-					attString = [[NSMutableAttributedString alloc] initWithAttributedString:[chunkAttString attributedSubstringFromRange:NSMakeRange(i, chunkAttString.length - (i))]] ;
+					NSString *lastWords = [attString.string substringFromIndex:(attString.string.length - 10)];
+					int lastWordsLocationInChunk = [chunkAttString.string rangeOfString:lastWords].location + 10;
+					
+					attString = [[NSMutableAttributedString alloc] initWithAttributedString:[chunkAttString attributedSubstringFromRange:NSMakeRange(lastWordsLocationInChunk, chunkAttString.length - (lastWordsLocationInChunk))]] ;
 					//NSLog(@"attstring = %@", attString.string);
 				}
 			}

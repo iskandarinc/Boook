@@ -2,8 +2,8 @@
 #import "SSZipArchive.h"
 #import "NSFileManager+BoookAdditions.h"
 #import "NSString+BoookAdditions.h"
-#import "XMLReader.h"
 #import "BKChapter.h"
+#import "GDataXMLNode.h"
 
 @implementation BKBook
 
@@ -49,11 +49,12 @@ NSString *const kEpubContentManifest = @"/OPS/content.opf";
 	
 	NSString *contentManifestPath = [[self unzipPathForFileName:fileName] stringByAppendingString:kEpubContentManifest];
 	NSData *xmlData = [NSData dataWithContentsOfFile:contentManifestPath];
-	NSDictionary *fileContents = [XMLReader dictionaryForXMLData:xmlData error:nil];
+	
+	GDataXMLDocument *xmlDoc = [[GDataXMLDocument alloc] initWithHTMLData:xmlData encoding:NSUTF8StringEncoding error:nil];
 	
 	// epub id and title
-	NSString *epubId = [[[[fileContents objectForKey:@"package"] objectForKey:@"metadata"] objectForKey:@"dc:identifier"] objectForKey:@"text"];
-	NSString *title = [[[[fileContents objectForKey:@"package"] objectForKey:@"metadata"] objectForKey:@"dc:title"] objectForKey:@"text"];
+	NSString *epubId = [[[xmlDoc nodesForXPath:@"//dc:identifier" error:nil] objectAtIndex:0] stringValue];
+	NSString *title = [[[xmlDoc nodesForXPath:@"//dc:title" error:nil] objectAtIndex:0] stringValue];
 	
 	// save the main book metadata
 	BKBook *book = [BKBook findFirstByAttribute:@"epubId" withValue:epubId];
@@ -69,13 +70,11 @@ NSString *const kEpubContentManifest = @"/OPS/content.opf";
 	
 	// lets go get the chapters
 	__block NSMutableOrderedSet *chapters = [NSMutableOrderedSet orderedSetWithCapacity:2];
-	
-	NSArray *chaptersFileNames = [[[fileContents objectForKey:@"package"] objectForKey:@"manifest"] objectForKey:@"item"];
+
+	NSArray *chaptersFileNames = [[xmlDoc nodesForXPath:@"//dc:title/@href" error:nil] objectAtIndex:0];
 	[chaptersFileNames enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
 	
-
-		NSDictionary *item = (NSDictionary *)obj;
-		NSString *chapterFileName = [item objectForKey:@"href"];
+		NSString *chapterFileName = (NSString *)obj;
 		
 		// read each file
 		NSString *chapterFileNamePath = [[[self unzipPathForFileName:fileName] stringByAppendingString:kEpubContentRoot] stringByAppendingString:chapterFileName];

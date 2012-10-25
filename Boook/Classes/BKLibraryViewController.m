@@ -22,11 +22,12 @@
 	self.collectionView.alpha = 0.0f;
 	
 	[BKBook parseEpub:@"gullivers.epub"];
+	[BKBook parseEpub:@"carroll-alice-in-wonderland-illustrations.epub"];
 	[BKBook parseEpub:@"sherlock.epub"];
 	[BKBook parseEpub:@"dickens-battle-of-life.epub"];
 	[BKBook parseEpub:@"austen-pride-and-prejudice-illustrations.epub"];
 	self.books = [BKBook findAll];
-
+		
 	[UIView animateWithDuration:.5f animations:^{
 		self.collectionView.alpha = 1.0f;
 		[self.activityIndicator stopAnimating];
@@ -55,6 +56,9 @@
 	
 	BKLibraryCell *libraryCell = (BKLibraryCell *)[collectionView dequeueReusableCellWithReuseIdentifier:@"square" forIndexPath:indexPath];
 	libraryCell.bookCoverImage.image = [UIImage imageWithContentsOfFile:[book pathToBookImage]];
+	libraryCell.alpha = 1.0f;
+
+	
 	return libraryCell;
 }
 

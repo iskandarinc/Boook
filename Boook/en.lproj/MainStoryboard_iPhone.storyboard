@@ -109,7 +109,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="trW-rK-CTP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="97" y="-793"/>
+            <point key="canvasLocation" x="485" y="-345"/>
         </scene>
         <!--Library View Controller-->
         <scene sceneID="Zs8-Du-OEA">
@@ -132,7 +132,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" reuseIdentifier="square" id="TRF-OW-IoX" customClass="BKLibraryCell">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.0" contentMode="scaleToFill" reuseIdentifier="square" id="TRF-OW-IoX" customClass="BKLibraryCell">
                                         <rect key="frame" x="0.0" y="0.0" width="155" height="250"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -180,29 +180,9 @@
                         <segue destination="yPh-SV-mgz" kind="push" identifier="bookdetails" id="Ixr-pZ-bVa"/>
                     </connections>
                 </viewController>
-                <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="aEq-tp-5Yw">
-                    <rect key="frame" x="0.0" y="0.0" width="150" height="250"/>
-                    <autoresizingMask key="autoresizingMask"/>
-                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                        <rect key="frame" x="0.0" y="0.0" width="150" height="250"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                    </view>
-                    <size key="customSize" width="150" height="250"/>
-                </collectionViewCell>
-                <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="qfd-Sw-Vk0">
-                    <rect key="frame" x="0.0" y="0.0" width="150" height="250"/>
-                    <autoresizingMask key="autoresizingMask"/>
-                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                        <rect key="frame" x="0.0" y="0.0" width="150" height="250"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                    </view>
-                    <size key="customSize" width="150" height="250"/>
-                </collectionViewCell>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XeY-jI-9Fb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-255" y="-289"/>
+            <point key="canvasLocation" x="-139" y="-257"/>
         </scene>
     </scenes>
     <classes>
