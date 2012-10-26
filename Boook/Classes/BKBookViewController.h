@@ -10,10 +10,12 @@
 #import "BKBook.h"
 #import "BKBaseViewController.h"
 
-@interface BKBookViewController : BKBaseViewController <UITableViewDelegate, UITableViewDataSource>
+@interface BKBookViewController : BKBaseViewController <UITableViewDelegate, UITableViewDataSource, UIGestureRecognizerDelegate>
 @property (strong, nonatomic) IBOutlet UITableView *tableView;
 @property (strong, nonatomic) IBOutlet UIActivityIndicatorView *activityIndicator;
 @property (strong, nonatomic) BKBook *book;
 @property (strong, nonatomic) NSMutableArray *pages;
+@property (strong, nonatomic) IBOutlet UILabel *tipLabel;
+@property (strong, nonatomic) IBOutletCollection(UIView) NSArray *toolTipElements;
 @property CGPoint lastContentOffset;
 @end

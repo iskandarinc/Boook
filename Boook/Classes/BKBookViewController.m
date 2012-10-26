@@ -14,6 +14,7 @@
 #import "BKPageCell.h"
 #import "NSAttributedString+BoookAdditions.h"
 #import "UILabel+BoookAdditions.h"
+#import "BKLabel.h"
 
 @interface BKBookViewController ()
 
@@ -27,9 +28,9 @@ CGFloat const kPageHeight = 444.0f;
 
 @implementation BKBookViewController
 
+#pragma mark book rendering
 - (UILabel *)sizedLabelWithAttributedText:(NSAttributedString *)wordAttText {
-	
-	UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, kPagelWidth, kPageHeight)];
+	BKLabel *label = [[BKLabel alloc] initWithFrame:CGRectMake(0, 0, kPagelWidth, kPageHeight)];
 	[label setAttributedText:wordAttText];
 	[label sizeToFit];
 	[label setBackgroundColor:[UIColor clearColor]];
@@ -37,7 +38,6 @@ CGFloat const kPageHeight = 444.0f;
 }
 
 - (void)setupPages {
-		
 	// setup the pages array. Each object within the array will contain another array containing the UILabels that make up the page
 	self.pages = [NSMutableArray array];
 	__block NSMutableArray *page = [NSMutableArray array];
@@ -101,7 +101,6 @@ CGFloat const kPageHeight = 444.0f;
 				
 				// add paragraph spacing if word has line break characters
 				if ([wordLabel.text rangeOfString:@"\n"].location != NSNotFound) {
-					NSLog(@"supposed to make line break");
 					pageCursor = CGPointMake(kParagraphIndent, pageCursor.y + wordLabel.frame.size.height + 20.0f);
 				}
 				
@@ -115,10 +114,13 @@ CGFloat const kPageHeight = 444.0f;
 	}
 }
 
+#pragma mark view lifecycle methods
 - (void)viewDidLoad {
     [super viewDidLoad];
 	self.title = self.book.title;
 	[[UIBarButtonItem appearance] setTintColor:[UIColor blackColor]];
+
+	[self hideTip];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -134,8 +136,15 @@ CGFloat const kPageHeight = 444.0f;
 		self.tableView.alpha = 1.0f;
 	}];
 
+	// show highlighting tip after 5 seconds
+	int64_t delayInSeconds = 3.0;
+	dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, delayInSeconds * NSEC_PER_SEC);
+	dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
+		[self showTipWithMessage:@"Swipe right to hightlight, left to undo"];
+	});
 }
 
+#pragma mark table view delegate methods
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 	return [self.pages count];
 }
@@ -145,7 +154,7 @@ CGFloat const kPageHeight = 444.0f;
 	BKPageCell *cell = [tableView dequeueReusableCellWithIdentifier:@"standard"];
 	
 	// don't redraw if the same cell
-	cell.contentView.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"paper_texture.png"]];
+	cell.textView.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"paper_texture.png"]];
 	
 	NSArray *page = [self.pages objectAtIndex:indexPath.row];
 	// add all the words onto the page
@@ -155,18 +164,110 @@ CGFloat const kPageHeight = 444.0f;
 	}
 	
 	cell.pageNumberLabel.text = [NSString stringWithFormat:@"page %i / %i", indexPath.row + 1, [self.pages count]];
+	
+	UIPanGestureRecognizer *panGestureRecognizer = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(panText:)];
+	panGestureRecognizer.delegate = self;
+	[cell.textView addGestureRecognizer:panGestureRecognizer];
 	return cell;
 }
 
-- (void)scrollViewDidScroll:(UIScrollView *)sender {
-	if (self.lastContentOffset.y > self.tableView.contentOffset.y) {
-		// up
-		//[self.navigationController setNavigationBarHidden:NO animated:YES];
-	}
-	else if (self.lastContentOffset.y < self.tableView.contentOffset.y) {
-		//[self.navigationController setNavigationBarHidden:YES animated:YES];
-	}
-	
-	self.lastContentOffset = self.tableView.contentOffset;
+#pragma mark Gesture Recognizer methods to support text highlighting
+- (BOOL)gestureRecognizerShouldBegin:(UIPanGestureRecognizer *)gestureRecognizer
+{
+	// only listen for horizontal pans or else tableview wont scroll
+    UIView *textView = [gestureRecognizer view];
+    CGPoint translation = [gestureRecognizer translationInView:textView];
+    return (fabsf(translation.x) > fabsf(translation.y));
 }
+
+- (void)panText:(UIPanGestureRecognizer *)panGestureRecognizer  {
+	UIView *textView = [panGestureRecognizer view];
+	CGPoint touchedPoint = [panGestureRecognizer locationInView:textView];
+	
+	[[textView subviews] enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
+		BKLabel *label = (BKLabel *)obj;
+		if (CGRectContainsPoint(label.frame, touchedPoint)) {
+			
+			CGPoint velocity = [panGestureRecognizer velocityInView:textView];
+			if(velocity.x > 0) {
+				// highlight on swipe right
+				[label highLight];
+				
+				// show tip for tap and hold
+				static dispatch_once_t onceToken;
+				dispatch_once(&onceToken, ^{
+					[self showTipWithMessage:@"Tap and hold to share highlighted text"];
+				});
+	
+			}
+			else {
+				// unhighlight on swipe left
+				[label unhighLight];
+			}
+		} 
+	}];
+}
+
+#pragma mark tip notifications
+- (void) hideTip {
+	[self.toolTipElements enumerateObjectsUsingBlock:^(UIView *view, NSUInteger idx, BOOL *stop) {
+		view.frame = CGRectMake(0.0f, -30.0f, view.frame.size.width, view.frame.size.height);
+	}];
+}
+- (void) hideTipAnimated:(BOOL)animated {
+	if (animated) {
+		[UIView animateWithDuration:.5f delay:0.0f options:UIViewAnimationOptionCurveEaseIn animations:^{
+			[self hideTip];
+		} completion:^(BOOL finished) {
+			//
+		}];
+	} else {
+		[self hideTip];
+	}
+}
+
+- (void) showTipWithMessage:(NSString *)tipMessage {
+	self.tipLabel.text = tipMessage;
+	
+	[UIView animateWithDuration:.5f delay:0.0f options:UIViewAnimationOptionCurveEaseIn animations:^{
+		[self.toolTipElements enumerateObjectsUsingBlock:^(UIView *view, NSUInteger idx, BOOL *stop) {
+			view.frame = CGRectMake(0.0f, 0.0f, view.frame.size.width, view.frame.size.height);
+		}];
+	} completion:^(BOOL finished) {
+		// hide the tip 5 seconds later
+		int64_t delayInSeconds = 4.0;
+		dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, delayInSeconds * NSEC_PER_SEC);
+		dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
+			[self hideTipAnimated:YES];
+		});
+	}];
+}
+
+
+#pragma mark sharing text
+- (NSString *)highlightedText {
+	__block NSString *highlightedText = @"";
+	[self.pages enumerateObjectsUsingBlock:^(NSArray *page, NSUInteger idx, BOOL *stop) {
+		[page enumerateObjectsUsingBlock:^(BKLabel *label, NSUInteger idx, BOOL *stop) {
+			if ([label isHighLighted]) {
+				highlightedText = [[highlightedText stringByAppendingString:label.text] stringByAppendingString:@" "];
+			}
+		}];
+	}];
+	return highlightedText;
+}
+
+- (IBAction)shareText {
+	NSString *text = [self highlightedText];
+	
+	// add quotes to text
+	text = [NSString stringWithFormat:@"\"%@\"", text];
+	UIImage *image = [UIImage imageWithContentsOfFile:[self.book pathToBookImage]];
+	
+	NSArray *activityItems = [NSArray arrayWithObjects:text,image , nil];
+	UIActivityViewController *activityViewController = [[UIActivityViewController alloc]
+									 initWithActivityItems: activityItems applicationActivities:nil];
+	[self presentViewController:activityViewController animated:YES completion:nil];
+}
+
 @end

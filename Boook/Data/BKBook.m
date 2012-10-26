@@ -53,8 +53,8 @@ NSString *const kEpubContentManifest = @"/OPS/content.opf";
 	GDataXMLDocument *xmlDoc = [[GDataXMLDocument alloc] initWithHTMLData:xmlData encoding:NSUTF8StringEncoding error:nil];
 	
 	// epub id and title
-	NSString *epubId = [[[xmlDoc nodesForXPath:@"//dc:identifier" error:nil] objectAtIndex:0] stringValue];
-	NSString *title = [[[xmlDoc nodesForXPath:@"//dc:title" error:nil] objectAtIndex:0] stringValue];
+	NSString *epubId = [[[xmlDoc nodesForXPath:@"//identifier" error:nil] objectAtIndex:0] stringValue];
+	NSString *title = [[[xmlDoc nodesForXPath:@"//title" error:nil] objectAtIndex:0] stringValue];
 	
 	// save the main book metadata
 	BKBook *book = [BKBook findFirstByAttribute:@"epubId" withValue:epubId];
@@ -71,10 +71,10 @@ NSString *const kEpubContentManifest = @"/OPS/content.opf";
 	// lets go get the chapters
 	__block NSMutableOrderedSet *chapters = [NSMutableOrderedSet orderedSetWithCapacity:2];
 
-	NSArray *chaptersFileNames = [[xmlDoc nodesForXPath:@"//dc:title/@href" error:nil] objectAtIndex:0];
-	[chaptersFileNames enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
+	NSArray *chaptersFileNames = [xmlDoc nodesForXPath:@"//item/@href" error:nil];
+	[chaptersFileNames enumerateObjectsUsingBlock:^(GDataXMLNode *chapterFileNameNode, NSUInteger idx, BOOL *stop) {
 	
-		NSString *chapterFileName = (NSString *)obj;
+		NSString *chapterFileName = [chapterFileNameNode stringValue];
 		
 		// read each file
 		NSString *chapterFileNamePath = [[[self unzipPathForFileName:fileName] stringByAppendingString:kEpubContentRoot] stringByAppendingString:chapterFileName];

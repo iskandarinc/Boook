@@ -7,20 +7,23 @@
 //
 
 #import "BKAppDelegate.h"
+#import "NSAttributedString+BoookAdditions.h"
 
 @implementation BKAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-	// global appearances
-//	[[UINavigationBar appearance] setBackgroundImage:[UIImage imageNamed:@"blue_texture"] forBarMetrics:UIBarMetricsDefault];
-	
 	[[UINavigationBar appearance] setTintColor:[UIColor blackColor]];
-
+	NSDictionary *navbarTitleTextAttributes = [NSDictionary dictionaryWithObjectsAndKeys:
+											   [UIColor whiteColor],UITextAttributeTextColor,
+											   [UIColor blackColor], UITextAttributeTextShadowColor,
+											   [NSValue valueWithUIOffset:UIOffsetMake(-1, 0)], UITextAttributeTextShadowOffset, nil];
+	
+	[[UINavigationBar appearance] setTitleTextAttributes:navbarTitleTextAttributes];
     [MagicalRecord setupCoreDataStackWithStoreNamed:@"Book_Store"];
 	return YES;
 }
-							
+
 - (void)applicationWillResignActive:(UIApplication *)application
 {
 	// Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

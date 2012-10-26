@@ -7,6 +7,7 @@
 //
 
 #import "BKBaseViewController.h"
+#import "NSAttributedString+BoookAdditions.h"
 
 @interface BKBaseViewController ()
 
