@@ -3,80 +3,79 @@ v5
 r1
 cCheck dependencies
 cProcessInfoPlistFile /Users/eiskandar/Documents/workspace/Boook/build/Debug-iphonesimulator/Boook.app/Info.plist Boook/Boook-Info.plist
-cProcessPCH /var/folders/hx/wyy7bv9n35d0ynqj8cc7yxs80000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/Boook-Prefix-avnpgdnbkccpgvfoxdogjdfervgs/Boook-Prefix.pch.pth Boook/Boook-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cProcessPCH /var/folders/hx/wyy7bv9n35d0ynqj8cc7yxs80000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/Boook-Prefix-fnjdetngfyivdyeyccitizngkbeq/Boook-Prefix.pch.pth Boook/Boook-Prefix.pch normal i386 c com.apple.compilers.llvm.clang.1_0.compiler
 cDataModelVersionCompile /Users/eiskandar/Documents/workspace/Boook/build/Debug-iphonesimulator/Boook.app/BoookModel.momd /Users/eiskandar/Documents/workspace/Boook/Boook/Data/BoookModel.xcdatamodeld
+cProcessPCH /var/folders/hx/wyy7bv9n35d0ynqj8cc7yxs80000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/Boook-Prefix-fnjdetngfyivdyeyccitizngkbeq/Boook-Prefix.pch.pth Boook/Boook-Prefix.pch normal i386 c com.apple.compilers.llvm.clang.1_0.compiler
+cProcessPCH /var/folders/hx/wyy7bv9n35d0ynqj8cc7yxs80000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/Boook-Prefix-avnpgdnbkccpgvfoxdogjdfervgs/Boook-Prefix.pch.pth Boook/Boook-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/Boook.build/Debug-iphonesimulator/Boook.build/Objects-normal/i386/NSManagedObjectContext+MagicalThreading.o /Users/eiskandar/Documents/workspace/Boook/Boook/External/MagicalRecord/Categories/NSManagedObjectContext/NSManagedObjectContext+MagicalThreading.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/Boook.build/Debug-iphonesimulator/Boook.build/Objects-normal/i386/mztools.o /Users/eiskandar/Documents/workspace/Boook/Boook/External/minizip/mztools.c normal i386 c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/Boook.build/Debug-iphonesimulator/Boook.build/Objects-normal/i386/ioapi.o /Users/eiskandar/Documents/workspace/Boook/Boook/External/minizip/ioapi.c normal i386 c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/Boook.build/Debug-iphonesimulator/Boook.build/Objects-normal/i386/unzip.o /Users/eiskandar/Documents/workspace/Boook/Boook/External/minizip/unzip.c normal i386 c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/Boook.build/Debug-iphonesimulator/Boook.build/Objects-normal/i386/zip.o /Users/eiskandar/Documents/workspace/Boook/Boook/External/minizip/zip.c normal i386 c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/Boook.build/Debug-iphonesimulator/Boook.build/Objects-normal/i386/_BKBook.o /Users/eiskandar/Documents/workspace/Boook/Boook/Data/_BKBook.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/Boook.build/Debug-iphonesimulator/Boook.build/Objects-normal/i386/NSFileManager+BoookAdditions.o /Users/eiskandar/Documents/workspace/Boook/Boook/Classes/NSFileManager+BoookAdditions.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/Boook.build/Debug-iphonesimulator/Boook.build/Objects-normal/i386/BKChapter.o /Users/eiskandar/Documents/workspace/Boook/Boook/Data/BKChapter.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/Boook.build/Debug-iphonesimulator/Boook.build/Objects-normal/i386/_BKBook.o /Users/eiskandar/Documents/workspace/Boook/Boook/Data/_BKBook.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/Boook.build/Debug-iphonesimulator/Boook.build/Objects-normal/i386/BKBook.o /Users/eiskandar/Documents/workspace/Boook/Boook/Data/BKBook.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/Boook.build/Debug-iphonesimulator/Boook.build/Objects-normal/i386/_BKChunk.o /Users/eiskandar/Documents/workspace/Boook/Boook/Data/_BKChunk.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/Boook.build/Debug-iphonesimulator/Boook.build/Objects-normal/i386/BKChunk.o /Users/eiskandar/Documents/workspace/Boook/Boook/Data/BKChunk.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/Boook.build/Debug-iphonesimulator/Boook.build/Objects-normal/i386/_BKChapter.o /Users/eiskandar/Documents/workspace/Boook/Boook/Data/_BKChapter.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/Boook.build/Debug-iphonesimulator/Boook.build/Objects-normal/i386/_BKAuthor.o /Users/eiskandar/Documents/workspace/Boook/Boook/Data/_BKAuthor.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/Boook.build/Debug-iphonesimulator/Boook.build/Objects-normal/i386/_BKChapter.o /Users/eiskandar/Documents/workspace/Boook/Boook/Data/_BKChapter.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/Boook.build/Debug-iphonesimulator/Boook.build/Objects-normal/i386/BKAuthor.o /Users/eiskandar/Documents/workspace/Boook/Boook/Data/BKAuthor.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/Boook.build/Debug-iphonesimulator/Boook.build/Objects-normal/i386/NSAttributedString+BoookAdditions.o /Users/eiskandar/Documents/workspace/Boook/Boook/Classes/NSAttributedString+BoookAdditions.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/Boook.build/Debug-iphonesimulator/Boook.build/Objects-normal/i386/UILabel+BoookAdditions.o /Users/eiskandar/Documents/workspace/Boook/Boook/Classes/UILabel+BoookAdditions.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/Boook.build/Debug-iphonesimulator/Boook.build/Objects-normal/i386/NSString+BoookAdditions.o /Users/eiskandar/Documents/workspace/Boook/Boook/Classes/NSString+BoookAdditions.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/Boook.build/Debug-iphonesimulator/Boook.build/Objects-normal/i386/NSFileManager+BoookAdditions.o /Users/eiskandar/Documents/workspace/Boook/Boook/Classes/NSFileManager+BoookAdditions.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/Boook.build/Debug-iphonesimulator/Boook.build/Objects-normal/i386/main.o /Users/eiskandar/Documents/workspace/Boook/Boook/Classes/main.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/Boook.build/Debug-iphonesimulator/Boook.build/Objects-normal/i386/BKAppDelegate.o /Users/eiskandar/Documents/workspace/Boook/Boook/Classes/BKAppDelegate.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/Boook.build/Debug-iphonesimulator/Boook.build/Objects-normal/i386/BKBaseViewController.o /Users/eiskandar/Documents/workspace/Boook/Boook/Classes/BKBaseViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/Boook.build/Debug-iphonesimulator/Boook.build/Objects-normal/i386/NSAttributedString+BoookAdditions.o /Users/eiskandar/Documents/workspace/Boook/Boook/Classes/NSAttributedString+BoookAdditions.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/Boook.build/Debug-iphonesimulator/Boook.build/Objects-normal/i386/main.o /Users/eiskandar/Documents/workspace/Boook/Boook/Classes/main.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/Boook.build/Debug-iphonesimulator/Boook.build/Objects-normal/i386/BKBookViewController.o /Users/eiskandar/Documents/workspace/Boook/Boook/Classes/BKBookViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/Boook.build/Debug-iphonesimulator/Boook.build/Objects-normal/i386/BKBaseViewController.o /Users/eiskandar/Documents/workspace/Boook/Boook/Classes/BKBaseViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/Boook.build/Debug-iphonesimulator/Boook.build/Objects-normal/i386/BKLibraryCell.o /Users/eiskandar/Documents/workspace/Boook/Boook/Classes/BKLibraryCell.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/Boook.build/Debug-iphonesimulator/Boook.build/Objects-normal/i386/GDataXMLNode.o /Users/eiskandar/Documents/workspace/Boook/Boook/Classes/GDataXMLNode.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/Boook.build/Debug-iphonesimulator/Boook.build/Objects-normal/i386/BKLibraryViewController.o /Users/eiskandar/Documents/workspace/Boook/Boook/Classes/BKLibraryViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/Boook.build/Debug-iphonesimulator/Boook.build/Objects-normal/i386/BKPageCell.o /Users/eiskandar/Documents/workspace/Boook/Boook/Classes/BKPageCell.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/Boook.build/Debug-iphonesimulator/Boook.build/Objects-normal/i386/GDataXMLNode.o /Users/eiskandar/Documents/workspace/Boook/Boook/Classes/GDataXMLNode.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/Boook.build/Debug-iphonesimulator/Boook.build/Objects-normal/i386/MagicalImportFunctions.o /Users/eiskandar/Documents/workspace/Boook/Boook/External/MagicalRecord/Categories/DataImport/MagicalImportFunctions.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/Boook.build/Debug-iphonesimulator/Boook.build/Objects-normal/i386/NSEntityDescription+MagicalDataImport.o /Users/eiskandar/Documents/workspace/Boook/Boook/External/MagicalRecord/Categories/DataImport/NSEntityDescription+MagicalDataImport.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/Boook.build/Debug-iphonesimulator/Boook.build/Objects-normal/i386/NSAttributeDescription+MagicalDataImport.o /Users/eiskandar/Documents/workspace/Boook/Boook/External/MagicalRecord/Categories/DataImport/NSAttributeDescription+MagicalDataImport.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/Boook.build/Debug-iphonesimulator/Boook.build/Objects-normal/i386/NSEntityDescription+MagicalDataImport.o /Users/eiskandar/Documents/workspace/Boook/Boook/External/MagicalRecord/Categories/DataImport/NSEntityDescription+MagicalDataImport.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/Boook.build/Debug-iphonesimulator/Boook.build/Objects-normal/i386/NSNumber+MagicalDataImport.o /Users/eiskandar/Documents/workspace/Boook/Boook/External/MagicalRecord/Categories/DataImport/NSNumber+MagicalDataImport.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/Boook.build/Debug-iphonesimulator/Boook.build/Objects-normal/i386/NSObject+MagicalDataImport.o /Users/eiskandar/Documents/workspace/Boook/Boook/External/MagicalRecord/Categories/DataImport/NSObject+MagicalDataImport.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/Boook.build/Debug-iphonesimulator/Boook.build/Objects-normal/i386/NSRelationshipDescription+MagicalDataImport.o /Users/eiskandar/Documents/workspace/Boook/Boook/External/MagicalRecord/Categories/DataImport/NSRelationshipDescription+MagicalDataImport.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/Boook.build/Debug-iphonesimulator/Boook.build/Objects-normal/i386/NSString+MagicalDataImport.o /Users/eiskandar/Documents/workspace/Boook/Boook/External/MagicalRecord/Categories/DataImport/NSString+MagicalDataImport.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/Boook.build/Debug-iphonesimulator/Boook.build/Objects-normal/i386/NSManagedObject+MagicalAggregation.o /Users/eiskandar/Documents/workspace/Boook/Boook/External/MagicalRecord/Categories/NSManagedObject/NSManagedObject+MagicalAggregation.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/Boook.build/Debug-iphonesimulator/Boook.build/Objects-normal/i386/NSString+MagicalDataImport.o /Users/eiskandar/Documents/workspace/Boook/Boook/External/MagicalRecord/Categories/DataImport/NSString+MagicalDataImport.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/Boook.build/Debug-iphonesimulator/Boook.build/Objects-normal/i386/NSManagedObject+MagicalDataImport.o /Users/eiskandar/Documents/workspace/Boook/Boook/External/MagicalRecord/Categories/NSManagedObject/NSManagedObject+MagicalDataImport.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/Boook.build/Debug-iphonesimulator/Boook.build/Objects-normal/i386/NSManagedObject+MagicalFinders.o /Users/eiskandar/Documents/workspace/Boook/Boook/External/MagicalRecord/Categories/NSManagedObject/NSManagedObject+MagicalFinders.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/Boook.build/Debug-iphonesimulator/Boook.build/Objects-normal/i386/NSManagedObject+MagicalRecord.o /Users/eiskandar/Documents/workspace/Boook/Boook/External/MagicalRecord/Categories/NSManagedObject/NSManagedObject+MagicalRecord.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/Boook.build/Debug-iphonesimulator/Boook.build/Objects-normal/i386/NSManagedObject+MagicalRequests.o /Users/eiskandar/Documents/workspace/Boook/Boook/External/MagicalRecord/Categories/NSManagedObject/NSManagedObject+MagicalRequests.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/Boook.build/Debug-iphonesimulator/Boook.build/Objects-normal/i386/NSManagedObjectContext+MagicalObserving.o /Users/eiskandar/Documents/workspace/Boook/Boook/External/MagicalRecord/Categories/NSManagedObjectContext/NSManagedObjectContext+MagicalObserving.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/Boook.build/Debug-iphonesimulator/Boook.build/Objects-normal/i386/NSManagedObject+MagicalFinders.o /Users/eiskandar/Documents/workspace/Boook/Boook/External/MagicalRecord/Categories/NSManagedObject/NSManagedObject+MagicalFinders.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/Boook.build/Debug-iphonesimulator/Boook.build/Objects-normal/i386/NSManagedObjectContext+MagicalRecord.o /Users/eiskandar/Documents/workspace/Boook/Boook/External/MagicalRecord/Categories/NSManagedObjectContext/NSManagedObjectContext+MagicalRecord.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/Boook.build/Debug-iphonesimulator/Boook.build/Objects-normal/i386/NSManagedObjectContext+MagicalObserving.o /Users/eiskandar/Documents/workspace/Boook/Boook/External/MagicalRecord/Categories/NSManagedObjectContext/NSManagedObjectContext+MagicalObserving.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/Boook.build/Debug-iphonesimulator/Boook.build/Objects-normal/i386/NSManagedObjectContext+MagicalSaves.o /Users/eiskandar/Documents/workspace/Boook/Boook/External/MagicalRecord/Categories/NSManagedObjectContext/NSManagedObjectContext+MagicalSaves.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/Boook.build/Debug-iphonesimulator/Boook.build/Objects-normal/i386/NSManagedObjectContext+MagicalThreading.o /Users/eiskandar/Documents/workspace/Boook/Boook/External/MagicalRecord/Categories/NSManagedObjectContext/NSManagedObjectContext+MagicalThreading.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/Boook.build/Debug-iphonesimulator/Boook.build/Objects-normal/i386/NSManagedObjectModel+MagicalRecord.o /Users/eiskandar/Documents/workspace/Boook/Boook/External/MagicalRecord/Categories/NSManagedObjectModel+MagicalRecord.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/Boook.build/Debug-iphonesimulator/Boook.build/Objects-normal/i386/NSPersistentStore+MagicalRecord.o /Users/eiskandar/Documents/workspace/Boook/Boook/External/MagicalRecord/Categories/NSPersistentStore+MagicalRecord.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/Boook.build/Debug-iphonesimulator/Boook.build/Objects-normal/i386/NSPersistentStoreCoordinator+MagicalRecord.o /Users/eiskandar/Documents/workspace/Boook/Boook/External/MagicalRecord/Categories/NSPersistentStoreCoordinator+MagicalRecord.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/Boook.build/Debug-iphonesimulator/Boook.build/Objects-normal/i386/MagicalRecord+ErrorHandling.o /Users/eiskandar/Documents/workspace/Boook/Boook/External/MagicalRecord/Core/MagicalRecord+ErrorHandling.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/Boook.build/Debug-iphonesimulator/Boook.build/Objects-normal/i386/MagicalRecord+Actions.o /Users/eiskandar/Documents/workspace/Boook/Boook/External/MagicalRecord/Core/MagicalRecord+Actions.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/Boook.build/Debug-iphonesimulator/Boook.build/Objects-normal/i386/MagicalRecord+iCloud.o /Users/eiskandar/Documents/workspace/Boook/Boook/External/MagicalRecord/Core/MagicalRecord+iCloud.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/Boook.build/Debug-iphonesimulator/Boook.build/Objects-normal/i386/MagicalRecord+Actions.o /Users/eiskandar/Documents/workspace/Boook/Boook/External/MagicalRecord/Core/MagicalRecord+Actions.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/Boook.build/Debug-iphonesimulator/Boook.build/Objects-normal/i386/MagicalRecord+ShorthandSupport.o /Users/eiskandar/Documents/workspace/Boook/Boook/External/MagicalRecord/Core/MagicalRecord+ShorthandSupport.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/Boook.build/Debug-iphonesimulator/Boook.build/Objects-normal/i386/MagicalRecord+Options.o /Users/eiskandar/Documents/workspace/Boook/Boook/External/MagicalRecord/Core/MagicalRecord+Options.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/Boook.build/Debug-iphonesimulator/Boook.build/Objects-normal/i386/MagicalRecord+Setup.o /Users/eiskandar/Documents/workspace/Boook/Boook/External/MagicalRecord/Core/MagicalRecord+Setup.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/Boook.build/Debug-iphonesimulator/Boook.build/Objects-normal/i386/MagicalRecord+ShorthandSupport.o /Users/eiskandar/Documents/workspace/Boook/Boook/External/MagicalRecord/Core/MagicalRecord+ShorthandSupport.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/Boook.build/Debug-iphonesimulator/Boook.build/Objects-normal/i386/zip.o /Users/eiskandar/Documents/workspace/Boook/Boook/External/minizip/zip.c normal i386 c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/Boook.build/Debug-iphonesimulator/Boook.build/Objects-normal/i386/unzip.o /Users/eiskandar/Documents/workspace/Boook/Boook/External/minizip/unzip.c normal i386 c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/Boook.build/Debug-iphonesimulator/Boook.build/Objects-normal/i386/MagicalRecord.o /Users/eiskandar/Documents/workspace/Boook/Boook/External/MagicalRecord/Core/MagicalRecord.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/Boook.build/Debug-iphonesimulator/Boook.build/Objects-normal/i386/CTidy.o /Users/eiskandar/Documents/workspace/Boook/Boook/External/Tidy/CTidy.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/Boook.build/Debug-iphonesimulator/Boook.build/Objects-normal/i386/SSZipArchive.o /Users/eiskandar/Documents/workspace/Boook/Boook/Classes/SSZipArchive.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cLd /Users/eiskandar/Documents/workspace/Boook/build/Debug-iphonesimulator/Boook.app/Boook normal i386
 cGenerateDSYMFile /Users/eiskandar/Documents/workspace/Boook/build/Debug-iphonesimulator/Boook.app.dSYM /Users/eiskandar/Documents/workspace/Boook/build/Debug-iphonesimulator/Boook.app/Boook
 cCompileStoryboard /Users/eiskandar/Documents/workspace/Boook/Boook/en.lproj/MainStoryboard_iPhone.storyboard
-cCopyStringsFile /Users/eiskandar/Documents/workspace/Boook/build/Debug-iphonesimulator/Boook.app/en.lproj/InfoPlist.strings Boook/en.lproj/InfoPlist.strings
 cCpResource Boook/Images/paper_texture.png build/Debug-iphonesimulator/Boook.app/paper_texture.png
 cCpResource Boook/Images/blue_texture.png build/Debug-iphonesimulator/Boook.app/blue_texture.png
 cCpResource Boook/Images/dark_texture.png build/Debug-iphonesimulator/Boook.app/dark_texture.png
-cCpResource Icon@2x.png build/Debug-iphonesimulator/Boook.app/Icon@2x.png
-cCpResource Icon.png build/Debug-iphonesimulator/Boook.app/Icon.png
+cCpResource Boook/../Icon@2x.png build/Debug-iphonesimulator/Boook.app/Icon@2x.png
 cCpResource Boook/Images/blue_texture@2x.png build/Debug-iphonesimulator/Boook.app/blue_texture@2x.png
+cCpResource Boook/../Icon.png build/Debug-iphonesimulator/Boook.app/Icon.png
 cCpResource Boook/Images/Default-568h@2x.png build/Debug-iphonesimulator/Boook.app/Default-568h@2x.png
 cCpResource Boook/Images/Default.png build/Debug-iphonesimulator/Boook.app/Default.png
 cCpResource Boook/Images/Default@2x.png build/Debug-iphonesimulator/Boook.app/Default@2x.png
 cCpResource Boook/Images/gray_global_bgr.png build/Debug-iphonesimulator/Boook.app/gray_global_bgr.png
-cCpResource Boook/Ebooks/carroll-alice-in-wonderland-illustrations.epub build/Debug-iphonesimulator/Boook.app/carroll-alice-in-wonderland-illustrations.epub
 cCpResource Boook/Images/gray_global_bgr@2x.png build/Debug-iphonesimulator/Boook.app/gray_global_bgr@2x.png
+cCpResource Boook/Ebooks/carroll-alice-in-wonderland-illustrations.epub build/Debug-iphonesimulator/Boook.app/carroll-alice-in-wonderland-illustrations.epub
 cCpResource Boook/Ebooks/austen-pride-and-prejudice-illustrations.epub build/Debug-iphonesimulator/Boook.app/austen-pride-and-prejudice-illustrations.epub
-cCpResource Boook/Ebooks/dickens-battle-of-life.epub build/Debug-iphonesimulator/Boook.app/dickens-battle-of-life.epub
 cCpResource Boook/Ebooks/gullivers.epub build/Debug-iphonesimulator/Boook.app/gullivers.epub
+cCpResource Boook/Ebooks/dickens-battle-of-life.epub build/Debug-iphonesimulator/Boook.app/dickens-battle-of-life.epub
 cCpResource Boook/Ebooks/sherlock.epub build/Debug-iphonesimulator/Boook.app/sherlock.epub
 cTouch /Users/eiskandar/Documents/workspace/Boook/build/Debug-iphonesimulator/Boook.app
 
@@ -255,6 +254,16 @@ c00000000504A984B0000000000013500
 t1347065931
 s79104
 
+N/Users/eiskandar/Documents/workspace/Boook/Boook/../Icon.png
+c0000000050843F590000000000001AB1
+t1350844249
+s6833
+
+N/Users/eiskandar/Documents/workspace/Boook/Boook/../Icon@2x.png
+c0000000050849C6B00000000000019DB
+t1350868075
+s6619
+
 N/Users/eiskandar/Documents/workspace/Boook/Boook/Boook-Prefix.pch
 c0000000050889D70000000000000016D
 t1351130480
@@ -285,14 +294,14 @@ t1350834212
 s782
 
 N/Users/eiskandar/Documents/workspace/Boook/Boook/Classes/BKBookViewController.h
-c000000005085806F0000000000000292
-t1350926447
-s658
+c00000000508933F5000000000000025F
+t1351169013
+s607
 
 N/Users/eiskandar/Documents/workspace/Boook/Boook/Classes/BKBookViewController.m
-c000000005085EDA8000000000000168A
-t1350954408
-s5770
+c000000005089EBA4000000000000171F
+t1351216036
+s5919
 
 N/Users/eiskandar/Documents/workspace/Boook/Boook/Classes/BKLibraryCell.h
 c0000000050841CFE0000000000000129
@@ -310,19 +319,29 @@ t1350855374
 s546
 
 N/Users/eiskandar/Documents/workspace/Boook/Boook/Classes/BKLibraryViewController.m
-c000000005085437C00000000000009E0
-t1350910844
-s2528
+c0000000050889E3300000000000008FD
+t1351130675
+s2301
 
 N/Users/eiskandar/Documents/workspace/Boook/Boook/Classes/BKPageCell.h
-c0000000050836C160000000000000152
-t1350790166
-s338
+c000000005089D78C000000000000014D
+t1351210892
+s333
 
 N/Users/eiskandar/Documents/workspace/Boook/Boook/Classes/BKPageCell.m
-c0000000050821537000000000000025A
-t1350702391
-s602
+c000000005089D7DD000000000000019B
+t1351210973
+s411
+
+N/Users/eiskandar/Documents/workspace/Boook/Boook/Classes/BKPageFormatter.m
+c000000005088A72900000000000000D4
+t1351132969
+s212
+
+N/Users/eiskandar/Documents/workspace/Boook/Boook/Classes/BKPageParser.m
+c000000005088A70E00000000000000CB
+t1351132942
+s203
 
 N/Users/eiskandar/Documents/workspace/Boook/Boook/Classes/GDataXMLNode.h
 c000000005081D84E0000000000002179
@@ -335,14 +354,14 @@ t1350686798
 s64130
 
 N/Users/eiskandar/Documents/workspace/Boook/Boook/Classes/NSAttributedString+BoookAdditions.h
-c000000005084123200000000000001E7
-t1350832690
-s487
+c000000005089369B000000000000022B
+t1351169691
+s555
 
 N/Users/eiskandar/Documents/workspace/Boook/Boook/Classes/NSAttributedString+BoookAdditions.m
-c00000000508411EA0000000000000744
-t1350832618
-s1860
+c000000005089E6E00000000000000A4C
+t1351214816
+s2636
 
 N/Users/eiskandar/Documents/workspace/Boook/Boook/Classes/NSFileManager+BoookAdditions.h
 c000000005080B54C0000000000000140
@@ -870,9 +889,9 @@ t1350564189
 s45
 
 N/Users/eiskandar/Documents/workspace/Boook/Boook/en.lproj/MainStoryboard_iPhone.storyboard
-c00000000508543190000000000005166
-t1350910745
-s20838
+c000000005089D8100000000000004D7F
+t1351211024
+s19839
 
 N/Users/eiskandar/Documents/workspace/Boook/Icon.png
 c0000000050843F590000000000001AB1
@@ -885,44 +904,52 @@ t1350868075
 s6619
 
 N/Users/eiskandar/Documents/workspace/Boook/build/Boook.build/Debug-iphonesimulator/Boook.build/Objects-normal/i386/BKAppDelegate.o
-t1351130372
+t1351130481
 s87628
 
 N/Users/eiskandar/Documents/workspace/Boook/build/Boook.build/Debug-iphonesimulator/Boook.build/Objects-normal/i386/BKAuthor.o
-t1351130371
+t1351130481
 s2720
 
 N/Users/eiskandar/Documents/workspace/Boook/build/Boook.build/Debug-iphonesimulator/Boook.build/Objects-normal/i386/BKBaseViewController.o
-t1351130372
+t1351130481
 s69696
 
 N/Users/eiskandar/Documents/workspace/Boook/build/Boook.build/Debug-iphonesimulator/Boook.build/Objects-normal/i386/BKBook.o
-t1351130440
+t1351130481
 s31488
 
 N/Users/eiskandar/Documents/workspace/Boook/build/Boook.build/Debug-iphonesimulator/Boook.build/Objects-normal/i386/BKBookViewController.o
-t1351130372
-s117500
+t1351215659
+s117620
 
 N/Users/eiskandar/Documents/workspace/Boook/build/Boook.build/Debug-iphonesimulator/Boook.build/Objects-normal/i386/BKChapter.o
-t1351130372
+t1351130481
 s23292
 
 N/Users/eiskandar/Documents/workspace/Boook/build/Boook.build/Debug-iphonesimulator/Boook.build/Objects-normal/i386/BKChunk.o
-t1351130372
+t1351130481
 s10896
 
 N/Users/eiskandar/Documents/workspace/Boook/build/Boook.build/Debug-iphonesimulator/Boook.build/Objects-normal/i386/BKLibraryCell.o
-t1351130372
+t1351130481
 s69732
 
 N/Users/eiskandar/Documents/workspace/Boook/build/Boook.build/Debug-iphonesimulator/Boook.build/Objects-normal/i386/BKLibraryViewController.o
-t1351130372
-s98200
+t1351171116
+s98132
 
 N/Users/eiskandar/Documents/workspace/Boook/build/Boook.build/Debug-iphonesimulator/Boook.build/Objects-normal/i386/BKPageCell.o
-t1351130372
-s71544
+t1351210973
+s71924
+
+N/Users/eiskandar/Documents/workspace/Boook/build/Boook.build/Debug-iphonesimulator/Boook.build/Objects-normal/i386/BKPageFormatter.o
+t2
+s0
+
+N/Users/eiskandar/Documents/workspace/Boook/build/Boook.build/Debug-iphonesimulator/Boook.build/Objects-normal/i386/BKPageParser.o
+t2
+s0
 
 N/Users/eiskandar/Documents/workspace/Boook/build/Boook.build/Debug-iphonesimulator/Boook.build/Objects-normal/i386/Boook.LinkFileList
 c0000000050889D020000000000001C4A
@@ -930,184 +957,184 @@ t1351130370
 s7242
 
 N/Users/eiskandar/Documents/workspace/Boook/build/Boook.build/Debug-iphonesimulator/Boook.build/Objects-normal/i386/CTidy.o
-t1351130373
+t1351130482
 s1780
 
 N/Users/eiskandar/Documents/workspace/Boook/build/Boook.build/Debug-iphonesimulator/Boook.build/Objects-normal/i386/GDataXMLNode.o
-t1351130372
+t1351130481
 s126980
 
 N/Users/eiskandar/Documents/workspace/Boook/build/Boook.build/Debug-iphonesimulator/Boook.build/Objects-normal/i386/MagicalImportFunctions.o
-t1351130372
+t1351130481
 s12892
 
 N/Users/eiskandar/Documents/workspace/Boook/build/Boook.build/Debug-iphonesimulator/Boook.build/Objects-normal/i386/MagicalRecord+Actions.o
-t1351130373
+t1351130482
 s19192
 
 N/Users/eiskandar/Documents/workspace/Boook/build/Boook.build/Debug-iphonesimulator/Boook.build/Objects-normal/i386/MagicalRecord+ErrorHandling.o
-t1351130373
+t1351130482
 s14668
 
 N/Users/eiskandar/Documents/workspace/Boook/build/Boook.build/Debug-iphonesimulator/Boook.build/Objects-normal/i386/MagicalRecord+Options.o
-t1351130373
+t1351130482
 s7528
 
 N/Users/eiskandar/Documents/workspace/Boook/build/Boook.build/Debug-iphonesimulator/Boook.build/Objects-normal/i386/MagicalRecord+Setup.o
-t1351130373
+t1351130482
 s11164
 
 N/Users/eiskandar/Documents/workspace/Boook/build/Boook.build/Debug-iphonesimulator/Boook.build/Objects-normal/i386/MagicalRecord+ShorthandSupport.o
-t1351130373
+t1351130482
 s16452
 
 N/Users/eiskandar/Documents/workspace/Boook/build/Boook.build/Debug-iphonesimulator/Boook.build/Objects-normal/i386/MagicalRecord+iCloud.o
-t1351130373
+t1351130482
 s12892
 
 N/Users/eiskandar/Documents/workspace/Boook/build/Boook.build/Debug-iphonesimulator/Boook.build/Objects-normal/i386/MagicalRecord.o
-t1351130373
+t1351130482
 s15024
 
 N/Users/eiskandar/Documents/workspace/Boook/build/Boook.build/Debug-iphonesimulator/Boook.build/Objects-normal/i386/NSAttributeDescription+MagicalDataImport.o
-t1351130372
+t1351130482
 s13288
 
 N/Users/eiskandar/Documents/workspace/Boook/build/Boook.build/Debug-iphonesimulator/Boook.build/Objects-normal/i386/NSAttributedString+BoookAdditions.o
-t1351130372
-s13936
+t1351214816
+s19728
 
 N/Users/eiskandar/Documents/workspace/Boook/build/Boook.build/Debug-iphonesimulator/Boook.build/Objects-normal/i386/NSEntityDescription+MagicalDataImport.o
-t1351130372
+t1351130482
 s15524
 
 N/Users/eiskandar/Documents/workspace/Boook/build/Boook.build/Debug-iphonesimulator/Boook.build/Objects-normal/i386/NSFileManager+BoookAdditions.o
-t1351130372
+t1351130481
 s7764
 
 N/Users/eiskandar/Documents/workspace/Boook/build/Boook.build/Debug-iphonesimulator/Boook.build/Objects-normal/i386/NSManagedObject+MagicalAggregation.o
-t1351130372
+t1351130482
 s33732
 
 N/Users/eiskandar/Documents/workspace/Boook/build/Boook.build/Debug-iphonesimulator/Boook.build/Objects-normal/i386/NSManagedObject+MagicalDataImport.o
-t1351130373
+t1351130482
 s56924
 
 N/Users/eiskandar/Documents/workspace/Boook/build/Boook.build/Debug-iphonesimulator/Boook.build/Objects-normal/i386/NSManagedObject+MagicalFinders.o
-t1351130373
+t1351130482
 s55316
 
 N/Users/eiskandar/Documents/workspace/Boook/build/Boook.build/Debug-iphonesimulator/Boook.build/Objects-normal/i386/NSManagedObject+MagicalRecord.o
-t1351130373
+t1351130482
 s46196
 
 N/Users/eiskandar/Documents/workspace/Boook/build/Boook.build/Debug-iphonesimulator/Boook.build/Objects-normal/i386/NSManagedObject+MagicalRequests.o
-t1351130373
+t1351130482
 s30764
 
 N/Users/eiskandar/Documents/workspace/Boook/build/Boook.build/Debug-iphonesimulator/Boook.build/Objects-normal/i386/NSManagedObjectContext+MagicalObserving.o
-t1351130373
+t1351130482
 s22832
 
 N/Users/eiskandar/Documents/workspace/Boook/build/Boook.build/Debug-iphonesimulator/Boook.build/Objects-normal/i386/NSManagedObjectContext+MagicalRecord.o
-t1351130373
+t1351130482
 s38488
 
 N/Users/eiskandar/Documents/workspace/Boook/build/Boook.build/Debug-iphonesimulator/Boook.build/Objects-normal/i386/NSManagedObjectContext+MagicalSaves.o
-t1351130373
+t1351130482
 s34632
 
 N/Users/eiskandar/Documents/workspace/Boook/build/Boook.build/Debug-iphonesimulator/Boook.build/Objects-normal/i386/NSManagedObjectContext+MagicalThreading.o
-t1351130373
+t1351130482
 s10988
 
 N/Users/eiskandar/Documents/workspace/Boook/build/Boook.build/Debug-iphonesimulator/Boook.build/Objects-normal/i386/NSManagedObjectModel+MagicalRecord.o
-t1351130373
+t1351130482
 s12588
 
 N/Users/eiskandar/Documents/workspace/Boook/build/Boook.build/Debug-iphonesimulator/Boook.build/Objects-normal/i386/NSNumber+MagicalDataImport.o
-t1351130372
+t1351130482
 s10756
 
 N/Users/eiskandar/Documents/workspace/Boook/build/Boook.build/Debug-iphonesimulator/Boook.build/Objects-normal/i386/NSObject+MagicalDataImport.o
-t1351130372
+t1351130482
 s17280
 
 N/Users/eiskandar/Documents/workspace/Boook/build/Boook.build/Debug-iphonesimulator/Boook.build/Objects-normal/i386/NSPersistentStore+MagicalRecord.o
-t1351130373
+t1351130482
 s18356
 
 N/Users/eiskandar/Documents/workspace/Boook/build/Boook.build/Debug-iphonesimulator/Boook.build/Objects-normal/i386/NSPersistentStoreCoordinator+MagicalRecord.o
-t1351130373
+t1351130482
 s44756
 
 N/Users/eiskandar/Documents/workspace/Boook/build/Boook.build/Debug-iphonesimulator/Boook.build/Objects-normal/i386/NSRelationshipDescription+MagicalDataImport.o
-t1351130372
+t1351130482
 s10420
 
 N/Users/eiskandar/Documents/workspace/Boook/build/Boook.build/Debug-iphonesimulator/Boook.build/Objects-normal/i386/NSString+BoookAdditions.o
-t1351130372
+t1351130481
 s5092
 
 N/Users/eiskandar/Documents/workspace/Boook/build/Boook.build/Debug-iphonesimulator/Boook.build/Objects-normal/i386/NSString+MagicalDataImport.o
-t1351130372
+t1351130482
 s5236
 
 N/Users/eiskandar/Documents/workspace/Boook/build/Boook.build/Debug-iphonesimulator/Boook.build/Objects-normal/i386/SSZipArchive.o
-t1351130373
+t1351130482
 s44364
 
 N/Users/eiskandar/Documents/workspace/Boook/build/Boook.build/Debug-iphonesimulator/Boook.build/Objects-normal/i386/UILabel+BoookAdditions.o
-t1351130372
+t1351130481
 s66132
 
 N/Users/eiskandar/Documents/workspace/Boook/build/Boook.build/Debug-iphonesimulator/Boook.build/Objects-normal/i386/_BKAuthor.o
-t1351130372
+t1351130481
 s18196
 
 N/Users/eiskandar/Documents/workspace/Boook/build/Boook.build/Debug-iphonesimulator/Boook.build/Objects-normal/i386/_BKBook.o
-t1351130371
+t1351130481
 s20424
 
 N/Users/eiskandar/Documents/workspace/Boook/build/Boook.build/Debug-iphonesimulator/Boook.build/Objects-normal/i386/_BKChapter.o
-t1351130372
+t1351130481
 s19524
 
 N/Users/eiskandar/Documents/workspace/Boook/build/Boook.build/Debug-iphonesimulator/Boook.build/Objects-normal/i386/_BKChunk.o
-t1351130371
+t1351130481
 s22072
 
 N/Users/eiskandar/Documents/workspace/Boook/build/Boook.build/Debug-iphonesimulator/Boook.build/Objects-normal/i386/ioapi.o
-t1351130370
+t1351130480
 s14040
 
 N/Users/eiskandar/Documents/workspace/Boook/build/Boook.build/Debug-iphonesimulator/Boook.build/Objects-normal/i386/main.o
-t1351130372
+t1351130481
 s3324
 
 N/Users/eiskandar/Documents/workspace/Boook/build/Boook.build/Debug-iphonesimulator/Boook.build/Objects-normal/i386/mztools.o
-t1351130370
+t1351130480
 s10048
 
 N/Users/eiskandar/Documents/workspace/Boook/build/Boook.build/Debug-iphonesimulator/Boook.build/Objects-normal/i386/unzip.o
-t1351130371
+t1351130480
 s50172
 
 N/Users/eiskandar/Documents/workspace/Boook/build/Boook.build/Debug-iphonesimulator/Boook.build/Objects-normal/i386/zip.o
-t1351130371
+t1351130481
 s56456
 
 N/Users/eiskandar/Documents/workspace/Boook/build/Debug-iphonesimulator/Boook.app
-t1351130441
+t1351215659
 s782
 
 N/Users/eiskandar/Documents/workspace/Boook/build/Debug-iphonesimulator/Boook.app.dSYM
-t1351130441
+t1351215659
 s102
 
 N/Users/eiskandar/Documents/workspace/Boook/build/Debug-iphonesimulator/Boook.app/Boook
-t1351130440
-s447628
+t1351215659
+s448524
 
 N/Users/eiskandar/Documents/workspace/Boook/build/Debug-iphonesimulator/Boook.app/BoookModel.momd
 t1351130372
@@ -1126,11 +1153,11 @@ t1351130375
 s16107
 
 N/Users/eiskandar/Documents/workspace/Boook/build/Debug-iphonesimulator/Boook.app/Icon.png
-t1351130375
+t1351130676
 s6833
 
 N/Users/eiskandar/Documents/workspace/Boook/build/Debug-iphonesimulator/Boook.app/Icon@2x.png
-t1351130375
+t1351130676
 s6619
 
 N/Users/eiskandar/Documents/workspace/Boook/build/Debug-iphonesimulator/Boook.app/Info.plist
@@ -1170,7 +1197,7 @@ t1351130375
 s42
 
 N/Users/eiskandar/Documents/workspace/Boook/build/Debug-iphonesimulator/Boook.app/en.lproj/MainStoryboard_iPhone.storyboardc
-t1351130375
+t1351211025
 s238
 
 N/Users/eiskandar/Documents/workspace/Boook/build/Debug-iphonesimulator/Boook.app/gray_global_bgr.png
@@ -1194,11 +1221,11 @@ t1351130376
 s274108
 
 N/var/folders/hx/wyy7bv9n35d0ynqj8cc7yxs80000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/Boook-Prefix-avnpgdnbkccpgvfoxdogjdfervgs/Boook-Prefix.pch.pth
-t1351130371
+t1351130480
 s5167300
 
 N/var/folders/hx/wyy7bv9n35d0ynqj8cc7yxs80000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/Boook-Prefix-fnjdetngfyivdyeyccitizngkbeq/Boook-Prefix.pch.pth
-t1351130370
+t1351130480
 s125852
 
 NBoook/Boook-Info.plist
@@ -1222,6 +1249,12 @@ CBuild AST from /Users/eiskandar/Documents/workspace/Boook/Boook/Classes/BKLibra
 r0
 
 CBuild AST from /Users/eiskandar/Documents/workspace/Boook/Boook/Classes/BKPageCell.m
+r0
+
+CBuild AST from /Users/eiskandar/Documents/workspace/Boook/Boook/Classes/BKPageFormatter.m
+r0
+
+CBuild AST from /Users/eiskandar/Documents/workspace/Boook/Boook/Classes/BKPageParser.m
 r0
 
 CBuild AST from /Users/eiskandar/Documents/workspace/Boook/Boook/Classes/GDataXMLNode.m
@@ -1364,7 +1397,7 @@ r0
 
 CCheck dependencies
 r0
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies53967df0d438b641^e2007ef0d438b641^---0#1#0#--18"Check dependencies36"2449525A-016A-4611-A1F7-AEA02D9DE376-
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies71a94226233ab641^a92f4326233ab641^---0#1#0#--18"Check dependencies36"9BF53414-2C53-418F-82AD-77F34EDD7749-
 
 CCompileC build/Boook.build/Debug-iphonesimulator/Boook.build/Objects-normal/i386/BKAppDelegate.o /Users/eiskandar/Documents/workspace/Boook/Boook/Classes/BKAppDelegate.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 s372823281.655628
@@ -1419,8 +1452,8 @@ xcom.apple.compilers.llvm.clang.1_0.compiler
 lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection70"Compile /Users/eiskandar/Documents/workspace/Boook/Boook/Data/BKBook.mcbbd5cf1d438b641^cac2a7f1d438b641^---0#0#0#-19%DVTDocumentLocation2@78"file://localhost/Users/eiskandar/Documents/workspace/Boook/Boook/Data/BKBook.m0000000000000000^3356"CompileC build/Boook.build/Debug-iphonesimulator/Boook.build/Objects-normal/i386/BKBook.o Boook/Data/BKBook.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/eiskandar/Documents/workspace/Boook    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk -fexceptions -fasm-blocks -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -mios-simulator-version-min=6.0 -iquote /Users/eiskandar/Documents/workspace/Boook/build/Boook.build/Debug-iphonesimulator/Boook.build/Boook-generated-files.hmap -I/Users/eiskandar/Documents/workspace/Boook/build/Boook.build/Debug-iphonesimulator/Boook.build/Boook-own-target-headers.hmap -I/Users/eiskandar/Documents/workspace/Boook/build/Boook.build/Debug-iphonesimulator/Boook.build/Boook-all-target-headers.hmap -iquote /Users/eiskandar/Documents/workspace/Boook/build/Boook.build/Debug-iphonesimulator/Boook.build/Boook-project-headers.hmap -I/Users/eiskandar/Documents/workspace/Boook/build/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk/usr/include/libxml2 -I/Users/eiskandar/Documents/workspace/Boook/build/Boook.build/Debug-iphonesimulator/Boook.build/DerivedSources/i386 -I/Users/eiskandar/Documents/workspace/Boook/build/Boook.build/Debug-iphonesimulator/Boook.build/DerivedSources -F/Users/eiskandar/Documents/workspace/Boook/build/Debug-iphonesimulator -include /var/folders/hx/wyy7bv9n35d0ynqj8cc7yxs80000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/Boook-Prefix-avnpgdnbkccpgvfoxdogjdfervgs/Boook-Prefix.pch -MMD -MT dependencies -MF /Users/eiskandar/Documents/workspace/Boook/build/Boook.build/Debug-iphonesimulator/Boook.build/Objects-normal/i386/BKBook.d --serialize-diagnostics /Users/eiskandar/Documents/workspace/Boook/build/Boook.build/Debug-iphonesimulator/Boook.build/Objects-normal/i386/BKBook.dia -c /Users/eiskandar/Documents/workspace/Boook/Boook/Data/BKBook.m -o /Users/eiskandar/Documents/workspace/Boook/build/Boook.build/Debug-iphonesimulator/Boook.build/Objects-normal/i386/BKBook.o36"D0449FE2-7262-4CDB-97FB-D7484A0D7808-
 
 CCompileC build/Boook.build/Debug-iphonesimulator/Boook.build/Objects-normal/i386/BKBookViewController.o /Users/eiskandar/Documents/workspace/Boook/Boook/Classes/BKBookViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s372823281.688614
-e372823282.047264
+s372908838.299230
+e372908838.388532
 r1
 xCompileC
 xbuild/Boook.build/Debug-iphonesimulator/Boook.build/Objects-normal/i386/BKBookViewController.o
@@ -1429,7 +1462,7 @@ xnormal
 xi386
 xobjective-c
 xcom.apple.compilers.llvm.clang.1_0.compiler
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection87"Compile /Users/eiskandar/Documents/workspace/Boook/Boook/Classes/BKBookViewController.m2b6eb0f1d438b641^481a0cf2d438b641^---0#0#0#-19%DVTDocumentLocation2@95"file://localhost/Users/eiskandar/Documents/workspace/Boook/Boook/Classes/BKBookViewController.m0000000000000000^3446"CompileC build/Boook.build/Debug-iphonesimulator/Boook.build/Objects-normal/i386/BKBookViewController.o Boook/Classes/BKBookViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/eiskandar/Documents/workspace/Boook    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk -fexceptions -fasm-blocks -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -mios-simulator-version-min=6.0 -iquote /Users/eiskandar/Documents/workspace/Boook/build/Boook.build/Debug-iphonesimulator/Boook.build/Boook-generated-files.hmap -I/Users/eiskandar/Documents/workspace/Boook/build/Boook.build/Debug-iphonesimulator/Boook.build/Boook-own-target-headers.hmap -I/Users/eiskandar/Documents/workspace/Boook/build/Boook.build/Debug-iphonesimulator/Boook.build/Boook-all-target-headers.hmap -iquote /Users/eiskandar/Documents/workspace/Boook/build/Boook.build/Debug-iphonesimulator/Boook.build/Boook-project-headers.hmap -I/Users/eiskandar/Documents/workspace/Boook/build/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk/usr/include/libxml2 -I/Users/eiskandar/Documents/workspace/Boook/build/Boook.build/Debug-iphonesimulator/Boook.build/DerivedSources/i386 -I/Users/eiskandar/Documents/workspace/Boook/build/Boook.build/Debug-iphonesimulator/Boook.build/DerivedSources -F/Users/eiskandar/Documents/workspace/Boook/build/Debug-iphonesimulator -include /var/folders/hx/wyy7bv9n35d0ynqj8cc7yxs80000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/Boook-Prefix-avnpgdnbkccpgvfoxdogjdfervgs/Boook-Prefix.pch -MMD -MT dependencies -MF /Users/eiskandar/Documents/workspace/Boook/build/Boook.build/Debug-iphonesimulator/Boook.build/Objects-normal/i386/BKBookViewController.d --serialize-diagnostics /Users/eiskandar/Documents/workspace/Boook/build/Boook.build/Debug-iphonesimulator/Boook.build/Objects-normal/i386/BKBookViewController.dia -c /Users/eiskandar/Documents/workspace/Boook/Boook/Classes/BKBookViewController.m -o /Users/eiskandar/Documents/workspace/Boook/build/Boook.build/Debug-iphonesimulator/Boook.build/Objects-normal/i386/BKBookViewController.o36"34826C72-A6C8-4C83-9146-3074EA02E670-
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection87"Compile /Users/eiskandar/Documents/workspace/Boook/Boook/Classes/BKBookViewController.m91b74c26233ab641^f7766326233ab641^---0#0#0#-19%DVTDocumentLocation2@95"file://localhost/Users/eiskandar/Documents/workspace/Boook/Boook/Classes/BKBookViewController.m0000000000000000^3446"CompileC build/Boook.build/Debug-iphonesimulator/Boook.build/Objects-normal/i386/BKBookViewController.o Boook/Classes/BKBookViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/eiskandar/Documents/workspace/Boook    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk -fexceptions -fasm-blocks -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -mios-simulator-version-min=6.0 -iquote /Users/eiskandar/Documents/workspace/Boook/build/Boook.build/Debug-iphonesimulator/Boook.build/Boook-generated-files.hmap -I/Users/eiskandar/Documents/workspace/Boook/build/Boook.build/Debug-iphonesimulator/Boook.build/Boook-own-target-headers.hmap -I/Users/eiskandar/Documents/workspace/Boook/build/Boook.build/Debug-iphonesimulator/Boook.build/Boook-all-target-headers.hmap -iquote /Users/eiskandar/Documents/workspace/Boook/build/Boook.build/Debug-iphonesimulator/Boook.build/Boook-project-headers.hmap -I/Users/eiskandar/Documents/workspace/Boook/build/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk/usr/include/libxml2 -I/Users/eiskandar/Documents/workspace/Boook/build/Boook.build/Debug-iphonesimulator/Boook.build/DerivedSources/i386 -I/Users/eiskandar/Documents/workspace/Boook/build/Boook.build/Debug-iphonesimulator/Boook.build/DerivedSources -F/Users/eiskandar/Documents/workspace/Boook/build/Debug-iphonesimulator -include /var/folders/hx/wyy7bv9n35d0ynqj8cc7yxs80000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/Boook-Prefix-avnpgdnbkccpgvfoxdogjdfervgs/Boook-Prefix.pch -MMD -MT dependencies -MF /Users/eiskandar/Documents/workspace/Boook/build/Boook.build/Debug-iphonesimulator/Boook.build/Objects-normal/i386/BKBookViewController.d --serialize-diagnostics /Users/eiskandar/Documents/workspace/Boook/build/Boook.build/Debug-iphonesimulator/Boook.build/Objects-normal/i386/BKBookViewController.dia -c /Users/eiskandar/Documents/workspace/Boook/Boook/Classes/BKBookViewController.m -o /Users/eiskandar/Documents/workspace/Boook/build/Boook.build/Debug-iphonesimulator/Boook.build/Objects-normal/i386/BKBookViewController.o36"A1E487DD-0140-4859-A340-497BAD4E8718-
 
 CCompileC build/Boook.build/Debug-iphonesimulator/Boook.build/Objects-normal/i386/BKChapter.o /Users/eiskandar/Documents/workspace/Boook/Boook/Data/BKChapter.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 s372823281.122941
@@ -1471,8 +1504,8 @@ xcom.apple.compilers.llvm.clang.1_0.compiler
 lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection80"Compile /Users/eiskandar/Documents/workspace/Boook/Boook/Classes/BKLibraryCell.m48a4b1f1d438b641^7fa5c7f1d438b641^---0#0#0#-19%DVTDocumentLocation2@88"file://localhost/Users/eiskandar/Documents/workspace/Boook/Boook/Classes/BKLibraryCell.m0000000000000000^3404"CompileC build/Boook.build/Debug-iphonesimulator/Boook.build/Objects-normal/i386/BKLibraryCell.o Boook/Classes/BKLibraryCell.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/eiskandar/Documents/workspace/Boook    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk -fexceptions -fasm-blocks -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -mios-simulator-version-min=6.0 -iquote /Users/eiskandar/Documents/workspace/Boook/build/Boook.build/Debug-iphonesimulator/Boook.build/Boook-generated-files.hmap -I/Users/eiskandar/Documents/workspace/Boook/build/Boook.build/Debug-iphonesimulator/Boook.build/Boook-own-target-headers.hmap -I/Users/eiskandar/Documents/workspace/Boook/build/Boook.build/Debug-iphonesimulator/Boook.build/Boook-all-target-headers.hmap -iquote /Users/eiskandar/Documents/workspace/Boook/build/Boook.build/Debug-iphonesimulator/Boook.build/Boook-project-headers.hmap -I/Users/eiskandar/Documents/workspace/Boook/build/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk/usr/include/libxml2 -I/Users/eiskandar/Documents/workspace/Boook/build/Boook.build/Debug-iphonesimulator/Boook.build/DerivedSources/i386 -I/Users/eiskandar/Documents/workspace/Boook/build/Boook.build/Debug-iphonesimulator/Boook.build/DerivedSources -F/Users/eiskandar/Documents/workspace/Boook/build/Debug-iphonesimulator -include /var/folders/hx/wyy7bv9n35d0ynqj8cc7yxs80000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/Boook-Prefix-avnpgdnbkccpgvfoxdogjdfervgs/Boook-Prefix.pch -MMD -MT dependencies -MF /Users/eiskandar/Documents/workspace/Boook/build/Boook.build/Debug-iphonesimulator/Boook.build/Objects-normal/i386/BKLibraryCell.d --serialize-diagnostics /Users/eiskandar/Documents/workspace/Boook/build/Boook.build/Debug-iphonesimulator/Boook.build/Objects-normal/i386/BKLibraryCell.dia -c /Users/eiskandar/Documents/workspace/Boook/Boook/Classes/BKLibraryCell.m -o /Users/eiskandar/Documents/workspace/Boook/build/Boook.build/Debug-iphonesimulator/Boook.build/Objects-normal/i386/BKLibraryCell.o36"3C5CA5AD-7514-413C-93A5-A6011863416B-
 
 CCompileC build/Boook.build/Debug-iphonesimulator/Boook.build/Objects-normal/i386/BKLibraryViewController.o /Users/eiskandar/Documents/workspace/Boook/Boook/Classes/BKLibraryViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s372823281.753061
-e372823282.046651
+s372863915.952407
+e372863916.788203
 r1
 xCompileC
 xbuild/Boook.build/Debug-iphonesimulator/Boook.build/Objects-normal/i386/BKLibraryViewController.o
@@ -1481,11 +1514,11 @@ xnormal
 xi386
 xobjective-c
 xcom.apple.compilers.llvm.clang.1_0.compiler
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection90"Compile /Users/eiskandar/Documents/workspace/Boook/Boook/Classes/BKLibraryViewController.m07eec0f1d438b641^63f10bf2d438b641^---0#0#0#-19%DVTDocumentLocation2@98"file://localhost/Users/eiskandar/Documents/workspace/Boook/Boook/Classes/BKLibraryViewController.m0000000000000000^3464"CompileC build/Boook.build/Debug-iphonesimulator/Boook.build/Objects-normal/i386/BKLibraryViewController.o Boook/Classes/BKLibraryViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/eiskandar/Documents/workspace/Boook    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk -fexceptions -fasm-blocks -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -mios-simulator-version-min=6.0 -iquote /Users/eiskandar/Documents/workspace/Boook/build/Boook.build/Debug-iphonesimulator/Boook.build/Boook-generated-files.hmap -I/Users/eiskandar/Documents/workspace/Boook/build/Boook.build/Debug-iphonesimulator/Boook.build/Boook-own-target-headers.hmap -I/Users/eiskandar/Documents/workspace/Boook/build/Boook.build/Debug-iphonesimulator/Boook.build/Boook-all-target-headers.hmap -iquote /Users/eiskandar/Documents/workspace/Boook/build/Boook.build/Debug-iphonesimulator/Boook.build/Boook-project-headers.hmap -I/Users/eiskandar/Documents/workspace/Boook/build/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk/usr/include/libxml2 -I/Users/eiskandar/Documents/workspace/Boook/build/Boook.build/Debug-iphonesimulator/Boook.build/DerivedSources/i386 -I/Users/eiskandar/Documents/workspace/Boook/build/Boook.build/Debug-iphonesimulator/Boook.build/DerivedSources -F/Users/eiskandar/Documents/workspace/Boook/build/Debug-iphonesimulator -include /var/folders/hx/wyy7bv9n35d0ynqj8cc7yxs80000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/Boook-Prefix-avnpgdnbkccpgvfoxdogjdfervgs/Boook-Prefix.pch -MMD -MT dependencies -MF /Users/eiskandar/Documents/workspace/Boook/build/Boook.build/Debug-iphonesimulator/Boook.build/Objects-normal/i386/BKLibraryViewController.d --serialize-diagnostics /Users/eiskandar/Documents/workspace/Boook/build/Boook.build/Debug-iphonesimulator/Boook.build/Objects-normal/i386/BKLibraryViewController.dia -c /Users/eiskandar/Documents/workspace/Boook/Boook/Classes/BKLibraryViewController.m -o /Users/eiskandar/Documents/workspace/Boook/build/Boook.build/Debug-iphonesimulator/Boook.build/Objects-normal/i386/BKLibraryViewController.o36"F0EA8BCF-F8F5-498B-AE89-5AEBA5A62C07-
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection90"Compile /Users/eiskandar/Documents/workspace/Boook/Boook/Classes/BKLibraryViewController.m83f9f3ab7339b641^86c8c9ac7339b641^---0#0#0#-19%DVTDocumentLocation2@98"file://localhost/Users/eiskandar/Documents/workspace/Boook/Boook/Classes/BKLibraryViewController.m0000000000000000^3464"CompileC build/Boook.build/Debug-iphonesimulator/Boook.build/Objects-normal/i386/BKLibraryViewController.o Boook/Classes/BKLibraryViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/eiskandar/Documents/workspace/Boook    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk -fexceptions -fasm-blocks -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -mios-simulator-version-min=6.0 -iquote /Users/eiskandar/Documents/workspace/Boook/build/Boook.build/Debug-iphonesimulator/Boook.build/Boook-generated-files.hmap -I/Users/eiskandar/Documents/workspace/Boook/build/Boook.build/Debug-iphonesimulator/Boook.build/Boook-own-target-headers.hmap -I/Users/eiskandar/Documents/workspace/Boook/build/Boook.build/Debug-iphonesimulator/Boook.build/Boook-all-target-headers.hmap -iquote /Users/eiskandar/Documents/workspace/Boook/build/Boook.build/Debug-iphonesimulator/Boook.build/Boook-project-headers.hmap -I/Users/eiskandar/Documents/workspace/Boook/build/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk/usr/include/libxml2 -I/Users/eiskandar/Documents/workspace/Boook/build/Boook.build/Debug-iphonesimulator/Boook.build/DerivedSources/i386 -I/Users/eiskandar/Documents/workspace/Boook/build/Boook.build/Debug-iphonesimulator/Boook.build/DerivedSources -F/Users/eiskandar/Documents/workspace/Boook/build/Debug-iphonesimulator -include /var/folders/hx/wyy7bv9n35d0ynqj8cc7yxs80000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/Boook-Prefix-avnpgdnbkccpgvfoxdogjdfervgs/Boook-Prefix.pch -MMD -MT dependencies -MF /Users/eiskandar/Documents/workspace/Boook/build/Boook.build/Debug-iphonesimulator/Boook.build/Objects-normal/i386/BKLibraryViewController.d --serialize-diagnostics /Users/eiskandar/Documents/workspace/Boook/build/Boook.build/Debug-iphonesimulator/Boook.build/Objects-normal/i386/BKLibraryViewController.dia -c /Users/eiskandar/Documents/workspace/Boook/Boook/Classes/BKLibraryViewController.m -o /Users/eiskandar/Documents/workspace/Boook/build/Boook.build/Debug-iphonesimulator/Boook.build/Objects-normal/i386/BKLibraryViewController.o36"CF941289-A263-4C17-B4C6-B471CF2C28E2-
 
 CCompileC build/Boook.build/Debug-iphonesimulator/Boook.build/Objects-normal/i386/BKPageCell.o /Users/eiskandar/Documents/workspace/Boook/Boook/Classes/BKPageCell.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s372823281.757264
-e372823281.849650
+s372903773.484656
+e372903773.648363
 r1
 xCompileC
 xbuild/Boook.build/Debug-iphonesimulator/Boook.build/Objects-normal/i386/BKPageCell.o
@@ -1494,7 +1527,13 @@ xnormal
 xi386
 xobjective-c
 xcom.apple.compilers.llvm.clang.1_0.compiler
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection77"Compile /Users/eiskandar/Documents/workspace/Boook/Boook/Classes/BKPageCell.m1501c2f1d438b641^5b94d9f1d438b641^---0#0#0#-19%DVTDocumentLocation2@85"file://localhost/Users/eiskandar/Documents/workspace/Boook/Boook/Classes/BKPageCell.m0000000000000000^3386"CompileC build/Boook.build/Debug-iphonesimulator/Boook.build/Objects-normal/i386/BKPageCell.o Boook/Classes/BKPageCell.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/eiskandar/Documents/workspace/Boook    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk -fexceptions -fasm-blocks -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -mios-simulator-version-min=6.0 -iquote /Users/eiskandar/Documents/workspace/Boook/build/Boook.build/Debug-iphonesimulator/Boook.build/Boook-generated-files.hmap -I/Users/eiskandar/Documents/workspace/Boook/build/Boook.build/Debug-iphonesimulator/Boook.build/Boook-own-target-headers.hmap -I/Users/eiskandar/Documents/workspace/Boook/build/Boook.build/Debug-iphonesimulator/Boook.build/Boook-all-target-headers.hmap -iquote /Users/eiskandar/Documents/workspace/Boook/build/Boook.build/Debug-iphonesimulator/Boook.build/Boook-project-headers.hmap -I/Users/eiskandar/Documents/workspace/Boook/build/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk/usr/include/libxml2 -I/Users/eiskandar/Documents/workspace/Boook/build/Boook.build/Debug-iphonesimulator/Boook.build/DerivedSources/i386 -I/Users/eiskandar/Documents/workspace/Boook/build/Boook.build/Debug-iphonesimulator/Boook.build/DerivedSources -F/Users/eiskandar/Documents/workspace/Boook/build/Debug-iphonesimulator -include /var/folders/hx/wyy7bv9n35d0ynqj8cc7yxs80000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/Boook-Prefix-avnpgdnbkccpgvfoxdogjdfervgs/Boook-Prefix.pch -MMD -MT dependencies -MF /Users/eiskandar/Documents/workspace/Boook/build/Boook.build/Debug-iphonesimulator/Boook.build/Objects-normal/i386/BKPageCell.d --serialize-diagnostics /Users/eiskandar/Documents/workspace/Boook/build/Boook.build/Debug-iphonesimulator/Boook.build/Objects-normal/i386/BKPageCell.dia -c /Users/eiskandar/Documents/workspace/Boook/Boook/Classes/BKPageCell.m -o /Users/eiskandar/Documents/workspace/Boook/build/Boook.build/Debug-iphonesimulator/Boook.build/Objects-normal/i386/BKPageCell.o36"150F443A-788A-475E-A2F0-1E7F0FFCC525-
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection77"Compile /Users/eiskandar/Documents/workspace/Boook/Boook/Classes/BKPageCell.mf92f7c5d0f3ab641^431bf05d0f3ab641^---0#0#0#-19%DVTDocumentLocation2@85"file://localhost/Users/eiskandar/Documents/workspace/Boook/Boook/Classes/BKPageCell.m0000000000000000^3386"CompileC build/Boook.build/Debug-iphonesimulator/Boook.build/Objects-normal/i386/BKPageCell.o Boook/Classes/BKPageCell.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/eiskandar/Documents/workspace/Boook    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk -fexceptions -fasm-blocks -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -mios-simulator-version-min=6.0 -iquote /Users/eiskandar/Documents/workspace/Boook/build/Boook.build/Debug-iphonesimulator/Boook.build/Boook-generated-files.hmap -I/Users/eiskandar/Documents/workspace/Boook/build/Boook.build/Debug-iphonesimulator/Boook.build/Boook-own-target-headers.hmap -I/Users/eiskandar/Documents/workspace/Boook/build/Boook.build/Debug-iphonesimulator/Boook.build/Boook-all-target-headers.hmap -iquote /Users/eiskandar/Documents/workspace/Boook/build/Boook.build/Debug-iphonesimulator/Boook.build/Boook-project-headers.hmap -I/Users/eiskandar/Documents/workspace/Boook/build/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk/usr/include/libxml2 -I/Users/eiskandar/Documents/workspace/Boook/build/Boook.build/Debug-iphonesimulator/Boook.build/DerivedSources/i386 -I/Users/eiskandar/Documents/workspace/Boook/build/Boook.build/Debug-iphonesimulator/Boook.build/DerivedSources -F/Users/eiskandar/Documents/workspace/Boook/build/Debug-iphonesimulator -include /var/folders/hx/wyy7bv9n35d0ynqj8cc7yxs80000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/Boook-Prefix-avnpgdnbkccpgvfoxdogjdfervgs/Boook-Prefix.pch -MMD -MT dependencies -MF /Users/eiskandar/Documents/workspace/Boook/build/Boook.build/Debug-iphonesimulator/Boook.build/Objects-normal/i386/BKPageCell.d --serialize-diagnostics /Users/eiskandar/Documents/workspace/Boook/build/Boook.build/Debug-iphonesimulator/Boook.build/Objects-normal/i386/BKPageCell.dia -c /Users/eiskandar/Documents/workspace/Boook/Boook/Classes/BKPageCell.m -o /Users/eiskandar/Documents/workspace/Boook/build/Boook.build/Debug-iphonesimulator/Boook.build/Objects-normal/i386/BKPageCell.o36"DE01A6FE-4426-45FF-9468-6BBD97D93AC3-
+
+CCompileC build/Boook.build/Debug-iphonesimulator/Boook.build/Objects-normal/i386/BKPageFormatter.o /Users/eiskandar/Documents/workspace/Boook/Boook/Classes/BKPageFormatter.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC build/Boook.build/Debug-iphonesimulator/Boook.build/Objects-normal/i386/BKPageParser.o /Users/eiskandar/Documents/workspace/Boook/Boook/Classes/BKPageParser.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
 
 CCompileC build/Boook.build/Debug-iphonesimulator/Boook.build/Objects-normal/i386/CTidy.o /Users/eiskandar/Documents/workspace/Boook/Boook/External/Tidy/CTidy.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 s372823282.664950
@@ -1640,8 +1679,8 @@ xcom.apple.compilers.llvm.clang.1_0.compiler
 lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection144"Compile /Users/eiskandar/Documents/workspace/Boook/Boook/External/MagicalRecord/Categories/DataImport/NSAttributeDescription+MagicalDataImport.mc3620cf2d438b641^c2dc1af2d438b641^---0#0#0#-19%DVTDocumentLocation2@152"file://localhost/Users/eiskandar/Documents/workspace/Boook/Boook/External/MagicalRecord/Categories/DataImport/NSAttributeDescription+MagicalDataImport.m0000000000000000^3640"CompileC build/Boook.build/Debug-iphonesimulator/Boook.build/Objects-normal/i386/NSAttributeDescription+MagicalDataImport.o Boook/External/MagicalRecord/Categories/DataImport/NSAttributeDescription+MagicalDataImport.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/eiskandar/Documents/workspace/Boook    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk -fexceptions -fasm-blocks -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -mios-simulator-version-min=6.0 -iquote /Users/eiskandar/Documents/workspace/Boook/build/Boook.build/Debug-iphonesimulator/Boook.build/Boook-generated-files.hmap -I/Users/eiskandar/Documents/workspace/Boook/build/Boook.build/Debug-iphonesimulator/Boook.build/Boook-own-target-headers.hmap -I/Users/eiskandar/Documents/workspace/Boook/build/Boook.build/Debug-iphonesimulator/Boook.build/Boook-all-target-headers.hmap -iquote /Users/eiskandar/Documents/workspace/Boook/build/Boook.build/Debug-iphonesimulator/Boook.build/Boook-project-headers.hmap -I/Users/eiskandar/Documents/workspace/Boook/build/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk/usr/include/libxml2 -I/Users/eiskandar/Documents/workspace/Boook/build/Boook.build/Debug-iphonesimulator/Boook.build/DerivedSources/i386 -I/Users/eiskandar/Documents/workspace/Boook/build/Boook.build/Debug-iphonesimulator/Boook.build/DerivedSources -F/Users/eiskandar/Documents/workspace/Boook/build/Debug-iphonesimulator -include /var/folders/hx/wyy7bv9n35d0ynqj8cc7yxs80000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/Boook-Prefix-avnpgdnbkccpgvfoxdogjdfervgs/Boook-Prefix.pch -MMD -MT dependencies -MF /Users/eiskandar/Documents/workspace/Boook/build/Boook.build/Debug-iphonesimulator/Boook.build/Objects-normal/i386/NSAttributeDescription+MagicalDataImport.d --serialize-diagnostics /Users/eiskandar/Documents/workspace/Boook/build/Boook.build/Debug-iphonesimulator/Boook.build/Objects-normal/i386/NSAttributeDescription+MagicalDataImport.dia -c /Users/eiskandar/Documents/workspace/Boook/Boook/External/MagicalRecord/Categories/DataImport/NSAttributeDescription+MagicalDataImport.m -o /Users/eiskandar/Documents/workspace/Boook/build/Boook.build/Debug-iphonesimulator/Boook.build/Objects-normal/i386/NSAttributeDescription+MagicalDataImport.o36"2C26A8DE-06E1-4CF6-B6D0-D3D18D8E2FBA-
 
 CCompileC build/Boook.build/Debug-iphonesimulator/Boook.build/Objects-normal/i386/NSAttributedString+BoookAdditions.o /Users/eiskandar/Documents/workspace/Boook/Boook/Classes/NSAttributedString+BoookAdditions.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s372823281.437393
-e372823281.654426
+s372907616.821464
+e372907616.875671
 r1
 xCompileC
 xbuild/Boook.build/Debug-iphonesimulator/Boook.build/Objects-normal/i386/NSAttributedString+BoookAdditions.o
@@ -1650,7 +1689,7 @@ xnormal
 xi386
 xobjective-c
 xcom.apple.compilers.llvm.clang.1_0.compiler
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection100"Compile /Users/eiskandar/Documents/workspace/Boook/Boook/Classes/NSAttributedString+BoookAdditions.md92370f1d438b641^4089a7f1d438b641^---0#0#0#-19%DVTDocumentLocation2@108"file://localhost/Users/eiskandar/Documents/workspace/Boook/Boook/Classes/NSAttributedString+BoookAdditions.m0000000000000000^3524"CompileC build/Boook.build/Debug-iphonesimulator/Boook.build/Objects-normal/i386/NSAttributedString+BoookAdditions.o Boook/Classes/NSAttributedString+BoookAdditions.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/eiskandar/Documents/workspace/Boook    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk -fexceptions -fasm-blocks -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -mios-simulator-version-min=6.0 -iquote /Users/eiskandar/Documents/workspace/Boook/build/Boook.build/Debug-iphonesimulator/Boook.build/Boook-generated-files.hmap -I/Users/eiskandar/Documents/workspace/Boook/build/Boook.build/Debug-iphonesimulator/Boook.build/Boook-own-target-headers.hmap -I/Users/eiskandar/Documents/workspace/Boook/build/Boook.build/Debug-iphonesimulator/Boook.build/Boook-all-target-headers.hmap -iquote /Users/eiskandar/Documents/workspace/Boook/build/Boook.build/Debug-iphonesimulator/Boook.build/Boook-project-headers.hmap -I/Users/eiskandar/Documents/workspace/Boook/build/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk/usr/include/libxml2 -I/Users/eiskandar/Documents/workspace/Boook/build/Boook.build/Debug-iphonesimulator/Boook.build/DerivedSources/i386 -I/Users/eiskandar/Documents/workspace/Boook/build/Boook.build/Debug-iphonesimulator/Boook.build/DerivedSources -F/Users/eiskandar/Documents/workspace/Boook/build/Debug-iphonesimulator -include /var/folders/hx/wyy7bv9n35d0ynqj8cc7yxs80000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/Boook-Prefix-avnpgdnbkccpgvfoxdogjdfervgs/Boook-Prefix.pch -MMD -MT dependencies -MF /Users/eiskandar/Documents/workspace/Boook/build/Boook.build/Debug-iphonesimulator/Boook.build/Objects-normal/i386/NSAttributedString+BoookAdditions.d --serialize-diagnostics /Users/eiskandar/Documents/workspace/Boook/build/Boook.build/Debug-iphonesimulator/Boook.build/Objects-normal/i386/NSAttributedString+BoookAdditions.dia -c /Users/eiskandar/Documents/workspace/Boook/Boook/Classes/NSAttributedString+BoookAdditions.m -o /Users/eiskandar/Documents/workspace/Boook/build/Boook.build/Debug-iphonesimulator/Boook.build/Objects-normal/i386/NSAttributedString+BoookAdditions.o36"1E5ECE08-7087-4CD1-AB5D-8E76ADEF04DA-
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection100"Compile /Users/eiskandar/Documents/workspace/Boook/Boook/Classes/NSAttributedString+BoookAdditions.ma52cd3601e3ab641^280e28611e3ab641^---0#0#0#-19%DVTDocumentLocation2@108"file://localhost/Users/eiskandar/Documents/workspace/Boook/Boook/Classes/NSAttributedString+BoookAdditions.m0000000000000000^3524"CompileC build/Boook.build/Debug-iphonesimulator/Boook.build/Objects-normal/i386/NSAttributedString+BoookAdditions.o Boook/Classes/NSAttributedString+BoookAdditions.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/eiskandar/Documents/workspace/Boook    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk -fexceptions -fasm-blocks -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -mios-simulator-version-min=6.0 -iquote /Users/eiskandar/Documents/workspace/Boook/build/Boook.build/Debug-iphonesimulator/Boook.build/Boook-generated-files.hmap -I/Users/eiskandar/Documents/workspace/Boook/build/Boook.build/Debug-iphonesimulator/Boook.build/Boook-own-target-headers.hmap -I/Users/eiskandar/Documents/workspace/Boook/build/Boook.build/Debug-iphonesimulator/Boook.build/Boook-all-target-headers.hmap -iquote /Users/eiskandar/Documents/workspace/Boook/build/Boook.build/Debug-iphonesimulator/Boook.build/Boook-project-headers.hmap -I/Users/eiskandar/Documents/workspace/Boook/build/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk/usr/include/libxml2 -I/Users/eiskandar/Documents/workspace/Boook/build/Boook.build/Debug-iphonesimulator/Boook.build/DerivedSources/i386 -I/Users/eiskandar/Documents/workspace/Boook/build/Boook.build/Debug-iphonesimulator/Boook.build/DerivedSources -F/Users/eiskandar/Documents/workspace/Boook/build/Debug-iphonesimulator -include /var/folders/hx/wyy7bv9n35d0ynqj8cc7yxs80000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/Boook-Prefix-avnpgdnbkccpgvfoxdogjdfervgs/Boook-Prefix.pch -MMD -MT dependencies -MF /Users/eiskandar/Documents/workspace/Boook/build/Boook.build/Debug-iphonesimulator/Boook.build/Objects-normal/i386/NSAttributedString+BoookAdditions.d --serialize-diagnostics /Users/eiskandar/Documents/workspace/Boook/build/Boook.build/Debug-iphonesimulator/Boook.build/Objects-normal/i386/NSAttributedString+BoookAdditions.dia -c /Users/eiskandar/Documents/workspace/Boook/Boook/Classes/NSAttributedString+BoookAdditions.m -o /Users/eiskandar/Documents/workspace/Boook/build/Boook.build/Debug-iphonesimulator/Boook.build/Objects-normal/i386/NSAttributedString+BoookAdditions.o36"F68E4B93-E0A2-4EB1-8F5D-417651EA4CC2-
 
 CCompileC build/Boook.build/Debug-iphonesimulator/Boook.build/Objects-normal/i386/NSEntityDescription+MagicalDataImport.o /Users/eiskandar/Documents/workspace/Boook/Boook/External/MagicalRecord/Categories/DataImport/NSEntityDescription+MagicalDataImport.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 s372823282.047865
@@ -2043,12 +2082,12 @@ xcom.apple.compilers.llvm.clang.1_0.compiler
 lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection79"Compile /Users/eiskandar/Documents/workspace/Boook/Boook/External/minizip/zip.c193b1df1d438b641^94845cf1d438b641^---0#0#0#-19%DVTDocumentLocation2@87"file://localhost/Users/eiskandar/Documents/workspace/Boook/Boook/External/minizip/zip.c0000000000000000^2936"CompileC build/Boook.build/Debug-iphonesimulator/Boook.build/Objects-normal/i386/zip.o Boook/External/minizip/zip.c normal i386 c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/eiskandar/Documents/workspace/Boook    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -arch i386 -fmessage-length=0 -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk -fexceptions -fasm-blocks -Wdeprecated-declarations -g -Wno-sign-conversion -mios-simulator-version-min=6.0 -iquote /Users/eiskandar/Documents/workspace/Boook/build/Boook.build/Debug-iphonesimulator/Boook.build/Boook-generated-files.hmap -I/Users/eiskandar/Documents/workspace/Boook/build/Boook.build/Debug-iphonesimulator/Boook.build/Boook-own-target-headers.hmap -I/Users/eiskandar/Documents/workspace/Boook/build/Boook.build/Debug-iphonesimulator/Boook.build/Boook-all-target-headers.hmap -iquote /Users/eiskandar/Documents/workspace/Boook/build/Boook.build/Debug-iphonesimulator/Boook.build/Boook-project-headers.hmap -I/Users/eiskandar/Documents/workspace/Boook/build/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk/usr/include/libxml2 -I/Users/eiskandar/Documents/workspace/Boook/build/Boook.build/Debug-iphonesimulator/Boook.build/DerivedSources/i386 -I/Users/eiskandar/Documents/workspace/Boook/build/Boook.build/Debug-iphonesimulator/Boook.build/DerivedSources -F/Users/eiskandar/Documents/workspace/Boook/build/Debug-iphonesimulator -include /var/folders/hx/wyy7bv9n35d0ynqj8cc7yxs80000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/Boook-Prefix-fnjdetngfyivdyeyccitizngkbeq/Boook-Prefix.pch -MMD -MT dependencies -MF /Users/eiskandar/Documents/workspace/Boook/build/Boook.build/Debug-iphonesimulator/Boook.build/Objects-normal/i386/zip.d --serialize-diagnostics /Users/eiskandar/Documents/workspace/Boook/build/Boook.build/Debug-iphonesimulator/Boook.build/Objects-normal/i386/zip.dia -c /Users/eiskandar/Documents/workspace/Boook/Boook/External/minizip/zip.c -o /Users/eiskandar/Documents/workspace/Boook/build/Boook.build/Debug-iphonesimulator/Boook.build/Objects-normal/i386/zip.o36"60F611D1-F407-47CB-9528-2CAD9C16CADD-
 
 CCompileStoryboard /Users/eiskandar/Documents/workspace/Boook/Boook/en.lproj/MainStoryboard_iPhone.storyboard
-s372823174.864204
-e372823175.822024
+s372903825.476393
+e372903825.835362
 r1
 xCompileStoryboard
 x/Users/eiskandar/Documents/workspace/Boook/Boook/en.lproj/MainStoryboard_iPhone.storyboard
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection65"CompileStoryboard Boook/en.lproj/MainStoryboard_iPhone.storyboardf855dd86d438b641^00a9dd87d438b641^---0#0#0#-19%DVTDocumentLocation2@106"file://localhost/Users/eiskandar/Documents/workspace/Boook/Boook/en.lproj/MainStoryboard_iPhone.storyboard0000000000000000^971"CompileStoryboard Boook/en.lproj/MainStoryboard_iPhone.storyboard    cd /Users/eiskandar/Documents/workspace/Boook    setenv IBSC_MINIMUM_COMPATIBILITY_VERSION 6.0    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    setenv XCODE_DEVELOPER_USR_PATH /Applications/Xcode.app/Contents/Developer/usr/bin/..    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/eiskandar/Documents/workspace/Boook/build/Debug-iphonesimulator/Boook.app/en.lproj/MainStoryboard_iPhone.storyboardc /Users/eiskandar/Documents/workspace/Boook/Boook/en.lproj/MainStoryboard_iPhone.storyboard --sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk36"5ABBE184-6838-4E04-92AD-2ECE5C12A4F1-
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection65"CompileStoryboard Boook/en.lproj/MainStoryboard_iPhone.storyboardcc097a910f3ab641^9fe8d6910f3ab641^---0#0#0#-19%DVTDocumentLocation2@106"file://localhost/Users/eiskandar/Documents/workspace/Boook/Boook/en.lproj/MainStoryboard_iPhone.storyboard0000000000000000^971"CompileStoryboard Boook/en.lproj/MainStoryboard_iPhone.storyboard    cd /Users/eiskandar/Documents/workspace/Boook    setenv IBSC_MINIMUM_COMPATIBILITY_VERSION 6.0    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    setenv XCODE_DEVELOPER_USR_PATH /Applications/Xcode.app/Contents/Developer/usr/bin/..    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/eiskandar/Documents/workspace/Boook/build/Debug-iphonesimulator/Boook.app/en.lproj/MainStoryboard_iPhone.storyboardc /Users/eiskandar/Documents/workspace/Boook/Boook/en.lproj/MainStoryboard_iPhone.storyboard --sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk36"21B80C07-FD34-4347-B524-3246EEA76583-
 
 CCopyStringsFile /Users/eiskandar/Documents/workspace/Boook/build/Debug-iphonesimulator/Boook.app/en.lproj/InfoPlist.strings Boook/en.lproj/InfoPlist.strings
 s372823174.864203
@@ -2058,6 +2097,24 @@ xCopyStringsFile
 x/Users/eiskandar/Documents/workspace/Boook/build/Debug-iphonesimulator/Boook.app/en.lproj/InfoPlist.strings
 xBoook/en.lproj/InfoPlist.strings
 lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection37"Copy Boook/en.lproj/InfoPlist.strings0856dd86d438b641^b4ab2487d438b641^---0#0#0#-19%DVTDocumentLocation2@91"file://localhost/Users/eiskandar/Documents/workspace/Boook/Boook/en.lproj/InfoPlist.strings0000000000000000^575"CopyStringsFile build/Debug-iphonesimulator/Boook.app/en.lproj/InfoPlist.strings Boook/en.lproj/InfoPlist.strings    cd /Users/eiskandar/Documents/workspace/Boook    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copyStrings --validate --inputencoding utf-8 --outputencoding binary --outdir /Users/eiskandar/Documents/workspace/Boook/build/Debug-iphonesimulator/Boook.app/en.lproj -- Boook/en.lproj/InfoPlist.strings36"32BC9C2E-B1AF-46C8-8A33-8DEA206F1EE5-
+
+CCpResource Boook/../Icon.png build/Debug-iphonesimulator/Boook.app/Icon.png
+s372823476.502891
+e372823476.505239
+r1
+xCpResource
+xBoook/../Icon.png
+xbuild/Debug-iphonesimulator/Boook.app/Icon.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection51"Copy build/Debug-iphonesimulator/Boook.app/Icon.png35d480b4d538b641^10cc81b4d538b641^---0#0#0#-19%DVTDocumentLocation2@105"file://localhost/Users/eiskandar/Documents/workspace/Boook/build/Debug-iphonesimulator/Boook.app/Icon.png0000000000000000^575"CpResource Boook/../Icon.png build/Debug-iphonesimulator/Boook.app/Icon.png    cd /Users/eiskandar/Documents/workspace/Boook    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/eiskandar/Documents/workspace/Boook/Boook/../Icon.png /Users/eiskandar/Documents/workspace/Boook/build/Debug-iphonesimulator/Boook.app36"11866C5C-2226-48A5-9544-BCB845103FB8-
+
+CCpResource Boook/../Icon@2x.png build/Debug-iphonesimulator/Boook.app/Icon@2x.png
+s372823476.502949
+e372823476.506093
+r1
+xCpResource
+xBoook/../Icon@2x.png
+xbuild/Debug-iphonesimulator/Boook.app/Icon@2x.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection54"Copy build/Debug-iphonesimulator/Boook.app/Icon@2x.png8cd780b4d538b641^14cf81b4d538b641^---0#0#0#-19%DVTDocumentLocation2@108"file://localhost/Users/eiskandar/Documents/workspace/Boook/build/Debug-iphonesimulator/Boook.app/Icon@2x.png0000000000000000^590"CpResource "Boook/../Icon@2x.png" "build/Debug-iphonesimulator/Boook.app/Icon@2x.png"    cd /Users/eiskandar/Documents/workspace/Boook    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks "/Users/eiskandar/Documents/workspace/Boook/Boook/../Icon@2x.png" /Users/eiskandar/Documents/workspace/Boook/build/Debug-iphonesimulator/Boook.app36"B3F0F247-7423-48D0-8EA3-2B34FD9C000F-
 
 CCpResource Boook/Ebooks/austen-pride-and-prejudice-illustrations.epub build/Debug-iphonesimulator/Boook.app/austen-pride-and-prejudice-illustrations.epub
 s372823175.288060
@@ -2213,23 +2270,23 @@ x/Users/eiskandar/Documents/workspace/Boook/Boook/Data/BoookModel.xcdatamodeld
 lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection112"DataModelVersionCompile build/Debug-iphonesimulator/Boook.app/BoookModel.momd Boook/Data/BoookModel.xcdatamodeldc3646282d438b641^dd5b8985d438b641^---0#0#0#-19%DVTDocumentLocation2@94"file://localhost/Users/eiskandar/Documents/workspace/Boook/Boook/Data/BoookModel.xcdatamodeld/0000000000000000^889"DataModelVersionCompile build/Debug-iphonesimulator/Boook.app/BoookModel.momd Boook/Data/BoookModel.xcdatamodeld    cd /Users/eiskandar/Documents/workspace/Boook    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/momc -XD_MOMC_SDKROOT=/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk -XD_MOMC_IOS_TARGET_VERSION=6.0 -MOMC_PLATFORMS iphonesimulator -MOMC_PLATFORMS iphoneos -XD_MOMC_TARGET_VERSION=10.6 /Users/eiskandar/Documents/workspace/Boook/Boook/Data/BoookModel.xcdatamodeld /Users/eiskandar/Documents/workspace/Boook/build/Debug-iphonesimulator/Boook.app/BoookModel.momd36"AD57F79F-5A6F-4992-A0E2-FE54F7683669-
 
 CGenerateDSYMFile /Users/eiskandar/Documents/workspace/Boook/build/Debug-iphonesimulator/Boook.app.dSYM /Users/eiskandar/Documents/workspace/Boook/build/Debug-iphonesimulator/Boook.app/Boook
-s372823282.905952
-e372823282.959153
+s372908838.438414
+e372908838.527065
 r1
 xGenerateDSYMFile
 x/Users/eiskandar/Documents/workspace/Boook/build/Debug-iphonesimulator/Boook.app.dSYM
 x/Users/eiskandar/Documents/workspace/Boook/build/Debug-iphonesimulator/Boook.app/Boook
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection96"Generating /Users/eiskandar/Documents/workspace/Boook/build/Debug-iphonesimulator/Boook.app.dSYM1d01e8f2d438b641^3f8bf5f2d438b641^---0#0#0#-19%DVTDocumentLocation2@102"file://localhost/Users/eiskandar/Documents/workspace/Boook/build/Debug-iphonesimulator/Boook.app.dSYM/0000000000000000^625"GenerateDSYMFile build/Debug-iphonesimulator/Boook.app.dSYM build/Debug-iphonesimulator/Boook.app/Boook    cd /Users/eiskandar/Documents/workspace/Boook    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/dsymutil /Users/eiskandar/Documents/workspace/Boook/build/Debug-iphonesimulator/Boook.app/Boook -o /Users/eiskandar/Documents/workspace/Boook/build/Debug-iphonesimulator/Boook.app.dSYM36"D2E5D044-9185-47BF-BC0B-5E4F12ECB06B-
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection96"Generating /Users/eiskandar/Documents/workspace/Boook/build/Debug-iphonesimulator/Boook.app.dSYM7b4c7026233ab641^3cf78626233ab641^---0#0#0#-19%DVTDocumentLocation2@102"file://localhost/Users/eiskandar/Documents/workspace/Boook/build/Debug-iphonesimulator/Boook.app.dSYM/0000000000000000^625"GenerateDSYMFile build/Debug-iphonesimulator/Boook.app.dSYM build/Debug-iphonesimulator/Boook.app/Boook    cd /Users/eiskandar/Documents/workspace/Boook    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/dsymutil /Users/eiskandar/Documents/workspace/Boook/build/Debug-iphonesimulator/Boook.app/Boook -o /Users/eiskandar/Documents/workspace/Boook/build/Debug-iphonesimulator/Boook.app.dSYM36"ABA295E5-722B-43D7-B60C-1138B4DDF064-
 
 CLd /Users/eiskandar/Documents/workspace/Boook/build/Debug-iphonesimulator/Boook.app/Boook normal i386
-s372823282.861999
-e372823282.899692
+s372908838.395476
+e372908838.431495
 r1
 xLd
 x/Users/eiskandar/Documents/workspace/Boook/build/Debug-iphonesimulator/Boook.app/Boook
 xnormal
 xi386
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection91"Link /Users/eiskandar/Documents/workspace/Boook/build/Debug-iphonesimulator/Boook.app/Boookc2bfdcf2d438b641^9753e6f2d438b641^---0#0#0#--1211"Ld build/Debug-iphonesimulator/Boook.app/Boook normal i386    cd /Users/eiskandar/Documents/workspace/Boook    setenv IPHONEOS_DEPLOYMENT_TARGET 6.0    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -arch i386 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk -L/Users/eiskandar/Documents/workspace/Boook/build/Debug-iphonesimulator -F/Users/eiskandar/Documents/workspace/Boook/build/Debug-iphonesimulator -filelist /Users/eiskandar/Documents/workspace/Boook/build/Boook.build/Debug-iphonesimulator/Boook.build/Objects-normal/i386/Boook.LinkFileList -Xlinker -objc_abi_version -Xlinker 2 -lxml2 -fobjc-arc -fobjc-link-runtime -Xlinker -no_implicit_dylibs -mios-simulator-version-min=6.0 -framework CoreText -lxml2 -lz -framework CoreData -framework UIKit -framework Foundation -framework CoreGraphics -o /Users/eiskandar/Documents/workspace/Boook/build/Debug-iphonesimulator/Boook.app/Boook36"2627F189-0B14-47A9-99BD-B870CC7956E6-
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection91"Link /Users/eiskandar/Documents/workspace/Boook/build/Debug-iphonesimulator/Boook.app/Boookd7516526233ab641^d5776e26233ab641^---0#0#0#--1211"Ld build/Debug-iphonesimulator/Boook.app/Boook normal i386    cd /Users/eiskandar/Documents/workspace/Boook    setenv IPHONEOS_DEPLOYMENT_TARGET 6.0    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -arch i386 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk -L/Users/eiskandar/Documents/workspace/Boook/build/Debug-iphonesimulator -F/Users/eiskandar/Documents/workspace/Boook/build/Debug-iphonesimulator -filelist /Users/eiskandar/Documents/workspace/Boook/build/Boook.build/Debug-iphonesimulator/Boook.build/Objects-normal/i386/Boook.LinkFileList -Xlinker -objc_abi_version -Xlinker 2 -lxml2 -fobjc-arc -fobjc-link-runtime -Xlinker -no_implicit_dylibs -mios-simulator-version-min=6.0 -framework CoreText -lxml2 -lz -framework CoreData -framework UIKit -framework Foundation -framework CoreGraphics -o /Users/eiskandar/Documents/workspace/Boook/build/Debug-iphonesimulator/Boook.app/Boook36"0E7E6B16-DED7-4A74-9D5C-068EE06C50D3-
 
 CProcessInfoPlistFile /Users/eiskandar/Documents/workspace/Boook/build/Debug-iphonesimulator/Boook.app/Info.plist Boook/Boook-Info.plist
 s372823170.371271
@@ -2278,10 +2335,10 @@ o1 warning generated.
 lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection33"Precompile Boook/Boook-Prefix.pchfca585f0d438b641^9468c1f0d438b641^-318"In file included from /Users/eiskandar/Documents/workspace/Boook/Boook/Boook-Prefix.pch:17:/Users/eiskandar/Documents/workspace/Boook/Boook/External/MagicalRecord/CoreData+MagicalRecord.h:3:6: warning: MagicalRecord requires blocks [-W#warnings]    #warning MagicalRecord requires blocks     ^1 warning generated.1(36%IDEClangDiagnosticActivityLogMessage2@29"MagicalRecord requires blocks-372823280#18446744073709551615#0#1(2@91"In file included from /Users/eiskandar/Documents/workspace/Boook/Boook/Boook-Prefix.pch:17:-372823280#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic23%DVTTextDocumentLocation3@81"file://localhost/Users/eiskandar/Documents/workspace/Boook/Boook/Boook-Prefix.pch0000000000000000^16#8#16#8#337#0#30"Apple LLVM compiler 4.1 Notice--1#27"com.apple.dt.IDE.diagnostic3@112"file://localhost/Users/eiskandar/Documents/workspace/Boook/Boook/External/MagicalRecord/CoreData+MagicalRecord.h0000000000000000^2#5#2#5#34#0#18"#warning Directive--0#0#0#-19%DVTDocumentLocation4@81"file://localhost/Users/eiskandar/Documents/workspace/Boook/Boook/Boook-Prefix.pch0000000000000000^2954"ProcessPCH /var/folders/hx/wyy7bv9n35d0ynqj8cc7yxs80000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/Boook-Prefix-fnjdetngfyivdyeyccitizngkbeq/Boook-Prefix.pch.pth Boook/Boook-Prefix.pch normal i386 c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/eiskandar/Documents/workspace/Boook    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c-header -arch i386 -fmessage-length=0 -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk -fexceptions -fasm-blocks -Wdeprecated-declarations -g -Wno-sign-conversion -mios-simulator-version-min=6.0 -iquote /Users/eiskandar/Documents/workspace/Boook/build/Boook.build/Debug-iphonesimulator/Boook.build/Boook-generated-files.hmap -I/Users/eiskandar/Documents/workspace/Boook/build/Boook.build/Debug-iphonesimulator/Boook.build/Boook-own-target-headers.hmap -I/Users/eiskandar/Documents/workspace/Boook/build/Boook.build/Debug-iphonesimulator/Boook.build/Boook-all-target-headers.hmap -iquote /Users/eiskandar/Documents/workspace/Boook/build/Boook.build/Debug-iphonesimulator/Boook.build/Boook-project-headers.hmap -I/Users/eiskandar/Documents/workspace/Boook/build/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk/usr/include/libxml2 -I/Users/eiskandar/Documents/workspace/Boook/build/Boook.build/Debug-iphonesimulator/Boook.build/DerivedSources/i386 -I/Users/eiskandar/Documents/workspace/Boook/build/Boook.build/Debug-iphonesimulator/Boook.build/DerivedSources -F/Users/eiskandar/Documents/workspace/Boook/build/Debug-iphonesimulator --serialize-diagnostics /var/folders/hx/wyy7bv9n35d0ynqj8cc7yxs80000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/Boook-Prefix-fnjdetngfyivdyeyccitizngkbeq/Boook-Prefix.pch.dia -c /Users/eiskandar/Documents/workspace/Boook/Boook/Boook-Prefix.pch -o /var/folders/hx/wyy7bv9n35d0ynqj8cc7yxs80000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/Boook-Prefix-fnjdetngfyivdyeyccitizngkbeq/Boook-Prefix.pch.pth -MMD -MT dependencies -MF /var/folders/hx/wyy7bv9n35d0ynqj8cc7yxs80000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/Boook-Prefix-fnjdetngfyivdyeyccitizngkbeq/Boook-Prefix.pch.d36"414A5192-3B29-48D4-899C-86D61BF6DA18-
 
 CTouch /Users/eiskandar/Documents/workspace/Boook/build/Debug-iphonesimulator/Boook.app
-s372823282.980932
-e372823282.986591
+s372908838.551574
+e372908838.557105
 r1
 xTouch
 x/Users/eiskandar/Documents/workspace/Boook/build/Debug-iphonesimulator/Boook.app
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection86"Touch /Users/eiskandar/Documents/workspace/Boook/build/Debug-iphonesimulator/Boook.app412cfbf2d438b641^c494fcf2d438b641^---0#0#0#--392"Touch build/Debug-iphonesimulator/Boook.app    cd /Users/eiskandar/Documents/workspace/Boook    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Users/eiskandar/Documents/workspace/Boook/build/Debug-iphonesimulator/Boook.app36"194021E7-A95C-4C86-BE27-6745080A7010-
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection86"Touch /Users/eiskandar/Documents/workspace/Boook/build/Debug-iphonesimulator/Boook.appf6468d26233ab641^5a9f8e26233ab641^---0#0#0#--392"Touch build/Debug-iphonesimulator/Boook.app    cd /Users/eiskandar/Documents/workspace/Boook    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Users/eiskandar/Documents/workspace/Boook/build/Debug-iphonesimulator/Boook.app36"D1634729-D5BE-4388-92A2-EFC15B15E7B2-
 

@@ -9,6 +9,23 @@
 #import "NSAttributedString+BoookAdditions.h"
 
 @implementation NSAttributedString (BoookAdditions)
+- (NSArray *)componentsSeperatedBySubString:(NSString *)subString {
+	NSMutableArray *components = [NSMutableArray array];
+	
+	NSArray *wordStrings = [self.string componentsSeparatedByString:subString];
+	[wordStrings enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
+		NSString *wordString = (NSString *)obj;
+		
+		if ([self.string rangeOfString:wordString].location != NSNotFound) {
+			NSMutableAttributedString *attributedWordString = [[NSMutableAttributedString alloc] initWithAttributedString:[self attributedSubstringFromRange:[self.string rangeOfString:wordString]]];
+			[attributedWordString appendAttributedString:[[NSAttributedString alloc] initWithString:@" "]]; // add a space
+			
+			[components addObject:attributedWordString];
+		}
+	}];
+	return components;
+}
+
 + (NSDictionary *)attributesForParagraph {
 	UIFont *font=[UIFont fontWithName:@"AmericanTypewriter" size:14];
 	return [NSDictionary dictionaryWithObjectsAndKeys:
@@ -47,12 +64,10 @@
 }
 
 + (NSDictionary *)attributesForFirstParagraphTitle {
-	UIFont *font=[UIFont fontWithName:@"AmericanTypewriter" size:35];
+	UIFont *font=[UIFont fontWithName:@"AmericanTypewriter" size:14];
 	return [NSDictionary dictionaryWithObjectsAndKeys:
 			font, NSFontAttributeName,
-			[UIColor blackColor], NSForegroundColorAttributeName,
-			
-			
+			[UIColor redColor], NSForegroundColorAttributeName,
 			nil];
 }
 

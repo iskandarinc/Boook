@@ -30,24 +30,14 @@
 		
 	[UIView animateWithDuration:.5f animations:^{
 		self.collectionView.alpha = 1.0f;
-		[self.activityIndicator stopAnimating];
 	}];
+	
+	[self.activityIndicator stopAnimating];
 	[self.collectionView reloadData];
 }
 
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
-//	int randomSize = arc4random() % 3;
-//	switch (randomSize) {
-//		case 0:
-//			return CGSizeMake(125.0f, 200.0f);
-//		case 1:
-//			return CGSizeMake(50.0f, 100.0f);
-//		default:
-//			return CGSizeMake(200.0f, 250.0f);
-//	}
-	
 	return CGSizeMake(155.0f, 250.0f);
-	
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {

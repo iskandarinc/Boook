@@ -371,12 +371,12 @@
 				83DE65551638C5CC009E1C1A /* BKBaseViewController.m */,
 				83DE65561638C5CC009E1C1A /* BKBookViewController.h */,
 				83DE65571638C5CC009E1C1A /* BKBookViewController.m */,
-				83DE65581638C5CC009E1C1A /* BKLibraryCell.h */,
-				83DE65591638C5CC009E1C1A /* BKLibraryCell.m */,
-				83DE655A1638C5CC009E1C1A /* BKLibraryViewController.h */,
-				83DE655B1638C5CC009E1C1A /* BKLibraryViewController.m */,
 				83DE655C1638C5CC009E1C1A /* BKPageCell.h */,
 				83DE655D1638C5CC009E1C1A /* BKPageCell.m */,
+				83DE655A1638C5CC009E1C1A /* BKLibraryViewController.h */,
+				83DE655B1638C5CC009E1C1A /* BKLibraryViewController.m */,
+				83DE65581638C5CC009E1C1A /* BKLibraryCell.h */,
+				83DE65591638C5CC009E1C1A /* BKLibraryCell.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";

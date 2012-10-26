@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface BKPageCell : UITableViewCell
-@property (nonatomic, strong) IBOutlet UILabel *contentLabel;
 @property (nonatomic, strong) IBOutlet UILabel *pageNumberLabel;
+@property (nonatomic, strong) IBOutlet UIView *textView;
 @end
 

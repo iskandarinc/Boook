@@ -15,4 +15,6 @@
 + (NSDictionary *)attributesForFootNote;
 - (UIFont *) font;
 + (NSDictionary *)attributesForSubHeading;
+- (NSArray *)componentsSeperatedBySubString:(NSString *)subString;
+
 @end

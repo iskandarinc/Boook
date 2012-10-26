@@ -15,6 +15,5 @@
 @property (strong, nonatomic) IBOutlet UIActivityIndicatorView *activityIndicator;
 @property (strong, nonatomic) BKBook *book;
 @property (strong, nonatomic) NSMutableArray *pages;
-@property (strong, nonatomic) UILabel *dummyLabel;
 @property CGPoint lastContentOffset;
 @end
