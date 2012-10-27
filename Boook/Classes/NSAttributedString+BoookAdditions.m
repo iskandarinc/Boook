@@ -58,8 +58,6 @@
 	return [NSDictionary dictionaryWithObjectsAndKeys:
 			font, NSFontAttributeName,
 			[UIColor redColor], NSForegroundColorAttributeName,
-			
-			
 			nil];
 }
 

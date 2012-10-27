@@ -25,6 +25,7 @@ CGFloat const kPageHorizontalMargin = 15.0f;
 CGFloat const kParagraphIndent = kPageHorizontalMargin + 20.0f;
 CGFloat const kPagelWidth = 300.0f;
 CGFloat const kPageHeight = 444.0f;
+CGFloat const kPageBounceChapterThreshold = 50.0f;
 
 @implementation BKBookViewController
 
@@ -44,12 +45,9 @@ CGFloat const kPageHeight = 444.0f;
 	
 	NSOrderedSet *chapters = [self.book chapters];
 	
-	// just hardcode chapter 5
-	BKChapter *chapter = [chapters objectAtIndex:1];
+	BKChapter *chapter = [chapters objectAtIndex:self.chapterNumber];
 	
 	NSOrderedSet *chunks = chapter.chunks;
-	__block NSMutableAttributedString *attString=[[NSMutableAttributedString alloc] initWithString:@""];
-	
 	__block CGPoint pageCursor = CGPointMake(kPageHorizontalMargin, kPageVerticalMargin); // track where each words fits on the page so we know how to start a new page
 	
 	[chunks enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
@@ -109,33 +107,51 @@ CGFloat const kPageHeight = 444.0f;
 		}
 	}];
 	
-	if ([chunks count] < 1) {
-		[self.pages addObject:attString];
-	}
+	// add the final page
+	[self.pages addObject:page];
 }
 
 #pragma mark view lifecycle methods
 - (void)viewDidLoad {
     [super viewDidLoad];
 	self.title = self.book.title;
-	[[UIBarButtonItem appearance] setTintColor:[UIColor blackColor]];
-
+	// reset tips
 	[self hideTip];
+	
+	// display book cover
+	self.bookCover.image = [UIImage imageWithContentsOfFile:[self.book pathToBookImage]];
+	// keep track of original frame so we can reset it
+	self.bookCoverFrame = self.bookCover.frame;
 }
 
 - (void)viewWillAppear:(BOOL)animated {
 	[super viewWillAppear:animated];
 	
-	self.tableView.alpha = 0.0f;
+	[UIView animateWithDuration:1.0f animations:^{
+		self.tableView.frame = CGRectMake(-150.0f, 0.0f, self.view.frame.size.width, self.view.frame.size.height);
+	}];
+}
 
+- (void)setupChapter {
 	[self setupPages];
-		
+	
 	[self.tableView reloadData];
 	[self.activityIndicator stopAnimating];
-	[UIView animateWithDuration:.3f animations:^{
-		self.tableView.alpha = 1.0f;
-	}];
+	
+	// turn page effect for cover
+	[UIView transitionWithView:self.bookCover
+					  duration:1.0
+					   options: UIViewAnimationOptionTransitionCurlUp animations:^{
+		 self.bookCover.frame = CGRectMake(-320.0f, 0.0f, 10.0f, 10.0f);
+	 } completion:^(BOOL finished){
+		 //
+	 }];
+}
 
+- (void)viewDidAppear:(BOOL)animated {
+	[super viewDidAppear:animated];
+	
+	[self setupChapter];
 	// show highlighting tip after 5 seconds
 	int64_t delayInSeconds = 3.0;
 	dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, delayInSeconds * NSEC_PER_SEC);
@@ -216,7 +232,7 @@ CGFloat const kPageHeight = 444.0f;
 }
 - (void) hideTipAnimated:(BOOL)animated {
 	if (animated) {
-		[UIView animateWithDuration:.5f delay:0.0f options:UIViewAnimationOptionCurveEaseIn animations:^{
+		[UIView animateWithDuration:.3f delay:0.0f options:UIViewAnimationOptionCurveEaseIn animations:^{
 			[self hideTip];
 		} completion:^(BOOL finished) {
 			//
@@ -229,7 +245,7 @@ CGFloat const kPageHeight = 444.0f;
 - (void) showTipWithMessage:(NSString *)tipMessage {
 	self.tipLabel.text = tipMessage;
 	
-	[UIView animateWithDuration:.5f delay:0.0f options:UIViewAnimationOptionCurveEaseIn animations:^{
+	[UIView animateWithDuration:.3f delay:0.0f options:UIViewAnimationOptionCurveEaseIn animations:^{
 		[self.toolTipElements enumerateObjectsUsingBlock:^(UIView *view, NSUInteger idx, BOOL *stop) {
 			view.frame = CGRectMake(0.0f, 0.0f, view.frame.size.width, view.frame.size.height);
 		}];
@@ -268,6 +284,40 @@ CGFloat const kPageHeight = 444.0f;
 	UIActivityViewController *activityViewController = [[UIActivityViewController alloc]
 									 initWithActivityItems: activityItems applicationActivities:nil];
 	[self presentViewController:activityViewController animated:YES completion:nil];
+}
+
+#pragma mark scroll view methods
+- (void)loadNewChapter:(NSInteger)newChapterNumber {
+	self.loadingChapter = YES;
+	[self.activityIndicator startAnimating];
+	
+	// put back book cover first
+	[UIView transitionWithView:self.bookCover
+					  duration:.5f
+					   options: UIViewAnimationOptionTransitionCurlDown animations:^{
+						   self.bookCover.frame = self.bookCoverFrame;
+					   } completion:^(BOOL finished){
+						   // now load the chapter again
+						   self.chapterNumber = newChapterNumber;
+						   [self setupChapter];
+						   self.loadingChapter = NO;
+						   [self.tableView setContentOffset:CGPointZero];
+					   }];
+}
+- (void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate {
+	if (self.loadingChapter) {
+		return;
+	}
+	
+	if (scrollView.contentOffset.y < -kPageBounceChapterThreshold && self.chapterNumber > 0) {
+		// snapped up so try and get the previous chapter
+		[self loadNewChapter:self.chapterNumber-1];
+	}
+	
+	if (scrollView.contentOffset.y + self.tableView.frame.size.height > self.tableView.contentSize.height + kPageBounceChapterThreshold) {
+		// snapped down so get next chapter
+		[self loadNewChapter:self.chapterNumber+1];
+	}
 }
 
 @end

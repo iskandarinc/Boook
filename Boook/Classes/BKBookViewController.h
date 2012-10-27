@@ -17,5 +17,9 @@
 @property (strong, nonatomic) NSMutableArray *pages;
 @property (strong, nonatomic) IBOutlet UILabel *tipLabel;
 @property (strong, nonatomic) IBOutletCollection(UIView) NSArray *toolTipElements;
+@property (strong, nonatomic) IBOutlet UIImageView *bookCover;
 @property CGPoint lastContentOffset;
+@property CGRect bookCoverFrame;
+@property NSInteger chapterNumber;
+@property BOOL loadingChapter;
 @end

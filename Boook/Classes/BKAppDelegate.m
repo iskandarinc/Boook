@@ -13,13 +13,16 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+	// nav bar stylings
 	[[UINavigationBar appearance] setTintColor:[UIColor blackColor]];
-	NSDictionary *navbarTitleTextAttributes = [NSDictionary dictionaryWithObjectsAndKeys:
-											   [UIColor whiteColor],UITextAttributeTextColor,
-											   [UIColor blackColor], UITextAttributeTextShadowColor,
-											   [NSValue valueWithUIOffset:UIOffsetMake(-1, 0)], UITextAttributeTextShadowOffset, nil];
+	NSDictionary *navBarTitleAttributes = [NSDictionary dictionaryWithObjectsAndKeys:
+			[UIFont fontWithName:@"Baskerville-Italic" size:20], UITextAttributeFont,
+			[UIColor whiteColor], UITextAttributeTextColor,
+			nil];
+	[[UINavigationBar appearance] setTitleTextAttributes:navBarTitleAttributes];
+	[[UIBarButtonItem appearance] setTintColor:[UIColor blackColor]];
 	
-	[[UINavigationBar appearance] setTitleTextAttributes:navbarTitleTextAttributes];
+	// init magical record
     [MagicalRecord setupCoreDataStackWithStoreNamed:@"Book_Store"];
 	return YES;
 }

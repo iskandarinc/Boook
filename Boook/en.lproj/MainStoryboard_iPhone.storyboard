@@ -64,21 +64,25 @@
                                     <outlet property="delegate" destination="yPh-SV-mgz" id="Gru-ou-PHk"/>
                                 </connections>
                             </tableView>
-                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" hidesWhenStopped="YES" animating="YES" style="whiteLarge" id="Z33-WH-wkU">
-                                <rect key="frame" x="142" y="234" width="37" height="37"/>
-                            </activityIndicatorView>
                             <view alpha="0.75" contentMode="scaleToFill" id="DIx-r3-4MP">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="23"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                             </view>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Swipe right to highlight, left to undo." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="RKI-LH-DMM">
-                                <rect key="frame" x="10" y="0.0" width="300" height="20"/>
+                                <rect key="frame" x="10" y="1" width="300" height="20"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="rAE-md-PLU">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" hidesWhenStopped="YES" animating="YES" style="whiteLarge" id="Z33-WH-wkU">
+                                <rect key="frame" x="142" y="234" width="37" height="37"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
@@ -93,6 +97,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="activityIndicator" destination="Z33-WH-wkU" id="Hfz-pO-hpm"/>
+                        <outlet property="bookCover" destination="rAE-md-PLU" id="6yE-HD-lpw"/>
                         <outlet property="tableView" destination="61C-if-W8p" id="ADv-Dw-hnU"/>
                         <outlet property="tipLabel" destination="RKI-LH-DMM" id="cBT-ro-PhX"/>
                         <outlet property="view" destination="Q3P-v9-Rl0" id="qqu-lj-CFT"/>
@@ -177,6 +182,7 @@
             <source key="sourceIdentifier" type="project" relativePath="./Classes/BKBookViewController.h"/>
             <relationships>
                 <relationship kind="outlet" name="activityIndicator" candidateClass="UIActivityIndicatorView"/>
+                <relationship kind="outlet" name="bookCover" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="tableView" candidateClass="UITableView"/>
                 <relationship kind="outlet" name="tipLabel" candidateClass="UILabel"/>
                 <relationship kind="outletCollection" name="toolTipElements" candidateClass="UIView"/>
