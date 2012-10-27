@@ -332,7 +332,7 @@ CGFloat const kImageVerticalMargin = 20.0f;
 	__block NSString *highlightedText = @"";
 	[self.pages enumerateObjectsUsingBlock:^(NSArray *page, NSUInteger idx, BOOL *stop) {
 		[page enumerateObjectsUsingBlock:^(BKLabel *label, NSUInteger idx, BOOL *stop) {
-			if ([label respondsToSelector:@selector(isHighlighted)] && [label isHighLighted]) {
+			if ([label isKindOfClass:[BKLabel class]] && [label isHighLighted]) {
 				highlightedText = [[highlightedText stringByAppendingString:label.text] stringByAppendingString:@" "];
 			}
 		}];
