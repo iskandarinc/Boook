@@ -198,7 +198,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" id="uQx-lJ-4Nq">
-                                                    <rect key="frame" x="0.0" y="15" width="155" height="245"/>
+                                                    <rect key="frame" x="0.0" y="15" width="155" height="265"/>
                                                 </imageView>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -242,7 +242,6 @@
         <class className="BKBookViewController" superclassName="BKBaseViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/BKBookViewController.h"/>
             <relationships>
-                <relationship kind="action" name="toggleTableOfContents:" candidateClass="UIBarButtonItem"/>
                 <relationship kind="outlet" name="activityIndicator" candidateClass="UIActivityIndicatorView"/>
                 <relationship kind="outlet" name="barButtonItem" candidateClass="UIBarButtonItem"/>
                 <relationship kind="outlet" name="bookCover" candidateClass="UIImageView"/>
@@ -288,9 +287,6 @@
         </class>
         <class className="UICollectionViewFlowLayout" superclassName="UICollectionViewLayout">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewFlowLayout.h"/>
-        </class>
-        <class className="UICollectionViewLayout" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewLayout.h"/>
         </class>
     </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
