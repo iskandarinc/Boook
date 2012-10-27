@@ -373,18 +373,20 @@ CGFloat const kImageVerticalMargin = 20.0f;
 					   }];
 }
 - (void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate {
-	if (self.loadingChapter) {
+	if (self.loadingChapter && scrollView) {
 		return;
 	}
 	
-	if (scrollView.contentOffset.y < -kPageBounceChapterThreshold && self.chapterNumber > 0) {
-		// snapped up so try and get the previous chapter
-		[self loadNewChapter:self.chapterNumber-1];
-	}
-	
-	if (scrollView.contentOffset.y + self.tableView.frame.size.height > self.tableView.contentSize.height + kPageBounceChapterThreshold) {
-		// snapped down so get next chapter
-		[self loadNewChapter:self.chapterNumber+1];
+	if (scrollView.tag == BookTableViewTagChapterContent) {
+		if (scrollView.contentOffset.y < -kPageBounceChapterThreshold && self.chapterNumber > 0) {
+			// snapped up so try and get the previous chapter
+			[self loadNewChapter:self.chapterNumber-1];
+		}
+		
+		if (scrollView.contentOffset.y + self.tableView.frame.size.height > self.tableView.contentSize.height + kPageBounceChapterThreshold) {
+			// snapped down so get next chapter
+			[self loadNewChapter:self.chapterNumber+1];
+		}
 	}
 }
 
