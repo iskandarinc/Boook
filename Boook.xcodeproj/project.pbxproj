@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8326CF99163C36E30055B104 /* vertical_shadow.png in Resources */ = {isa = PBXBuildFile; fileRef = 8326CF97163C36E20055B104 /* vertical_shadow.png */; };
+		8326CF9A163C36E30055B104 /* vertical_shadow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8326CF98163C36E30055B104 /* vertical_shadow@2x.png */; };
 		8338BFD41634785800281731 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 8338BFD31634785800281731 /* Icon.png */; };
 		8338BFD61634785E00281731 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8338BFD51634785E00281731 /* Icon@2x.png */; };
 		839A10471630CDCC00F3D6B1 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 839A10461630CDCC00F3D6B1 /* CoreData.framework */; };
@@ -89,6 +91,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8326CF97163C36E20055B104 /* vertical_shadow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = vertical_shadow.png; path = Images/vertical_shadow.png; sourceTree = "<group>"; };
+		8326CF98163C36E30055B104 /* vertical_shadow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "vertical_shadow@2x.png"; path = "Images/vertical_shadow@2x.png"; sourceTree = "<group>"; };
 		8338BFD31634785800281731 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon.png; path = ../Icon.png; sourceTree = "<group>"; };
 		8338BFD51634785E00281731 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon@2x.png"; path = "../Icon@2x.png"; sourceTree = "<group>"; };
 		839A10461630CDCC00F3D6B1 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
@@ -541,6 +545,8 @@
 		83E40A0F1632358D0085D91A /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				8326CF97163C36E20055B104 /* vertical_shadow.png */,
+				8326CF98163C36E30055B104 /* vertical_shadow@2x.png */,
 				83DE653A1638C517009E1C1A /* blue_texture@2x.png */,
 				83DE653B1638C517009E1C1A /* Default-568h@2x.png */,
 				83DE653C1638C517009E1C1A /* Default.png */,
@@ -623,6 +629,8 @@
 				83DE65501638C546009E1C1A /* dickens-battle-of-life.epub in Resources */,
 				83DE65511638C546009E1C1A /* gullivers.epub in Resources */,
 				83DE65521638C546009E1C1A /* sherlock.epub in Resources */,
+				8326CF99163C36E30055B104 /* vertical_shadow.png in Resources */,
+				8326CF9A163C36E30055B104 /* vertical_shadow@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

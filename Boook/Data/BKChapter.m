@@ -54,7 +54,12 @@
 }
 
 - (NSString *)title {
-	return [[self.chunks objectAtIndex:0] text];
+	BKChunk *titleChunk = [self.chunks objectAtIndex:0];
+	if (titleChunk.typeValue == ChunkTypeImage) {
+		return [[self.chunks objectAtIndex:1] text];
+	} else {
+		return [titleChunk text];
+	}
 }
 
 

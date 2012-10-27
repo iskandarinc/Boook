@@ -238,6 +238,7 @@ CGFloat const kImageVerticalMargin = 20.0f;
 			// background table of contents cell
 			
 			BKTOCCell *cell = [tableView dequeueReusableCellWithIdentifier:@"chapter"];
+			cell.contentView.backgroundColor = [UIColor darkGrayColor];
 			BKChapter *chapter = [self.book.chapters objectAtIndex:indexPath.row];
 			cell.chapterLabel.text = [chapter title];
 			return cell;
@@ -392,11 +393,13 @@ CGFloat const kImageVerticalMargin = 20.0f;
 	[UIView animateWithDuration:.5f animations:^{
 		if (self.tableView.frame.origin.x == 0.0f) {
 			self.tableOfContentsTableView.alpha = 1.0f;
+			self.tableOfContentsShadow.alpha = .4f;
 			self.tableView.frame = CGRectMake(-[UIScreen mainScreen].bounds.size.width/2, 0.0f, self.view.frame.size.width, self.view.frame.size.height);
-			buttonItem.title = @"-ToC";
+			buttonItem.title = @"☰";
 		} else {
 			self.tableView.frame = CGRectMake(0.0f, 0.0f, self.view.frame.size.width, self.view.frame.size.height);
-			buttonItem.title = @"ToC";
+			self.tableOfContentsShadow.alpha = 0.0f;
+			buttonItem.title = @"☰";
 			self.tableOfContentsTableView.alpha = 0.0f;
 		}
 	}];

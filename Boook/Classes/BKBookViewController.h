@@ -27,6 +27,7 @@ typedef enum {
 @property (strong, nonatomic) IBOutlet UIImageView *bookCover;
 @property (strong, nonatomic) IBOutlet UIImageView *tableOfContentsBookCover;
 @property (strong, nonatomic) IBOutlet UIBarButtonItem *barButtonItem;
+@property (strong, nonatomic) IBOutlet UIImageView *tableOfContentsShadow;
 
 @property CGPoint lastContentOffset;
 @property CGRect bookCoverFrame;

@@ -27,16 +27,16 @@
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" alpha="0.0" tag="2" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="mn9-NL-7iM">
+                            <tableView clipsSubviews="YES" alpha="0.0" tag="2" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="mn9-NL-7iM">
                                 <rect key="frame" x="160" y="1" width="160" height="504"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <view key="tableHeaderView" clipsSubviews="YES" contentMode="scaleToFill" id="bIG-sT-C9k">
-                                    <rect key="frame" x="0.0" y="0.0" width="160" height="105"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="160" height="160"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" id="04b-A4-C6D">
-                                            <rect key="frame" x="0.0" y="0.0" width="160" height="105"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="160" height="160"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                         </imageView>
                                     </subviews>
@@ -44,7 +44,7 @@
                                 </view>
                                 <prototypes>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="gray" indentationWidth="10" reuseIdentifier="chapter" id="qwk-tg-2fQ" customClass="BKTOCCell">
-                                        <rect key="frame" x="0.0" y="127" width="160" height="44"/>
+                                        <rect key="frame" x="0.0" y="182" width="160" height="44"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="0.0" y="0.0" width="160" height="43"/>
@@ -60,6 +60,7 @@
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
+                                        <color key="backgroundColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                         <connections>
                                             <outlet property="chapterLabel" destination="zO3-ZG-Ri5" id="Xhg-yh-Kip"/>
                                         </connections>
@@ -70,6 +71,10 @@
                                     <outlet property="delegate" destination="yPh-SV-mgz" id="ubb-aF-c1O"/>
                                 </connections>
                             </tableView>
+                            <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" image="vertical_shadow.png" id="FgM-la-Raq">
+                                <rect key="frame" x="160" y="0.0" width="160" height="504"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <tableView clipsSubviews="YES" tag="1" contentMode="scaleToFill" alwaysBounceVertical="YES" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="504" sectionHeaderHeight="22" sectionFooterHeight="22" id="61C-if-W8p">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="505"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -137,7 +142,7 @@
                         <barButtonItem key="backBarButtonItem" id="fWq-1j-lgc">
                             <color key="tintColor" red="0.1294117719" green="0.34509804840000002" blue="0.52941179279999995" alpha="1" colorSpace="deviceRGB"/>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="ToC" style="plain" id="JdN-ya-jYA">
+                        <barButtonItem key="rightBarButtonItem" title="☰" style="plain" id="JdN-ya-jYA">
                             <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <action selector="toggleTableOfContents:" destination="yPh-SV-mgz" id="rnB-nS-mte"/>
@@ -149,6 +154,7 @@
                         <outlet property="barButtonItem" destination="JdN-ya-jYA" id="Sao-IN-hum"/>
                         <outlet property="bookCover" destination="rAE-md-PLU" id="6yE-HD-lpw"/>
                         <outlet property="tableOfContentsBookCover" destination="04b-A4-C6D" id="9JU-vj-rdb"/>
+                        <outlet property="tableOfContentsShadow" destination="FgM-la-Raq" id="CsO-iw-jk1"/>
                         <outlet property="tableOfContentsTableView" destination="mn9-NL-7iM" id="uw1-wx-O0d"/>
                         <outlet property="tableView" destination="61C-if-W8p" id="ADv-Dw-hnU"/>
                         <outlet property="tipLabel" destination="RKI-LH-DMM" id="cBT-ro-PhX"/>
@@ -226,6 +232,67 @@
             <point key="canvasLocation" x="-139" y="-257"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="vertical_shadow.png" width="20" height="15"/>
+    </resources>
+    <classes>
+        <class className="BKBaseViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/BKBaseViewController.h"/>
+        </class>
+        <class className="BKBookViewController" superclassName="BKBaseViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/BKBookViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="toggleTableOfContents:" candidateClass="UIBarButtonItem"/>
+                <relationship kind="outlet" name="activityIndicator" candidateClass="UIActivityIndicatorView"/>
+                <relationship kind="outlet" name="barButtonItem" candidateClass="UIBarButtonItem"/>
+                <relationship kind="outlet" name="bookCover" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="tableOfContentsBookCover" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="tableOfContentsShadow" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="tableOfContentsTableView" candidateClass="UITableView"/>
+                <relationship kind="outlet" name="tableView" candidateClass="UITableView"/>
+                <relationship kind="outlet" name="tipLabel" candidateClass="UILabel"/>
+                <relationship kind="outletCollection" name="toolTipElements" candidateClass="UIView"/>
+            </relationships>
+        </class>
+        <class className="BKLibraryCell" superclassName="UICollectionViewCell">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/BKLibraryCell.h"/>
+            <relationships>
+                <relationship kind="outlet" name="bookCoverImage" candidateClass="UIImageView"/>
+            </relationships>
+        </class>
+        <class className="BKLibraryViewController" superclassName="BKBaseViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/BKLibraryViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="activityIndicator" candidateClass="UIActivityIndicatorView"/>
+                <relationship kind="outlet" name="collectionView" candidateClass="UICollectionView"/>
+            </relationships>
+        </class>
+        <class className="BKPageCell" superclassName="UITableViewCell">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/BKPageCell.h"/>
+            <relationships>
+                <relationship kind="outlet" name="pageNumberLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="textView" candidateClass="UIView"/>
+            </relationships>
+        </class>
+        <class className="BKTOCCell" superclassName="UITableViewCell">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/BKTOCCell.h"/>
+            <relationships>
+                <relationship kind="outlet" name="chapterLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="UICollectionReusableView" superclassName="UIView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionReusableView.h"/>
+        </class>
+        <class className="UICollectionViewCell" superclassName="UICollectionReusableView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewCell.h"/>
+        </class>
+        <class className="UICollectionViewFlowLayout" superclassName="UICollectionViewLayout">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewFlowLayout.h"/>
+        </class>
+        <class className="UICollectionViewLayout" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewLayout.h"/>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
