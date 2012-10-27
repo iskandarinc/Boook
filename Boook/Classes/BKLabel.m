@@ -9,15 +9,6 @@
 #import "BKLabel.h"
 
 @implementation BKLabel
-
-- (id)initWithFrame:(CGRect)frame
-{
-    self = [super initWithFrame:frame];
-    if (self) { 
-    }
-    return self;
-}
-
 - (void)highLight {
 	self.backgroundColor = [UIColor yellowColor];
 }
@@ -29,5 +20,4 @@
 - (BOOL)isHighLighted {
 	return (self.backgroundColor == [UIColor yellowColor]);
 }
-
 @end

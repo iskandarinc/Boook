@@ -28,6 +28,9 @@ CGFloat const kPagelWidth = 300.0f;
 CGFloat const kPageHeight = 444.0f;
 CGFloat const kPageBounceChapterThreshold = 50.0f;
 
+CGFloat const kImageHorizontalMargin = 40.0f;
+CGFloat const kImageVerticalMargin = 20.0f;
+
 @implementation BKBookViewController
 
 #pragma mark book rendering
@@ -59,20 +62,20 @@ CGFloat const kPageBounceChapterThreshold = 50.0f;
 			UIImageView *imageChunk = [[UIImageView alloc] initWithImage:[UIImage imageWithContentsOfFile:chunk.image]];
 			imageChunk.contentMode = UIViewContentModeScaleAspectFill;
 			imageChunk.clipsToBounds = YES;
-			imageChunk.frame = CGRectMake(0.0f, 0.0f, kPagelWidth-80.0f, kPageHeight*((kPagelWidth-80.0f)/imageChunk.frame.size.width));
+			imageChunk.frame = CGRectMake(0.0f, 0.0f, kPagelWidth-(kImageHorizontalMargin*2), kPageHeight*((kPagelWidth-(kImageHorizontalMargin*2))/imageChunk.frame.size.width));
 			
-			if (pageCursor.y + imageChunk.frame.size.height + 20.0f > kPageHeight  ) {
+			if (pageCursor.y + imageChunk.frame.size.height + kImageVerticalMargin > kPageHeight  ) {
 				// we've exceeded the page size so finish up this page
 				[self.pages addObject:page];
 				page = [NSMutableArray array];
 				pageCursor = CGPointMake(kPageHorizontalMargin, kPageVerticalMargin);
 			} else {
-				pageCursor = CGPointMake(kPageHorizontalMargin, pageCursor.y + 20.0f);
+				pageCursor = CGPointMake(kPageHorizontalMargin, pageCursor.y + kImageVerticalMargin);
 			}
-			imageChunk.frame = CGRectMake(40.0f, pageCursor.y, imageChunk.frame.size.width, imageChunk.frame.size.height);
+			imageChunk.frame = CGRectMake(kPageHorizontalMargin, pageCursor.y, imageChunk.frame.size.width, imageChunk.frame.size.height);
 			
 			// shift page cursor
-			pageCursor = CGPointMake(kPageHorizontalMargin, pageCursor.y + imageChunk.frame.size.height + 20.0f);
+			pageCursor = CGPointMake(kPageHorizontalMargin, pageCursor.y + imageChunk.frame.size.height + kImageVerticalMargin);
 			
 			[page addObject:imageChunk];
 			
