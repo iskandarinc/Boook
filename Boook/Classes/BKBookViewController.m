@@ -221,13 +221,13 @@ CGFloat const kImageVerticalMargin = 20.0f;
 				if ([wordOrImageChunk isKindOfClass:[UIImageView class]]) {
 					// for images bring them to the back so text overlays
 					[cell.textView sendSubviewToBack:wordOrImageChunk];
-				} else {
-					// enable hightlighting for text
-					UIPanGestureRecognizer *panGestureRecognizer = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(panText:)];
-					panGestureRecognizer.delegate = self;
-					[cell.textView addGestureRecognizer:panGestureRecognizer];
 				}
 			}
+			
+			// enable hightlighting for text
+			UIPanGestureRecognizer *panGestureRecognizer = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(panText:)];
+			panGestureRecognizer.delegate = self;
+			[cell.textView addGestureRecognizer:panGestureRecognizer];
 			
 			cell.pageNumberLabel.text = [NSString stringWithFormat:@"page %i / %i", indexPath.row + 1, [self.pages count]];
 			
