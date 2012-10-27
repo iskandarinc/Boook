@@ -62,7 +62,7 @@ CGFloat const kImageVerticalMargin = 20.0f;
 			UIImageView *imageChunk = [[UIImageView alloc] initWithImage:[UIImage imageWithContentsOfFile:chunk.image]];
 			imageChunk.contentMode = UIViewContentModeScaleAspectFill;
 			imageChunk.clipsToBounds = YES;
-			imageChunk.frame = CGRectMake(0.0f, 0.0f, kPagelWidth-(kImageHorizontalMargin*2), kPageHeight*((kPagelWidth-(kImageHorizontalMargin*2))/imageChunk.frame.size.width));
+			imageChunk.frame = CGRectMake(0.0f, 0.0f, [UIScreen mainScreen].bounds.size.width -(kImageHorizontalMargin*2), kPageHeight*((kPagelWidth-(kImageHorizontalMargin*2))/imageChunk.frame.size.width));
 			
 			if (pageCursor.y + imageChunk.frame.size.height + kImageVerticalMargin > kPageHeight  ) {
 				// we've exceeded the page size so finish up this page
@@ -72,7 +72,7 @@ CGFloat const kImageVerticalMargin = 20.0f;
 			} else {
 				pageCursor = CGPointMake(kPageHorizontalMargin, pageCursor.y + kImageVerticalMargin);
 			}
-			imageChunk.frame = CGRectMake(kPageHorizontalMargin, pageCursor.y, imageChunk.frame.size.width, imageChunk.frame.size.height);
+			imageChunk.frame = CGRectMake(kImageHorizontalMargin, pageCursor.y, imageChunk.frame.size.width, imageChunk.frame.size.height);
 			
 			// shift page cursor
 			pageCursor = CGPointMake(kPageHorizontalMargin, pageCursor.y + imageChunk.frame.size.height + kImageVerticalMargin);
