@@ -80,7 +80,7 @@ NSString *const kEpubContentManifest = @"/OPS/content.opf";
 		NSString *chapterFileNamePath = [[[self unzipPathForFileName:fileName] stringByAppendingString:kEpubContentRoot] stringByAppendingString:chapterFileName];
 		
 		if ([chapterFileName rangeOfString:@"chapter"].location != NSNotFound && [chapterFileName rangeOfString:@"html"].location != NSNotFound) {
-			BKChapter *chapter = [BKChapter parseChapterWithFilename:chapterFileNamePath];
+			BKChapter *chapter = [BKChapter parseChapterWithFilename:chapterFileNamePath forBook:book];
 			[chapters addObject:chapter];
 		}
 	}];

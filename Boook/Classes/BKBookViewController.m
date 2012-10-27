@@ -15,6 +15,7 @@
 #import "NSAttributedString+BoookAdditions.h"
 #import "UILabel+BoookAdditions.h"
 #import "BKLabel.h"
+#import "BKTOCCell.h"
 
 @interface BKBookViewController ()
 
@@ -52,58 +53,83 @@ CGFloat const kPageBounceChapterThreshold = 50.0f;
 	
 	[chunks enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
 		BKChunk *chunk = (BKChunk *)obj;
-	
-		NSString *text = [chunk.text stringByAppendingString:@"\n"];
-		if (text) {
-			NSMutableAttributedString *chunkAttString = [[NSMutableAttributedString alloc] initWithString:text];
+		
+		// handle images
+		if (chunk.typeValue == ChunkTypeImage) {
+			UIImageView *imageChunk = [[UIImageView alloc] initWithImage:[UIImage imageWithContentsOfFile:chunk.image]];
+			imageChunk.contentMode = UIViewContentModeScaleAspectFill;
+			imageChunk.clipsToBounds = YES;
+			imageChunk.frame = CGRectMake(0.0f, 0.0f, kPagelWidth-80.0f, kPageHeight*((kPagelWidth-80.0f)/imageChunk.frame.size.width));
 			
-			if (chunk.typeValue == ChunkTypeHeading) {
-				[chunkAttString setAttributes:[NSAttributedString attributesForHeading] range:NSMakeRange(0, chunkAttString.length)];
-			} else if (chunk.typeValue == ChunkTypeSubHeading) {
-				[chunkAttString setAttributes:[NSAttributedString attributesForSubHeading] range:NSMakeRange(0, chunkAttString.length)];
+			if (pageCursor.y + imageChunk.frame.size.height + 20.0f > kPageHeight  ) {
+				// we've exceeded the page size so finish up this page
+				[self.pages addObject:page];
+				page = [NSMutableArray array];
+				pageCursor = CGPointMake(kPageHorizontalMargin, kPageVerticalMargin);
 			} else {
-				[chunkAttString setAttributes:[NSAttributedString attributesForParagraph] range:NSMakeRange(0, chunkAttString.length)];
+				pageCursor = CGPointMake(kPageHorizontalMargin, pageCursor.y + 20.0f);
 			}
+			imageChunk.frame = CGRectMake(40.0f, pageCursor.y, imageChunk.frame.size.width, imageChunk.frame.size.height);
 			
-			// add footnotes
-			if ([text rangeOfString:@"["].location != NSNotFound) {
-				[chunkAttString setAttributes:[NSAttributedString attributesForFootNote] range:NSMakeRange([text rangeOfString:@"["].location, 4)];
-			}
+			// shift page cursor
+			pageCursor = CGPointMake(kPageHorizontalMargin, pageCursor.y + imageChunk.frame.size.height + 20.0f);
 			
-			// split into words
-			NSArray *wordAttStrings = [chunkAttString componentsSeperatedBySubString:@" "];
+			[page addObject:imageChunk];
 			
-			// create labels into word and organize them into pages
-			[wordAttStrings enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
-				NSAttributedString *wordAttString = (NSAttributedString *)obj;
+		} else {
+		
+			NSString *text = [chunk.text stringByAppendingString:@"\n"];
+			if (text) {
+				NSMutableAttributedString *chunkAttString = [[NSMutableAttributedString alloc] initWithString:text];
 				
-				UILabel *wordLabel = [self sizedLabelWithAttributedText:wordAttString];
-			
-				// set up the pageCursor position for the next label
-				if ((pageCursor.x + wordLabel.frame.size.width) > kPagelWidth) {
-					// start a new page if we exceeded the page width
-					pageCursor = CGPointMake(kPageHorizontalMargin, pageCursor.y + wordLabel.frame.size.height);
+				if (chunk.typeValue == ChunkTypeHeading) {
+					[chunkAttString setAttributes:[NSAttributedString attributesForHeading] range:NSMakeRange(0, chunkAttString.length)];
+				} else if (chunk.typeValue == ChunkTypeSubHeading) {
+					[chunkAttString setAttributes:[NSAttributedString attributesForSubHeading] range:NSMakeRange(0, chunkAttString.length)];
+				} else {
+					[chunkAttString setAttributes:[NSAttributedString attributesForParagraph] range:NSMakeRange(0, chunkAttString.length)];
 				}
 				
-				if (pageCursor.y > kPageHeight) {
-					// we've exceeded the page size so finish up this page
-					[self.pages addObject:page];
-					page = [NSMutableArray array];
+				// add footnotes
+				if ([text rangeOfString:@"["].location != NSNotFound) {
+					[chunkAttString setAttributes:[NSAttributedString attributesForFootNote] range:NSMakeRange([text rangeOfString:@"["].location, 4)];
+				}
+				
+				// split into words
+				NSArray *wordAttStrings = [chunkAttString componentsSeperatedBySubString:@" "];
+				
+				// create labels into word and organize them into pages
+				[wordAttStrings enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
+					NSAttributedString *wordAttString = (NSAttributedString *)obj;
 					
-					pageCursor = CGPointMake(kPageHorizontalMargin, kPageVerticalMargin);
-				}
-				wordLabel.frame = CGRectOffset(wordLabel.frame, pageCursor.x, pageCursor.y);
+					UILabel *wordLabel = [self sizedLabelWithAttributedText:wordAttString];
 				
-				// shift page cursor
-				pageCursor = CGPointMake(pageCursor.x + wordLabel.frame.size.width, pageCursor.y);
-				
-				// add paragraph spacing if word has line break characters
-				if ([wordLabel.text rangeOfString:@"\n"].location != NSNotFound) {
-					pageCursor = CGPointMake(kParagraphIndent, pageCursor.y + wordLabel.frame.size.height + 20.0f);
-				}
-				
-				[page addObject:wordLabel];
-			}];
+					// set up the pageCursor position for the next label
+					if ((pageCursor.x + wordLabel.frame.size.width) > kPagelWidth) {
+						// start a new line if we exceeded the page width
+						pageCursor = CGPointMake(kPageHorizontalMargin, pageCursor.y + wordLabel.frame.size.height);
+					}
+					
+					if (pageCursor.y > kPageHeight) {
+						// we've exceeded the page size so finish up this page
+						[self.pages addObject:page];
+						page = [NSMutableArray array];
+						
+						pageCursor = CGPointMake(kPageHorizontalMargin, kPageVerticalMargin);
+					}
+					wordLabel.frame = CGRectOffset(wordLabel.frame, pageCursor.x, pageCursor.y);
+					
+					// shift page cursor
+					pageCursor = CGPointMake(pageCursor.x + wordLabel.frame.size.width, pageCursor.y);
+					
+					// add paragraph spacing if word has line break characters
+					if ([wordLabel.text rangeOfString:@"\n"].location != NSNotFound) {
+						pageCursor = CGPointMake(kParagraphIndent, pageCursor.y + wordLabel.frame.size.height + 20.0f);
+					}
+					
+					[page addObject:wordLabel];
+				}];
+			}
 		}
 	}];
 	
@@ -120,16 +146,11 @@ CGFloat const kPageBounceChapterThreshold = 50.0f;
 	
 	// display book cover
 	self.bookCover.image = [UIImage imageWithContentsOfFile:[self.book pathToBookImage]];
+	// also in the table of contents
+	self.tableOfContentsBookCover.image = [UIImage imageWithContentsOfFile:[self.book pathToBookImage]];
+	
 	// keep track of original frame so we can reset it
 	self.bookCoverFrame = self.bookCover.frame;
-}
-
-- (void)viewWillAppear:(BOOL)animated {
-	[super viewWillAppear:animated];
-	
-	[UIView animateWithDuration:1.0f animations:^{
-		self.tableView.frame = CGRectMake(-150.0f, 0.0f, self.view.frame.size.width, self.view.frame.size.height);
-	}];
 }
 
 - (void)setupChapter {
@@ -162,29 +183,72 @@ CGFloat const kPageBounceChapterThreshold = 50.0f;
 
 #pragma mark table view delegate methods
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-	return [self.pages count];
+	int rowsInSection = 0;
+	switch (tableView.tag) {
+		case BookTableViewTagChapterContent: {
+			// main book content
+			rowsInSection = [self.pages count];
+			break;
+		}
+			
+		case BookTableViewTagTableOfContents: {
+			// table of contents
+			rowsInSection = [self.book.chapters count];
+			break;
+		}
+	}
+	return rowsInSection;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-	
-	BKPageCell *cell = [tableView dequeueReusableCellWithIdentifier:@"standard"];
-	
-	// don't redraw if the same cell
-	cell.textView.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"paper_texture.png"]];
-	
-	NSArray *page = [self.pages objectAtIndex:indexPath.row];
-	// add all the words onto the page
-	for (int i = 0; i < [page count]; i ++) {
-		UILabel *wordLabel = [page objectAtIndex:i];
-		[cell.textView addSubview:wordLabel];
+	switch (tableView.tag) {
+		case BookTableViewTagChapterContent: {
+			// Main page content cell
+			
+			BKPageCell *cell = [tableView dequeueReusableCellWithIdentifier:@"standard"];
+			// don't redraw if the same cell
+			cell.textView.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"paper_texture.png"]];
+			
+			NSArray *page = [self.pages objectAtIndex:indexPath.row];
+			// add all the words (or images) onto the page
+			for (int i = 0; i < [page count]; i ++) {
+				UIView *wordOrImageChunk = [page objectAtIndex:i];
+				[cell.textView addSubview:wordOrImageChunk];
+				
+				if ([wordOrImageChunk isKindOfClass:[UIImageView class]]) {
+					// for images bring them to the back so text overlays
+					[cell.textView sendSubviewToBack:wordOrImageChunk];
+				} else {
+					// enable hightlighting for text
+					UIPanGestureRecognizer *panGestureRecognizer = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(panText:)];
+					panGestureRecognizer.delegate = self;
+					[cell.textView addGestureRecognizer:panGestureRecognizer];
+				}
+			}
+			
+			cell.pageNumberLabel.text = [NSString stringWithFormat:@"page %i / %i", indexPath.row + 1, [self.pages count]];
+			
+			return cell;
+		}
+		break;
+		case BookTableViewTagTableOfContents: {
+			// background table of contents cell
+			
+			BKTOCCell *cell = [tableView dequeueReusableCellWithIdentifier:@"chapter"];
+			BKChapter *chapter = [self.book.chapters objectAtIndex:indexPath.row];
+			cell.chapterLabel.text = [chapter title];
+			return cell;
+		}
+		break;
 	}
-	
-	cell.pageNumberLabel.text = [NSString stringWithFormat:@"page %i / %i", indexPath.row + 1, [self.pages count]];
-	
-	UIPanGestureRecognizer *panGestureRecognizer = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(panText:)];
-	panGestureRecognizer.delegate = self;
-	[cell.textView addGestureRecognizer:panGestureRecognizer];
-	return cell;
+	return nil;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+	if (tableView.tag == BookTableViewTagTableOfContents) {
+		[self toggleTableOfContents:self.barButtonItem];
+		[self loadNewChapter:indexPath.row];
+	}
 }
 
 #pragma mark Gesture Recognizer methods to support text highlighting
@@ -202,7 +266,7 @@ CGFloat const kPageBounceChapterThreshold = 50.0f;
 	
 	[[textView subviews] enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
 		BKLabel *label = (BKLabel *)obj;
-		if (CGRectContainsPoint(label.frame, touchedPoint)) {
+		if ([label respondsToSelector:@selector(highLight)] && CGRectContainsPoint(label.frame, touchedPoint)) {
 			
 			CGPoint velocity = [panGestureRecognizer velocityInView:textView];
 			if(velocity.x > 0) {
@@ -265,7 +329,7 @@ CGFloat const kPageBounceChapterThreshold = 50.0f;
 	__block NSString *highlightedText = @"";
 	[self.pages enumerateObjectsUsingBlock:^(NSArray *page, NSUInteger idx, BOOL *stop) {
 		[page enumerateObjectsUsingBlock:^(BKLabel *label, NSUInteger idx, BOOL *stop) {
-			if ([label isHighLighted]) {
+			if ([label respondsToSelector:@selector(isHighlighted)] && [label isHighLighted]) {
 				highlightedText = [[highlightedText stringByAppendingString:label.text] stringByAppendingString:@" "];
 			}
 		}];
@@ -318,6 +382,21 @@ CGFloat const kPageBounceChapterThreshold = 50.0f;
 		// snapped down so get next chapter
 		[self loadNewChapter:self.chapterNumber+1];
 	}
+}
+
+#pragma mark Table of Contents
+- (IBAction)toggleTableOfContents:(UIBarButtonItem *)buttonItem {
+	[UIView animateWithDuration:.5f animations:^{
+		if (self.tableView.frame.origin.x == 0.0f) {
+			self.tableOfContentsTableView.alpha = 1.0f;
+			self.tableView.frame = CGRectMake(-[UIScreen mainScreen].bounds.size.width/2, 0.0f, self.view.frame.size.width, self.view.frame.size.height);
+			buttonItem.title = @"-ToC";
+		} else {
+			self.tableView.frame = CGRectMake(0.0f, 0.0f, self.view.frame.size.width, self.view.frame.size.height);
+			buttonItem.title = @"ToC";
+			self.tableOfContentsTableView.alpha = 0.0f;
+		}
+	}];
 }
 
 @end

@@ -47,8 +47,6 @@
 	BKLibraryCell *libraryCell = (BKLibraryCell *)[collectionView dequeueReusableCellWithReuseIdentifier:@"square" forIndexPath:indexPath];
 	libraryCell.bookCoverImage.image = [UIImage imageWithContentsOfFile:[book pathToBookImage]];
 	libraryCell.alpha = 1.0f;
-
-	
 	return libraryCell;
 }
 

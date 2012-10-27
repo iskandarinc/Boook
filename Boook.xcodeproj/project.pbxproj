@@ -80,6 +80,7 @@
 		83DE65EB1638C643009E1C1A /* CTidy.m in Sources */ = {isa = PBXBuildFile; fileRef = 83DE65E61638C643009E1C1A /* CTidy.m */; };
 		83DE65EE1638C67C009E1C1A /* SSZipArchive.m in Sources */ = {isa = PBXBuildFile; fileRef = 83DE65ED1638C67C009E1C1A /* SSZipArchive.m */; };
 		83DE660A163A318A009E1C1A /* BKLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 83DE6609163A318A009E1C1A /* BKLabel.m */; };
+		83DE6672163B7101009E1C1A /* BKTOCCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 83DE6671163B70FA009E1C1A /* BKTOCCell.m */; };
 		83E409FC1631F3980085D91A /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 83E409FB1631F3980085D91A /* libxml2.dylib */; };
 		83E40A13163235A40085D91A /* paper_texture.png in Resources */ = {isa = PBXBuildFile; fileRef = 83E40A10163235A40085D91A /* paper_texture.png */; };
 		83E40A14163235A40085D91A /* blue_texture.png in Resources */ = {isa = PBXBuildFile; fileRef = 83E40A11163235A40085D91A /* blue_texture.png */; };
@@ -219,6 +220,8 @@
 		83DE65ED1638C67C009E1C1A /* SSZipArchive.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SSZipArchive.m; path = Classes/SSZipArchive.m; sourceTree = "<group>"; };
 		83DE6608163A318A009E1C1A /* BKLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BKLabel.h; path = Classes/BKLabel.h; sourceTree = "<group>"; };
 		83DE6609163A318A009E1C1A /* BKLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BKLabel.m; path = Classes/BKLabel.m; sourceTree = "<group>"; };
+		83DE6670163B70F8009E1C1A /* BKTOCCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BKTOCCell.h; path = Classes/BKTOCCell.h; sourceTree = "<group>"; };
+		83DE6671163B70FA009E1C1A /* BKTOCCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BKTOCCell.m; path = Classes/BKTOCCell.m; sourceTree = "<group>"; };
 		83E409FB1631F3980085D91A /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
 		83E40A10163235A40085D91A /* paper_texture.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = paper_texture.png; path = Images/paper_texture.png; sourceTree = "<group>"; };
 		83E40A11163235A40085D91A /* blue_texture.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = blue_texture.png; path = Images/blue_texture.png; sourceTree = "<group>"; };
@@ -336,10 +339,10 @@
 			children = (
 				83DE65131638C4AE009E1C1A /* _BKBook.h */,
 				83DE65141638C4AE009E1C1A /* _BKBook.m */,
-				83DE65151638C4AE009E1C1A /* _BKChunk.h */,
-				83DE65161638C4AE009E1C1A /* _BKChunk.m */,
 				83DE651B1638C4AE009E1C1A /* _BKChapter.h */,
 				83DE651C1638C4AE009E1C1A /* _BKChapter.m */,
+				83DE65151638C4AE009E1C1A /* _BKChunk.h */,
+				83DE65161638C4AE009E1C1A /* _BKChunk.m */,
 				83DE651E1638C4AE009E1C1A /* _BKAuthor.h */,
 				83DE651F1638C4AE009E1C1A /* _BKAuthor.m */,
 				83DE65171638C4AE009E1C1A /* BKChunk.h */,
@@ -376,6 +379,8 @@
 				83DE65571638C5CC009E1C1A /* BKBookViewController.m */,
 				83DE655C1638C5CC009E1C1A /* BKPageCell.h */,
 				83DE655D1638C5CC009E1C1A /* BKPageCell.m */,
+				83DE6670163B70F8009E1C1A /* BKTOCCell.h */,
+				83DE6671163B70FA009E1C1A /* BKTOCCell.m */,
 				83DE655A1638C5CC009E1C1A /* BKLibraryViewController.h */,
 				83DE655B1638C5CC009E1C1A /* BKLibraryViewController.m */,
 				83DE65581638C5CC009E1C1A /* BKLibraryCell.h */,
@@ -682,6 +687,7 @@
 				83DE65EB1638C643009E1C1A /* CTidy.m in Sources */,
 				83DE65EE1638C67C009E1C1A /* SSZipArchive.m in Sources */,
 				83DE660A163A318A009E1C1A /* BKLabel.m in Sources */,
+				83DE6672163B7101009E1C1A /* BKTOCCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

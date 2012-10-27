@@ -1,10 +1,11 @@
 #import "BKChapter.h"
 #import "GDataXMLNode.h"
 #import "BKChunk.h"
+#import "BKBook.h"
 
 @implementation BKChapter
 
-+ (BKChapter* )parseChapterWithFilename:(NSString *)chapterFileName {
++ (BKChapter* )parseChapterWithFilename:(NSString *)chapterFileName forBook:(BKBook *)book{
 	BKChapter *chapter = [BKChapter insertInManagedObjectContext:[NSManagedObjectContext defaultContext]];
 	
 	NSData *xmlData = [NSData dataWithContentsOfFile:chapterFileName];
@@ -40,7 +41,8 @@
 		BKChunk *chunk = [BKChunk chunkWithType:chunkType andValue:textValue];
 		
 		if ([xmlElement.name isEqualToString:@"img"]) {
-			chunk.image = [xmlElement attributeForName:@"src"].stringValue;
+			
+			chunk.image = [NSString stringWithFormat:@"%@/OPS/%@",[book unzipPath], [xmlElement attributeForName:@"src"].stringValue];
 		}
 		[chunks addObject:chunk];
 	}];
@@ -49,6 +51,10 @@
 		[chapter setChunks:chunks];
 	}
 	return chapter;
+}
+
+- (NSString *)title {
+	return [[self.chunks objectAtIndex:0] text];
 }
 
 
