@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2840" systemVersion="12C60" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="FGn-K6-EMb">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2844" systemVersion="12C2034" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="FGn-K6-EMb">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1926"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1930"/>
     </dependencies>
     <scenes>
         <!--Navigation Controller-->
@@ -235,60 +235,6 @@
     <resources>
         <image name="vertical_shadow.png" width="20" height="15"/>
     </resources>
-    <classes>
-        <class className="BKBaseViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/BKBaseViewController.h"/>
-        </class>
-        <class className="BKBookViewController" superclassName="BKBaseViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/BKBookViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="activityIndicator" candidateClass="UIActivityIndicatorView"/>
-                <relationship kind="outlet" name="barButtonItem" candidateClass="UIBarButtonItem"/>
-                <relationship kind="outlet" name="bookCover" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="tableOfContentsBookCover" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="tableOfContentsShadow" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="tableOfContentsTableView" candidateClass="UITableView"/>
-                <relationship kind="outlet" name="tableView" candidateClass="UITableView"/>
-                <relationship kind="outlet" name="tipLabel" candidateClass="UILabel"/>
-                <relationship kind="outletCollection" name="toolTipElements" candidateClass="UIView"/>
-            </relationships>
-        </class>
-        <class className="BKLibraryCell" superclassName="UICollectionViewCell">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/BKLibraryCell.h"/>
-            <relationships>
-                <relationship kind="outlet" name="bookCoverImage" candidateClass="UIImageView"/>
-            </relationships>
-        </class>
-        <class className="BKLibraryViewController" superclassName="BKBaseViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/BKLibraryViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="activityIndicator" candidateClass="UIActivityIndicatorView"/>
-                <relationship kind="outlet" name="collectionView" candidateClass="UICollectionView"/>
-            </relationships>
-        </class>
-        <class className="BKPageCell" superclassName="UITableViewCell">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/BKPageCell.h"/>
-            <relationships>
-                <relationship kind="outlet" name="pageNumberLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="textView" candidateClass="UIView"/>
-            </relationships>
-        </class>
-        <class className="BKTOCCell" superclassName="UITableViewCell">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/BKTOCCell.h"/>
-            <relationships>
-                <relationship kind="outlet" name="chapterLabel" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="UICollectionReusableView" superclassName="UIView">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionReusableView.h"/>
-        </class>
-        <class className="UICollectionViewCell" superclassName="UICollectionReusableView">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewCell.h"/>
-        </class>
-        <class className="UICollectionViewFlowLayout" superclassName="UICollectionViewLayout">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewFlowLayout.h"/>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
