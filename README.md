@@ -1,3 +1,7 @@
+![Library View](https://raw.github.com/iskandarinc/Boook/master/screenshot1.png)
+![Book View](https://raw.github.com/iskandarinc/Boook/master/screenshot2.png)
+![Chapter Select Slider](https://raw.github.com/iskandarinc/Boook/master/screenshot2.png)
+
 # BoooK ebook reader
 Noteworthy Features
 - Complete e-book parsed with correct paging and even image support.
