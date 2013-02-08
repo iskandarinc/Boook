@@ -1,7 +1,5 @@
 ![Library View](https://raw.github.com/iskandarinc/Boook/master/screenshot1.png)
-
 ![Book View](https://raw.github.com/iskandarinc/Boook/master/screenshot2.png)
-
 ![Chapter Select Slider](https://raw.github.com/iskandarinc/Boook/master/screenshot3.png)
 
 # BoooK ebook reader
